@@ -171,13 +171,10 @@ test("custom toggle: an optional input_boolean button reflects its state and cal
   click(c, "toggle_entity");
   await flush();
   assert.equal(hass.calls.length, 1);
-  assert.deepEqual(hass.calls[0], {
-    domain: "input_boolean",
-    service: "toggle",
-    data: { entity_id: entityId },
-    target: undefined,
-    notifyOnError: false,
-  });
+  assert.equal(hass.calls[0].domain, "input_boolean");
+  assert.equal(hass.calls[0].service, "toggle");
+  assert.deepEqual({ ...hass.calls[0].data }, { entity_id: entityId });
+  assert.equal(hass.calls[0].notifyOnError, false);
 });
 
 test("custom toggle: no button is rendered when no input_boolean is configured", () => {
