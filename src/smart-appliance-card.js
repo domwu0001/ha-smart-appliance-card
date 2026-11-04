@@ -180,7 +180,8 @@ var HcI18n = {
     ed_show_program: 'Program picker',
     ed_show_controls: 'Control buttons',
     ed_show_options: 'Program options',
-    ed_show_power: 'Power button',    ed_toggle_entity: 'Toggle button entity',
+    ed_show_power: 'Power button',
+    ed_toggle_entity: 'Toggle button entity',
     ed_toggle_entity_helper: 'Optional input_boolean shown in the card header and toggled when pressed',
     toggle: 'Toggle',
 
@@ -285,7 +286,8 @@ var HcI18n = {
     ed_show_program: 'Programmauswahl',
     ed_show_controls: 'Steuerungsschaltflächen',
     ed_show_options: 'Programmoptionen',
-    ed_show_power: 'Ein-/Aus-Schaltfläche',    ed_toggle_entity: 'Toggle-Button-Entität',
+    ed_show_power: 'Ein-/Aus-Schaltfläche',
+    ed_toggle_entity: 'Toggle-Button-Entität',
     ed_toggle_entity_helper: 'Optionaler input_boolean, der in der Kartenkopfzeile angezeigt und beim Drücken umgeschaltet wird',
     toggle: 'Umschalten',
 
