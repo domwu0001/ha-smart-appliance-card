@@ -4109,7 +4109,7 @@ class HomeConnectWasherMiniCard extends hcMini(HomeConnectWasherCard) {}
 class SmartApplianceMiniCard extends hcMini(SmartApplianceCard) {}
 
 // ── smart-appliance-card-editor (visual editor, built on HA's ha-form) ──────────
-var HC_EDITOR_DEFAULTS = { show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, zoom: true };
+var HC_EDITOR_DEFAULTS = { show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, zoom: true, toggle_color: 'green' };
 
 class HomeConnectCardEditor extends HTMLElement {
   setConfig(config) {
