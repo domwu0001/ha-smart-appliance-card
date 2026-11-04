@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.4 - 2026-11-04
+
+### Features
+- Added an optional header toggle button for an `input_boolean` entity, configurable through the visual editor or YAML with `toggle_entity`. The button is available on full and mini cards and reflects the entity state.
+
 ## 2.0.3 - 2026-11-04
 
 ### Fixes
