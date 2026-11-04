@@ -90,6 +90,17 @@ test("header always shows the appliance icon, and the appliance illustration", (
   assert.match(render(HomeConnectWasherCard, mockHass(), { icon: "mdi:washing-machine" }), /class="badge"/);
 });
 
+test("mini card places the custom toggle before the power button", () => {
+  const Mini = customElements.get("home-connect-washer-mini-card");
+  const card = new Mini();
+  card.setConfig({ toggle_entity: "input_boolean.pv_optimization" });
+  const hass = mockHass();
+  hass.states["input_boolean.pv_optimization"] = st("off");
+  card.hass = hass;
+  const html = card.shadowRoot.innerHTML;
+  assert.ok(html.indexOf('data-action="toggle_entity"') < html.indexOf('data-action="power"'));
+});
+
 test("mini card: compact view, detail button toggles the full card", () => {
   const Mini = customElements.get("home-connect-washer-mini-card");
   const card = new Mini();
