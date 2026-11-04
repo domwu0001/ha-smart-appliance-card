@@ -159,9 +159,13 @@ test("custom toggle: an optional input_boolean button reflects its state and cal
   const hass = mockHass();
   const entityId = "input_boolean.pv_optimization";
   hass.states[entityId] = st("off");
-  const c = card(hass, { toggle_entity: entityId });
+  const c = card(hass, { toggle_entity: entityId, toggle_icon: "mdi:solar-power", toggle_color: "orange" });
 
-  assert.match(c.shadowRoot.innerHTML, /data-action="toggle_entity"[^>]*aria-pressed="false"/);
+  const initialHtml = c.shadowRoot.innerHTML;
+  assert.match(initialHtml, /data-action="toggle_entity"[^>]*style="--toggle-color: #ff9800"/);
+  assert.match(initialHtml, /<ha-icon icon="mdi:solar-power"><\/ha-icon>/);
+  assert.ok(initialHtml.indexOf('data-action="toggle_entity"') < initialHtml.indexOf('data-action="power"'), "toggle button appears before power button");
+  assert.match(initialHtml, /data-action="toggle_entity"[^>]*aria-pressed="false"/);
 
   // The entity is included in the render signature, so a state change updates the button.
   hass.states[entityId] = st("on");
