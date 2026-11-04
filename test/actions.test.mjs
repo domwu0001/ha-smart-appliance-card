@@ -162,7 +162,7 @@ test("custom toggle: an optional input_boolean button reflects its state and cal
   const c = card(hass, { toggle_entity: entityId, toggle_icon: "mdi:solar-power", toggle_color: "orange" });
 
   const initialHtml = c.shadowRoot.innerHTML;
-  assert.match(initialHtml, /data-action="toggle_entity"[^>]*style="--toggle-color: #ff9800"/);
+  assert.match(initialHtml, /style="--toggle-color: #ff9800"[^>]*data-action="toggle_entity"/);
   assert.match(initialHtml, /<ha-icon icon="mdi:solar-power"><\/ha-icon>/);
   assert.ok(initialHtml.indexOf('data-action="toggle_entity"') < initialHtml.indexOf('data-action="power"'), "toggle button appears before power button");
   assert.match(initialHtml, /data-action="toggle_entity"[^>]*aria-pressed="false"/);
