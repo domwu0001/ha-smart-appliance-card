@@ -162,6 +162,15 @@ function editor(kind, config, language = "en") {
   return ed;
 }
 
+test("editor exposes an icon picker and the Home Assistant colour palette for the toggle button", () => {
+  const schema = editor("washer", {})._schema();
+  assert.ok(schema.some((field) => field.name === "toggle_icon" && field.selector.icon));
+  const color = schema.find((field) => field.name === "toggle_color");
+  assert.equal(color.selector.select.mode, "dropdown");
+  assert.ok(color.selector.select.options.some((option) => option.value === "green"));
+  assert.ok(color.selector.select.options.some((option) => option.value === "blue-grey"));
+});
+
 test("editor labels follow the language option", () => {
   assert.equal(editor("washer", {})._form.computeLabel({ name: "name" }), "Name");
   assert.equal(editor("washer", { language: "fr" })._form.computeLabel({ name: "name" }), "Nom");
