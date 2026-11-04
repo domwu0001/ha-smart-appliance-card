@@ -185,6 +185,8 @@ var HcI18n = {
     ed_show_power: 'Power button',
     ed_toggle_entity: 'Toggle button entity',
     ed_toggle_entity_helper: 'Optional input_boolean shown in the card header and toggled when pressed',
+    ed_toggle_icon: 'Toggle button icon',
+    ed_toggle_color: 'Toggle button color',
 
     ed_zoom: 'Detail button',
     ed_zoom_helper: 'Button at the top right that switches the mini card to the full card and back',
@@ -290,6 +292,8 @@ var HcI18n = {
     ed_show_power: 'Ein-/Aus-Schaltfläche',
     ed_toggle_entity: 'Toggle-Button-Entität',
     ed_toggle_entity_helper: 'Optionaler input_boolean, der in der Kartenkopfzeile angezeigt und beim Drücken umgeschaltet wird',
+    ed_toggle_icon: 'Symbol des Toggle-Buttons',
+    ed_toggle_color: 'Farbe des Toggle-Buttons',
 
     ed_zoom: 'Detailansicht-Schaltfläche',
     ed_zoom_helper: 'Schaltfläche oben rechts zum Wechseln zwischen kompakter und vollständiger Kartenansicht',
@@ -2721,6 +2725,18 @@ var HC_BRANDS = {
 // Brand logos (SVG or PNG files in logos/, named after the HC_BRANDS key), embedded by the build; brands without one keep
 // the initial on their colour.
 var HC_BRAND_LOGOS = {}; // __BRAND_LOGOS__
+
+// Home Assistant's standard named colour palette, with safe CSS fallbacks for themes that omit a token.
+var HC_TOGGLE_COLORS = [
+  ['red', 'Red', '#f44336'], ['pink', 'Pink', '#e91e63'], ['purple', 'Purple', '#9c27b0'],
+  ['deep-purple', 'Deep purple', '#673ab7'], ['indigo', 'Indigo', '#3f51b5'], ['blue', 'Blue', '#2196f3'],
+  ['light-blue', 'Light blue', '#03a9f4'], ['cyan', 'Cyan', '#00bcd4'], ['teal', 'Teal', '#009688'],
+  ['green', 'Green', '#4caf50'], ['light-green', 'Light green', '#8bc34a'], ['lime', 'Lime', '#cddc39'],
+  ['yellow', 'Yellow', '#ffeb3b'], ['amber', 'Amber', '#ffc107'], ['orange', 'Orange', '#ff9800'],
+  ['deep-orange', 'Deep orange', '#ff5722'], ['brown', 'Brown', '#795548'], ['grey', 'Grey', '#9e9e9e'],
+  ['blue-grey', 'Blue grey', '#607d8b'],
+];
+var HC_TOGGLE_COLOR_MAP = Object.fromEntries(HC_TOGGLE_COLORS.map(([key, label, hex]) => [key, { label, hex }]));
 function hcBrand(dev, option) {
   var m = String(option || dev?.manufacturer || '').trim();
   if (!m) return null;
@@ -3461,8 +3477,10 @@ class HomeConnectBaseCard extends HTMLElement {
     var toggleId = c.toggle_entity;
     var toggleOn = toggleId && this._val(toggleId) === 'on';
     var toggleAvailable = toggleId && this._avail(toggleId);
+    var toggleColor = HC_TOGGLE_COLOR_MAP[c.toggle_color] || HC_TOGGLE_COLOR_MAP.green;
+    var toggleIcon = c.toggle_icon || (toggleOn ? 'mdi:toggle-switch' : 'mdi:toggle-switch-off-outline');
     var toggleBtn = toggleId && toggleAvailable
-      ? `<button class="custom-toggle${toggleOn ? ' on' : ''}" data-action="toggle_entity" title="${hcEsc(this._entityLabel(toggleId, ''))}" aria-label="${hcEsc(this._entityLabel(toggleId, ''))}" aria-pressed="${!!toggleOn}"><ha-icon icon="${toggleOn ? 'mdi:toggle-switch' : 'mdi:toggle-switch-off-outline'}"></ha-icon></button>`
+      ? `<button class="custom-toggle${toggleOn ? ' on' : ''}" style="--toggle-color: ${toggleColor.hex}" data-action="toggle_entity" title="${hcEsc(this._entityLabel(toggleId, ''))}" aria-label="${hcEsc(this._entityLabel(toggleId, ''))}" aria-pressed="${!!toggleOn}"><ha-icon icon="${hcEsc(toggleIcon)}"></ha-icon></button>`
       : '';
 
     var errorHtml = this._error
@@ -3502,7 +3520,7 @@ class HomeConnectBaseCard extends HTMLElement {
     this.shadowRoot.innerHTML = this._styles(color) + '<ha-card>' +
       '<div class="header">' + logo +
         '<div class="titles"><div class="name">' + hcEsc(name) + '</div><div class="sub">' + this._brandLogo() + hcEsc(sub) + '</div></div>' +
-        powerBtn + toggleBtn + this._zoomButton() +
+        toggleBtn + powerBtn + this._zoomButton() +
       '</div>' +
       heroHtml + programHtml + optionsHtml + errorHtml + controls +
     '</ha-card>';
@@ -3704,7 +3722,7 @@ class HomeConnectBaseCard extends HTMLElement {
       '.power.on { background: color-mix(in srgb, var(--hc-color) 15%, transparent); color: var(--hc-color); }' +
       '.custom-toggle { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none;' +
         ' border: 0; cursor: pointer; background: var(--secondary-background-color, rgba(128,128,128,0.12)); color: var(--secondary-text-color); }' +
-      '.custom-toggle.on { background: color-mix(in srgb, var(--success-color, #43a047) 16%, transparent); color: var(--success-color, #43a047); }' +
+      '.custom-toggle.on { background: color-mix(in srgb, var(--toggle-color, var(--success-color, #43a047)) 18%, transparent); color: var(--toggle-color, var(--success-color, #43a047)); }' +
 
       '.chips { display: flex; flex-wrap: wrap; gap: 6px; }' +
       '.chip { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere; font-size: 11px; font-weight: 500; padding: 1px 8px 1px 5px; border-radius: 12px;' +
@@ -4064,8 +4082,8 @@ var hcMini = (Base) => class extends Base {
 
     // Round buttons: start (or pause / resume) and power.
     var btns = c.show_controls && m.online && m.powerOn ? this._actionButtons(ent, m.state, m.running, true).btns : [];
-    if (m.powerBtn) btns.push(m.powerBtn);
     if (m.toggleBtn) btns.push(m.toggleBtn);
+    if (m.powerBtn) btns.push(m.powerBtn);
 
     var errorHtml = this._error
       ? `<div class="error" role="alert" title="${hcEsc(this._error.detail)}"><ha-icon icon="mdi:alert-circle-outline"></ha-icon><span>${hcEsc(this._t(this._error.key))}</span></div>`
@@ -4129,6 +4147,8 @@ class HomeConnectCardEditor extends HTMLElement {
     return [
       { name: 'device_id', selector: { device: { filter: HC_PLATFORMS.map((i) => ({ integration: i })) } } },
       { name: 'toggle_entity', selector: { entity: { domain: 'input_boolean' } } },
+      { name: 'toggle_icon', selector: { icon: {} } },
+      { name: 'toggle_color', selector: { select: { mode: 'dropdown', options: HC_TOGGLE_COLORS.map(([value, label]) => ({ value, label })) } } },
       {
         type: 'grid', name: '', schema: [
           { name: 'kind', selector: { select: { mode: 'dropdown', options: kinds } } },
