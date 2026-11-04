@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.5 - 2026-11-04
+
+### Features
+- Added custom icon and Home Assistant palette colour options for the optional `input_boolean` toggle button.
+- Moved the toggle button before the appliance power button on full and mini cards.
+
 ## 2.0.4 - 2026-11-04
 
 ### Features
