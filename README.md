@@ -125,7 +125,7 @@ and remove the former `home-connect-card.js` resource. A resource pointing to a 
 
 ### Visual editor
 
-Add the card from the dashboard (**Add card** → **Smart Appliance Card**). The first supported appliance is picked automatically; change it with the **Appliance** field, then set the name, icon and the sections to show. You can optionally select an `input_boolean` for an extra toggle button in the card header. **Appliance type** and **Brand** are only needed when the integration doesn't give them away. The **Entities (advanced)** panel lets you force any appliance entity if auto-detection picks the wrong one. Options left at their default are not written to the YAML.
+Add the card from the dashboard (**Add card** → **Smart Appliance Card**). The first supported appliance is picked automatically; change it with the **Appliance** field, then set the name, icon and the sections to show. You can optionally select an `input_boolean` for an extra toggle button in the card header, then choose its icon and a colour from Home Assistant's standard palette. **Appliance type** and **Brand** are only needed when the integration doesn't give them away. The **Entities (advanced)** panel lets you force any appliance entity if auto-detection picks the wrong one. Options left at their default are not written to the YAML.
 
 ### Minimal
 
@@ -164,6 +164,8 @@ show_controls: true
 show_alerts: true
 show_power: true
 toggle_entity: input_boolean.pv_optimization
+toggle_icon: mdi:solar-power
+toggle_color: green
 language: en
 entities:
   operation_state: sensor.washing_machine_operation_state
@@ -186,7 +188,9 @@ entities:
 | `show_controls` | ❌ | `true` | Show Start / Pause / Resume / Stop buttons |
 | `show_alerts` | ❌ | `true` | Show salt, rinse aid and coffee machine alerts |
 | `show_power` | ❌ | `true` | Show the power button (turn off for appliances that can't be switched on / off remotely) |
-| `toggle_entity` | ❌ | — | Optional `input_boolean` shown as a separate toggle button in the card header (also on mini cards) |
+| `toggle_entity` | ❌ | — | Optional `input_boolean` shown as a separate toggle button before the power button (also on mini cards) |
+| `toggle_icon` | ❌ | State-dependent toggle icon | Icon for the optional toggle button (Home Assistant icon selector / MDI icon) |
+| `toggle_color` | ❌ | `green` | Active-state background and icon colour; one of the Home Assistant palette colours: `red`, `pink`, `purple`, `deep-purple`, `indigo`, `blue`, `light-blue`, `cyan`, `teal`, `green`, `light-green`, `lime`, `yellow`, `amber`, `orange`, `deep-orange`, `brown`, `grey`, `blue-grey` |
 | `zoom` | ❌ | `true` | Mini cards only: detail button at the top right that unfolds the full card (a click elsewhere folds it back) |
 | `language` | ❌ | Auto | Force language: `fr`, `en`, `de`, `es`, `sr`, `sr-Latn`, `it`, `nl`, `pt`, `pl`, `ro`, `da`, `sv`, `bg`, `ru`, `uk`, `hu`, `sk`, `cs`, `sl`, `lv` or `el` (auto-detects from HA settings) |
 | `entities` | ❌ | Auto | Override detected entities (see below) |
