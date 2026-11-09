@@ -130,7 +130,7 @@ and remove the former `home-connect-card.js` resource. A resource pointing to a 
 
 ### Visual editor
 
-Add the card from the dashboard (**Add card** → **Smart Appliance Card**). The first supported appliance is picked automatically; change it with the **Appliance** field, then set the name, icon and the sections to show. **Appliance type** and **Brand** are only needed when the integration doesn't give them away. The **Entities (advanced)** panel lets you force any entity if auto-detection picks the wrong one. Options left at their default are not written to the YAML.
+Add the card from the dashboard (**Add card** → **Smart Appliance Card**). The first supported appliance is picked automatically; change it with the **Appliance** field, then set the name, icon and the sections to show. You can optionally select an `input_boolean` for an extra toggle button in the card header, then choose its icon and a colour from Home Assistant's standard palette. **Appliance type** and **Brand** are only needed when the integration doesn't give them away. The **Entities (advanced)** panel lets you force any appliance entity if auto-detection picks the wrong one. Options left at their default are not written to the YAML.
 
 ### Minimal
 
@@ -151,7 +151,7 @@ type: custom:smart-appliance-mini-card
 device_id: bad11e7fd00845a2fb485b38c97cf675
 ```
 
-The mini card shows the appliance, its state, the program, the progress and finish time, the alerts, and round Start / Pause / Resume and power buttons. The detail button (top right) unfolds the full card with every option; a click anywhere else on the page folds it back. It takes the same options as the full card, which apply once unfolded, plus `zoom`. At its default size in a Sections view (6 columns), the round buttons sit under the text and the status pill shows only its coloured dot, the state being written above the program.
+The mini card shows the appliance, its state, the program, the progress and finish time, the alerts, and round Start / Pause / Resume, power and (when configured) toggle buttons. The detail button (top right) unfolds the full card with every option; a click anywhere else on the page folds it back. It takes the same options as the full card, which apply once unfolded, plus `zoom`. At its default size in a Sections view (6 columns), the round buttons sit under the text and the status pill shows only its coloured dot, the state being written above the program.
 
 Use either `device_id` (what the visual editor writes) or `entity` (any entity of the appliance). With neither, the card uses the first supported appliance it finds (of the `kind` given, if any).
 
@@ -169,6 +169,9 @@ show_controls: true
 show_alerts: true
 show_power: true
 show_energy: true
+toggle_entity: input_boolean.pv_optimization
+toggle_icon: mdi:solar-power
+toggle_color: green
 language: en
 entities:
   operation_state: sensor.washing_machine_operation_state
@@ -192,6 +195,9 @@ entities:
 | `show_alerts` | ❌ | `true` | Show salt, rinse aid and coffee machine alerts, and the reminder when a finished program's door hasn't been opened |
 | `show_power` | ❌ | `true` | Show the power button (turn off for appliances that can't be switched on / off remotely) |
 | `show_energy` | ❌ | `true` | Energy chip of the running or last cycle (24 h), when the appliance has an energy meter |
+| `toggle_entity` | ❌ | — | Optional `input_boolean` shown as a separate toggle button before the power button (also on mini cards) |
+| `toggle_icon` | ❌ | State-dependent toggle icon | Icon for the optional toggle button (Home Assistant icon selector / MDI icon) |
+| `toggle_color` | ❌ | `green` | Active-state background and icon colour; one of the Home Assistant palette colours: `red`, `pink`, `purple`, `deep-purple`, `indigo`, `blue`, `light-blue`, `cyan`, `teal`, `green`, `light-green`, `lime`, `yellow`, `amber`, `orange`, `deep-orange`, `brown`, `grey`, `blue-grey` |
 | `zoom` | ❌ | `true` | Mini cards only: detail button at the top right that unfolds the full card (a click elsewhere folds it back) |
 | `language` | ❌ | Auto | Force language: `fr`, `en`, `de`, `es`, `sr`, `sr-Latn`, `it`, `nl`, `pt`, `pl`, `ro`, `da`, `sv`, `bg`, `ru`, `uk`, `hu`, `sk`, `cs`, `sl`, `lv` or `el` (auto-detects from HA settings) |
 | `entities` | ❌ | Auto | Override detected entities (see below) |

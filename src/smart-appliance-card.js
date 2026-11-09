@@ -84,6 +84,10 @@ var HcI18n = {
     ed_show_alerts: 'Alertes',
     ed_show_power: 'Bouton marche / arrêt',
     ed_show_energy: 'Énergie du cycle',
+    ed_toggle_entity: 'Entité du bouton bascule',
+    ed_toggle_entity_helper: 'input_boolean facultatif affiché dans l’en-tête de la carte et basculé lorsqu’on appuie dessus',
+    ed_toggle_icon: 'Icône du bouton bascule',
+    ed_toggle_color: 'Couleur du bouton bascule',
     ed_zoom: 'Bouton détail',
     ed_zoom_helper: 'Bouton en haut à droite qui passe la mini-carte en carte complète et inversement',
     zoom_in: 'Afficher la carte complète',
@@ -191,6 +195,11 @@ var HcI18n = {
     ed_show_options: 'Program options',
     ed_show_power: 'Power button',
     ed_show_energy: 'Cycle energy',
+    ed_toggle_entity: 'Toggle button entity',
+    ed_toggle_entity_helper: 'Optional input_boolean shown in the card header and toggled when pressed',
+    ed_toggle_icon: 'Toggle button icon',
+    ed_toggle_color: 'Toggle button color',
+
     ed_zoom: 'Detail button',
     ed_zoom_helper: 'Button at the top right that switches the mini card to the full card and back',
     zoom_in: 'Show the full card',
@@ -299,6 +308,11 @@ var HcI18n = {
     ed_show_options: 'Programmoptionen',
     ed_show_power: 'Ein-/Aus-Schaltfläche',
     ed_show_energy: 'Energie pro Zyklus',
+    ed_toggle_entity: 'Toggle-Button-Entität',
+    ed_toggle_entity_helper: 'Optionaler input_boolean, der in der Kartenkopfzeile angezeigt und beim Drücken umgeschaltet wird',
+    ed_toggle_icon: 'Symbol des Toggle-Buttons',
+    ed_toggle_color: 'Farbe des Toggle-Buttons',
+
     ed_zoom: 'Detailansicht-Schaltfläche',
     ed_zoom_helper: 'Schaltfläche oben rechts zum Wechseln zwischen kompakter und vollständiger Kartenansicht',
     zoom_in: 'Vollständige Karte anzeigen',
@@ -407,6 +421,10 @@ var HcI18n = {
     ed_show_options: 'Opciones del programa',
     ed_show_power: 'Botón de encendido',
     ed_show_energy: 'Energía del ciclo',
+    ed_toggle_entity: 'Entidad del botón de alternancia',
+    ed_toggle_entity_helper: 'input_boolean opcional que se muestra en el encabezado de la tarjeta y cambia al pulsarlo',
+    ed_toggle_icon: 'Icono del botón de alternancia',
+    ed_toggle_color: 'Color del botón de alternancia',
     ed_zoom: 'Botón de detalle',
     ed_zoom_helper: 'Botón arriba a la derecha que cambia la mini tarjeta a la tarjeta completa y viceversa',
     zoom_in: 'Mostrar la tarjeta completa',
@@ -515,6 +533,10 @@ var HcI18n = {
     ed_show_options: 'Опције програма',
     ed_show_power: 'Дугме за укључивање / искључивање',
     ed_show_energy: 'Енергија циклуса',
+    ed_toggle_entity: 'Ентитет дугмета за пребацивање',
+    ed_toggle_entity_helper: 'Опционална ентитет у заглављу картице која се мења притиском',
+    ed_toggle_icon: 'Икона дугмета за пребацивање',
+    ed_toggle_color: 'Боја дугмета за пребацивање',
     ed_zoom: 'Дугме за детаље',
     ed_zoom_helper: 'Дугме у горњем десном углу које пребацује мини картицу на пун приказ и назад',
     zoom_in: 'Прикажи целу картицу',
@@ -623,6 +645,10 @@ var HcI18n = {
     ed_show_options: 'Opcije programa',
     ed_show_power: 'Dugme za uključivanje / isključivanje',
     ed_show_energy: 'Energija ciklusa',
+    ed_toggle_entity: 'Entitet dugmeta za prebacivanje',
+    ed_toggle_entity_helper: 'Opciona entitet u zaglavlju kartice koja se menja pritiskom',
+    ed_toggle_icon: 'Ikona dugmeta za prebacivanje',
+    ed_toggle_color: 'Boja dugmeta za prebacivanje',
     ed_zoom: 'Dugme za detalje',
     ed_zoom_helper: 'Dugme u gornjem desnom uglu koje prebacuje mini karticu na pun prikaz i nazad',
     zoom_in: 'Prikaži celu karticu',
@@ -731,6 +757,10 @@ var HcI18n = {
     ed_show_options: 'Opzioni del programma',
     ed_show_power: 'Pulsante di accensione',
     ed_show_energy: 'Energia del ciclo',
+    ed_toggle_entity: 'Entità del pulsante di commutazione',
+    ed_toggle_entity_helper: 'input_boolean opzionale mostrato nell’intestazione della scheda e commutato quando viene premuto',
+    ed_toggle_icon: 'Icona del pulsante di commutazione',
+    ed_toggle_color: 'Colore del pulsante di commutazione',
     ed_zoom: 'Pulsante dettaglio',
     ed_zoom_helper: 'Pulsante in alto a destra che passa dalla mini scheda alla scheda completa e viceversa',
     zoom_in: 'Mostra la scheda completa',
@@ -839,6 +869,10 @@ var HcI18n = {
     ed_show_options: 'Programma-opties',
     ed_show_power: 'Aan/uit-knop',
     ed_show_energy: 'Energie per cyclus',
+    ed_toggle_entity: 'Entiteit van de schakelknop',
+    ed_toggle_entity_helper: 'Optionele input_boolean in de kaartkop die bij indrukken wordt omgeschakeld',
+    ed_toggle_icon: 'Pictogram van de schakelknop',
+    ed_toggle_color: 'Kleur van de schakelknop',
     ed_zoom: 'Detailknop',
     ed_zoom_helper: 'Knop rechtsboven die de minikaart omschakelt naar de volledige kaart en terug',
     zoom_in: 'Volledige kaart tonen',
@@ -947,6 +981,10 @@ var HcI18n = {
     ed_show_options: 'Opções do programa',
     ed_show_power: 'Botão ligar / desligar',
     ed_show_energy: 'Energia do ciclo',
+    ed_toggle_entity: 'Entidade do botão de alternância',
+    ed_toggle_entity_helper: 'input_boolean opcional apresentado no cabeçalho do cartão e alternado ao premir',
+    ed_toggle_icon: 'Ícone do botão de alternância',
+    ed_toggle_color: 'Cor do botão de alternância',
     ed_zoom: 'Botão de detalhe',
     ed_zoom_helper: 'Botão no canto superior direito que alterna entre o mini cartão e o cartão completo',
     zoom_in: 'Mostrar o cartão completo',
@@ -1055,6 +1093,10 @@ var HcI18n = {
     ed_show_options: 'Opcje programu',
     ed_show_power: 'Przycisk włączania / wyłączania',
     ed_show_energy: 'Energia cyklu',
+    ed_toggle_entity: 'Encja przycisku przełączania',
+    ed_toggle_entity_helper: 'Opcjonalny input_boolean wyświetlany w nagłówku karty i przełączany po naciśnięciu',
+    ed_toggle_icon: 'Ikona przycisku przełączania',
+    ed_toggle_color: 'Kolor przycisku przełączania',
     ed_zoom: 'Przycisk szczegółów',
     ed_zoom_helper: 'Przycisk w prawym górnym rogu przełączający minikartę na pełną kartę i z powrotem',
     zoom_in: 'Pokaż pełną kartę',
@@ -1163,6 +1205,10 @@ var HcI18n = {
     ed_show_options: 'Opțiunile programului',
     ed_show_power: 'Buton de pornire / oprire',
     ed_show_energy: 'Energia ciclului',
+    ed_toggle_entity: 'Entitatea butonului de comutare',
+    ed_toggle_entity_helper: 'input_boolean opțional afișat în antetul cardului și comutat la apăsare',
+    ed_toggle_icon: 'Pictograma butonului de comutare',
+    ed_toggle_color: 'Culoarea butonului de comutare',
     ed_zoom: 'Buton de detalii',
     ed_zoom_helper: 'Buton din dreapta sus care comută mini-cardul în cardul complet și înapoi',
     zoom_in: 'Afișează cardul complet',
@@ -1271,6 +1317,10 @@ var HcI18n = {
     ed_show_options: 'Programindstillinger',
     ed_show_power: 'Tænd/sluk-knap',
     ed_show_energy: 'Energi pr. cyklus',
+    ed_toggle_entity: 'Kontaktknappens entitet',
+    ed_toggle_entity_helper: 'Valgfri input_boolean, der vises i kortets overskrift og skifter ved tryk',
+    ed_toggle_icon: 'Ikon for skifteknap',
+    ed_toggle_color: 'Farve for skifteknap',
     ed_zoom: 'Detaljeknap',
     ed_zoom_helper: 'Knap øverst til højre, der skifter minikortet til det fulde kort og tilbage',
     zoom_in: 'Vis det fulde kort',
@@ -1379,6 +1429,10 @@ var HcI18n = {
     ed_show_options: 'Programalternativ',
     ed_show_power: 'På/av-knapp',
     ed_show_energy: 'Energi per cykel',
+    ed_toggle_entity: 'Entitet för växlingsknapp',
+    ed_toggle_entity_helper: 'Valfri input_boolean som visas i kortets rubrik och växlas när den trycks',
+    ed_toggle_icon: 'Ikon för växlingsknapp',
+    ed_toggle_color: 'Färg för växlingsknapp',
     ed_zoom: 'Detaljknapp',
     ed_zoom_helper: 'Knapp uppe till höger som växlar minikortet till hela kortet och tillbaka',
     zoom_in: 'Visa hela kortet',
@@ -1487,6 +1541,10 @@ var HcI18n = {
     ed_show_options: 'Опции на програмата',
     ed_show_power: 'Бутон за включване / изключване',
     ed_show_energy: 'Енергия на цикъла',
+    ed_toggle_entity: 'Елемент на бутона за превключване',
+    ed_toggle_entity_helper: 'Незадължителна същност в заглавката на картата, която се превключва при натискане',
+    ed_toggle_icon: 'Икона на бутона за превключване',
+    ed_toggle_color: 'Цвят на бутона за превключване',
     ed_zoom: 'Бутон за подробности',
     ed_zoom_helper: 'Бутон горе вдясно, който превключва мини картата към пълната карта и обратно',
     zoom_in: 'Покажи пълната карта',
@@ -1595,6 +1653,10 @@ var HcI18n = {
     ed_show_options: 'Параметры программы',
     ed_show_power: 'Кнопка включения / выключения',
     ed_show_energy: 'Энергия цикла',
+    ed_toggle_entity: 'Сущность кнопки переключения',
+    ed_toggle_entity_helper: 'Необязательная сущность в заголовке карточки, переключаемая при нажатии',
+    ed_toggle_icon: 'Значок кнопки переключения',
+    ed_toggle_color: 'Цвет кнопки переключения',
     ed_zoom: 'Кнопка подробностей',
     ed_zoom_helper: 'Кнопка в правом верхнем углу, переключающая мини-карточку на полную карточку и обратно',
     zoom_in: 'Показать полную карточку',
@@ -1703,6 +1765,10 @@ var HcI18n = {
     ed_show_options: 'Параметри програми',
     ed_show_power: 'Кнопка увімкнення / вимкнення',
     ed_show_energy: 'Енергія циклу',
+    ed_toggle_entity: 'Сутність кнопки перемикання',
+    ed_toggle_entity_helper: 'Необов’язкова сутність у заголовку картки, яка перемикається натисканням',
+    ed_toggle_icon: 'Піктограма кнопки перемикання',
+    ed_toggle_color: 'Колір кнопки перемикання',
     ed_zoom: 'Кнопка деталей',
     ed_zoom_helper: 'Кнопка в правому верхньому куті, що перемикає мінікартку на повну картку й назад',
     zoom_in: 'Показати повну картку',
@@ -1811,6 +1877,10 @@ var HcI18n = {
     ed_show_options: 'Programbeállítások',
     ed_show_power: 'Be-/kikapcsoló gomb',
     ed_show_energy: 'Ciklus energiája',
+    ed_toggle_entity: 'Váltógomb entitás',
+    ed_toggle_entity_helper: 'Opcionális input_boolean, amely a kártya fejlécében jelenik meg, és megnyomásakor átvált',
+    ed_toggle_icon: 'A váltógomb ikonja',
+    ed_toggle_color: 'A váltógomb színe',
     ed_zoom: 'Részletek gomb',
     ed_zoom_helper: 'Jobb felső sarokban lévő gomb, amely a minikártyát teljes kártyára váltja és vissza',
     zoom_in: 'Teljes kártya megjelenítése',
@@ -1919,6 +1989,10 @@ var HcI18n = {
     ed_show_options: 'Možnosti programu',
     ed_show_power: 'Tlačidlo zapnutia / vypnutia',
     ed_show_energy: 'Energia cyklu',
+    ed_toggle_entity: 'Entita prepínacieho tlačidla',
+    ed_toggle_entity_helper: 'Voliteľný input_boolean zobrazený v hlavičke karty, ktorý sa prepne po stlačení',
+    ed_toggle_icon: 'Ikona prepínacieho tlačidla',
+    ed_toggle_color: 'Farba prepínacieho tlačidla',
     ed_zoom: 'Tlačidlo podrobností',
     ed_zoom_helper: 'Tlačidlo vpravo hore, ktoré prepína minikartu na celú kartu a späť',
     zoom_in: 'Zobraziť celú kartu',
@@ -2027,6 +2101,10 @@ var HcI18n = {
     ed_show_options: 'Možnosti programu',
     ed_show_power: 'Tlačítko zapnutí / vypnutí',
     ed_show_energy: 'Energie cyklu',
+    ed_toggle_entity: 'Entita přepínacího tlačítka',
+    ed_toggle_entity_helper: 'Volitelný input_boolean zobrazený v záhlaví karty, který se po stisknutí přepne',
+    ed_toggle_icon: 'Ikona přepínacího tlačítka',
+    ed_toggle_color: 'Barva přepínacího tlačítka',
     ed_zoom: 'Tlačítko podrobností',
     ed_zoom_helper: 'Tlačítko vpravo nahoře, které přepíná minikartu na celou kartu a zpět',
     zoom_in: 'Zobrazit celou kartu',
@@ -2135,6 +2213,10 @@ var HcI18n = {
     ed_show_options: 'Možnosti programa',
     ed_show_power: 'Gumb za vklop / izklop',
     ed_show_energy: 'Energija cikla',
+    ed_toggle_entity: 'Entiteta preklopnega gumba',
+    ed_toggle_entity_helper: 'Izbirni input_boolean, prikazan v glavi kartice, ki se preklopi ob pritisku',
+    ed_toggle_icon: 'Ikona preklopnega gumba',
+    ed_toggle_color: 'Barva preklopnega gumba',
     ed_zoom: 'Gumb za podrobnosti',
     ed_zoom_helper: 'Gumb zgoraj desno, ki preklopi mini kartico v celotno kartico in nazaj',
     zoom_in: 'Prikaži celotno kartico',
@@ -2243,6 +2325,10 @@ var HcI18n = {
     ed_show_options: 'Programmas opcijas',
     ed_show_power: 'Ieslēgšanas / izslēgšanas poga',
     ed_show_energy: 'Cikla enerģija',
+    ed_toggle_entity: 'Pārslēgšanas pogas entītija',
+    ed_toggle_entity_helper: 'Neobligāts input_boolean kartes galvenē, kas tiek pārslēgts, nospiežot pogu',
+    ed_toggle_icon: 'Pārslēgšanas pogas ikona',
+    ed_toggle_color: 'Pārslēgšanas pogas krāsa',
     ed_zoom: 'Detaļu poga',
     ed_zoom_helper: 'Poga augšējā labajā stūrī, kas pārslēdz minikarti uz pilno karti un atpakaļ',
     zoom_in: 'Rādīt pilno karti',
@@ -2351,6 +2437,10 @@ var HcI18n = {
     ed_show_options: 'Επιλογές προγράμματος',
     ed_show_power: 'Κουμπί ενεργοποίησης / απενεργοποίησης',
     ed_show_energy: 'Ενέργεια κύκλου',
+    ed_toggle_entity: 'Οντότητα κουμπιού εναλλαγής',
+    ed_toggle_entity_helper: 'Προαιρετική οντότητα στην κεφαλίδα της κάρτας που εναλλάσσεται όταν πατηθεί',
+    ed_toggle_icon: 'Εικονίδιο κουμπιού εναλλαγής',
+    ed_toggle_color: 'Χρώμα κουμπιού εναλλαγής',
     ed_zoom: 'Κουμπί λεπτομερειών',
     ed_zoom_helper: 'Κουμπί πάνω δεξιά που αλλάζει τη μίνι κάρτα σε πλήρη κάρτα και αντίστροφα',
     zoom_in: 'Εμφάνιση πλήρους κάρτας',
@@ -2908,6 +2998,18 @@ var HC_BRANDS = {
 // Brand logos (SVG or PNG files in logos/, named after the HC_BRANDS key), embedded by the build; brands without one keep
 // the initial on their colour.
 var HC_BRAND_LOGOS = {}; // __BRAND_LOGOS__
+
+// Home Assistant's standard named colour palette, with safe CSS fallbacks for themes that omit a token.
+var HC_TOGGLE_COLORS = [
+  ['red', 'Red', '#f44336'], ['pink', 'Pink', '#e91e63'], ['purple', 'Purple', '#9c27b0'],
+  ['deep-purple', 'Deep purple', '#673ab7'], ['indigo', 'Indigo', '#3f51b5'], ['blue', 'Blue', '#2196f3'],
+  ['light-blue', 'Light blue', '#03a9f4'], ['cyan', 'Cyan', '#00bcd4'], ['teal', 'Teal', '#009688'],
+  ['green', 'Green', '#4caf50'], ['light-green', 'Light green', '#8bc34a'], ['lime', 'Lime', '#cddc39'],
+  ['yellow', 'Yellow', '#ffeb3b'], ['amber', 'Amber', '#ffc107'], ['orange', 'Orange', '#ff9800'],
+  ['deep-orange', 'Deep orange', '#ff5722'], ['brown', 'Brown', '#795548'], ['grey', 'Grey', '#9e9e9e'],
+  ['blue-grey', 'Blue grey', '#607d8b'],
+];
+var HC_TOGGLE_COLOR_MAP = Object.fromEntries(HC_TOGGLE_COLORS.map(([key, label, hex]) => [key, { label, hex }]));
 function hcBrand(dev, option) {
   var m = String(option || dev?.manufacturer || '').trim();
   if (!m) return null;
@@ -3436,7 +3538,7 @@ class HomeConnectBaseCard extends HTMLElement {
   _update() {
     if (!this._config || !this._hass || !this.shadowRoot) return;
     var r = this._resolve();
-    var ids = HC_ALL_ROLES.map((role) => r.ent[role]).concat(r.ent.option_switches, r.ent.option_selects, r.ent.temps);
+    var ids = HC_ALL_ROLES.map((role) => r.ent[role]).concat(r.ent.option_switches, r.ent.option_selects, r.ent.temps, this._config.toggle_entity);
     var hass = this._hass;
     var states = JSON.stringify(ids.map((id) => {
       var s = id && hass.states[id];
@@ -3805,6 +3907,14 @@ class HomeConnectBaseCard extends HTMLElement {
     var powerBtn = c.show_power && ent.power && online
       ? `<button class="power${powerOn ? ' on' : ''}" data-action="power" title="${hcEsc(powerTitle)}" aria-label="${this._t('power')}" aria-pressed="${!!powerOn}"${noOff || powerBusy ? ' disabled' : ''}><ha-icon icon="mdi:power"></ha-icon></button>`
       : '';
+    var toggleId = c.toggle_entity;
+    var toggleOn = toggleId && this._val(toggleId) === 'on';
+    var toggleAvailable = toggleId && this._avail(toggleId);
+    var toggleColor = HC_TOGGLE_COLOR_MAP[c.toggle_color] || HC_TOGGLE_COLOR_MAP.green;
+    var toggleIcon = c.toggle_icon || (toggleOn ? 'mdi:toggle-switch' : 'mdi:toggle-switch-off-outline');
+    var toggleBtn = toggleId && toggleAvailable
+      ? `<button class="custom-toggle${toggleOn ? ' on' : ''}" style="--toggle-color: ${toggleColor.hex}" data-action="toggle_entity" title="${hcEsc(this._entityLabel(toggleId, ''))}" aria-label="${hcEsc(this._entityLabel(toggleId, ''))}" aria-pressed="${!!toggleOn}"><ha-icon icon="${hcEsc(toggleIcon)}"></ha-icon></button>`
+      : '';
 
     var errorHtml = this._error
       ? `<div class="error" role="alert" title="${hcEsc(this._error.detail)}"><ha-icon icon="mdi:alert-circle-outline"></ha-icon><span>${hcEsc(this._t(this._error.key))}</span></div>`
@@ -3834,7 +3944,7 @@ class HomeConnectBaseCard extends HTMLElement {
     if (this._compact()) {
       this._rows = hcRows(HC_PX.miniBase + (this._error ? HC_PX.error : 0));
       this.shadowRoot.innerHTML = this._miniHtml({ c, ent, name, color, state, statusText, running, online, powerOn, progress,
-        finish, progLabel, chips: chips.filter((x) => x.indexOf('chip warn') >= 0 || x.indexOf('chip extra') >= 0 || !online), art, logo, powerBtn });
+        finish, progLabel, chips: chips.filter((x) => x.indexOf('chip warn') >= 0 || x.indexOf('chip extra') >= 0 || !online), art, logo, powerBtn, toggleBtn });
       return;
     }
 
@@ -3843,7 +3953,7 @@ class HomeConnectBaseCard extends HTMLElement {
     this.shadowRoot.innerHTML = this._styles(color) + '<ha-card>' +
       '<div class="header">' + logo +
         '<div class="titles"><div class="name">' + hcEsc(name) + '</div><div class="sub">' + this._brandLogo() + hcEsc(sub) + '</div></div>' +
-        powerBtn + this._zoomButton() +
+        toggleBtn + powerBtn + this._zoomButton() +
       '</div>' +
       heroHtml + programHtml + optionsHtml + errorHtml + controls +
     '</ha-card>';
@@ -4050,6 +4160,10 @@ class HomeConnectBaseCard extends HTMLElement {
       '.power { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none;' +
         ' background: var(--secondary-background-color, rgba(128,128,128,0.12)); color: var(--secondary-text-color); }' +
       '.power.on { background: color-mix(in srgb, var(--hc-color) 15%, transparent); color: var(--hc-color); }' +
+      '.custom-toggle { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none;' +
+        ' border: 0; cursor: pointer; background: var(--secondary-background-color, rgba(128,128,128,0.12)); color: var(--secondary-text-color); }' +
+      '.custom-toggle.on { background: color-mix(in srgb, var(--toggle-color, var(--success-color, #43a047)) 18%, transparent); color: var(--toggle-color, var(--success-color, #43a047)); }' +
+
       '.chips { display: flex; flex-wrap: wrap; gap: 6px; }' +
       '.chip { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere; font-size: 11px; font-weight: 500; padding: 1px 8px 1px 5px; border-radius: 12px;' +
         ' background: var(--secondary-background-color, rgba(128,128,128,0.12)); color: var(--secondary-text-color); }' +
@@ -4168,6 +4282,10 @@ class HomeConnectBaseCard extends HTMLElement {
     if (!btn || btn.disabled) return;
     if (btn.dataset.entity) {
       this._moreInfo(btn.dataset.entity);
+      return;
+    }
+    if (btn.dataset.action === 'toggle_entity') {
+      this._option('input_boolean', 'toggle', { entity_id: this._config.toggle_entity });
       return;
     }
     if (btn.dataset.toggle) {
@@ -4436,6 +4554,7 @@ var hcMini = (Base) => class extends Base {
 
     // Round buttons: start (or pause / resume) and power.
     var btns = c.show_controls && m.online && m.powerOn ? this._actionButtons(ent, m.state, m.running, true).btns : [];
+    if (m.toggleBtn) btns.push(m.toggleBtn);
     if (m.powerBtn) btns.push(m.powerBtn);
 
     var errorHtml = this._error
@@ -4462,7 +4581,7 @@ class HomeConnectWasherMiniCard extends hcMini(HomeConnectWasherCard) {}
 class SmartApplianceMiniCard extends hcMini(SmartApplianceCard) {}
 
 // ── smart-appliance-card-editor (visual editor, built on HA's ha-form) ──────────
-var HC_EDITOR_DEFAULTS = { show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true };
+var HC_EDITOR_DEFAULTS = { show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true, toggle_color: 'green' };
 
 class HomeConnectCardEditor extends HTMLElement {
   setConfig(config) {
@@ -4500,6 +4619,9 @@ class HomeConnectCardEditor extends HTMLElement {
     var brands = Object.keys(HC_BRANDS).map((k) => ({ value: k, label: HC_BRANDS[k].name }));
     return [
       { name: 'device_id', selector: { device: { filter: HC_PLATFORMS.map((i) => ({ integration: i })) } } },
+      { name: 'toggle_entity', selector: { entity: { domain: 'input_boolean' } } },
+      { name: 'toggle_icon', selector: { icon: {} } },
+      { name: 'toggle_color', selector: { select: { mode: 'dropdown', options: HC_TOGGLE_COLORS.map(([value, label]) => ({ value, label })) } } },
       {
         type: 'grid', name: '', schema: [
           { name: 'kind', selector: { select: { mode: 'dropdown', options: kinds } } },

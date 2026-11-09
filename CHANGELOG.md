@@ -58,6 +58,12 @@
 - A click on a chip (door, temperature, fan, light, alert) opens the more-info dialog of its entity, also with Enter or Space from the keyboard.
 - Mini cards take the height of their content in sections dashboards (`rows: 'auto'`).
 
+## 2.0.5 - 2026-11-04
+
+### Features
+- Added custom icon and Home Assistant palette colour options for the optional `input_boolean` toggle button.
+- Moved the toggle button before the appliance power button on full and mini cards.
+
 ## 2.0.4 - 2026-11-04
 
 ### Documentation

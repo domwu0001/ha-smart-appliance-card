@@ -90,6 +90,17 @@ test("header always shows the appliance icon, and the appliance illustration", (
   assert.match(render(HomeConnectWasherCard, mockHass(), { icon: "mdi:washing-machine" }), /class="badge"/);
 });
 
+test("mini card places the custom toggle before the power button", () => {
+  const Mini = customElements.get("home-connect-washer-mini-card");
+  const card = new Mini();
+  card.setConfig({ toggle_entity: "input_boolean.pv_optimization" });
+  const hass = mockHass();
+  hass.states["input_boolean.pv_optimization"] = st("off");
+  card.hass = hass;
+  const html = card.shadowRoot.innerHTML;
+  assert.ok(html.indexOf('data-action="toggle_entity"') < html.indexOf('data-action="power"'));
+});
+
 test("mini card: compact view, detail button toggles the full card", () => {
   const Mini = customElements.get("home-connect-washer-mini-card");
   const card = new Mini();
@@ -187,6 +198,15 @@ function editor(kind, config, language = "en") {
   ed.hass = { language };
   return ed;
 }
+
+test("editor exposes an icon picker and the Home Assistant colour palette for the toggle button", () => {
+  const schema = editor("washer", {})._schema();
+  assert.ok(schema.some((field) => field.name === "toggle_icon" && field.selector.icon));
+  const color = schema.find((field) => field.name === "toggle_color");
+  assert.equal(color.selector.select.mode, "dropdown");
+  assert.ok(color.selector.select.options.some((option) => option.value === "green"));
+  assert.ok(color.selector.select.options.some((option) => option.value === "blue-grey"));
+});
 
 test("editor labels follow the language option", () => {
   assert.equal(editor("washer", {})._form.computeLabel({ name: "name" }), "Name");

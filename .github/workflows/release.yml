@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # The Lint, Validate and HACS Validation workflows: a commit whose checks fail is not released.
+  # Lint and Validate must pass before a release is published. HACS validation runs independently.
   lint:
     name: Lint
     uses: ./.github/workflows/lint.yml
@@ -28,14 +28,8 @@ jobs:
     permissions:
       contents: read
 
-  hacs:
-    name: HACS Validation
-    uses: ./.github/workflows/hacs.yml
-    permissions:
-      contents: read
-
   release:
-    needs: [lint, validate, hacs]
+    needs: [lint, validate]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

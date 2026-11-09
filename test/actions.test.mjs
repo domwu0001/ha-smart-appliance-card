@@ -49,9 +49,9 @@ function mockHass({ deviceId = "d2", power = "on", remoteControl = "on", options
   };
 }
 
-function card(hass) {
+function card(hass, config = {}) {
   const c = new HomeConnectWasherCard();
-  c.setConfig({ device_id: Object.keys(hass.devices)[0] });
+  c.setConfig({ device_id: Object.keys(hass.devices)[0], ...config });
   c.hass = hass;
   return c;
 }
@@ -153,6 +153,38 @@ test("options: a failed reload restores the original program and shows a message
   assert.deepEqual(options, ["laundry_care_washer_program_mix", "laundry_care_washer_program_cotton", "laundry_care_washer_program_cotton"]);
   assert.ok(hass.calls.every((x) => x.notifyOnError === false));
   assert.match(c.shadowRoot.innerHTML, /Le programme d&#39;origine n&#39;a pas pu être rétabli/);
+});
+
+test("custom toggle: an optional input_boolean button reflects its state and calls input_boolean.toggle", async () => {
+  const hass = mockHass();
+  const entityId = "input_boolean.pv_optimization";
+  hass.states[entityId] = st("off");
+  const c = card(hass, { toggle_entity: entityId, toggle_icon: "mdi:solar-power", toggle_color: "orange" });
+
+  const initialHtml = c.shadowRoot.innerHTML;
+  assert.match(initialHtml, /style="--toggle-color: #ff9800"[^>]*data-action="toggle_entity"/);
+  assert.match(initialHtml, /<ha-icon icon="mdi:solar-power"><\/ha-icon>/);
+  assert.ok(initialHtml.indexOf('data-action="toggle_entity"') < initialHtml.indexOf('data-action="power"'), "toggle button appears before power button");
+  assert.match(initialHtml, /data-action="toggle_entity"[^>]*aria-pressed="false"/);
+
+  // The entity is included in the render signature, so a state change updates the button.
+  hass.states[entityId] = st("on");
+  c.hass = { ...hass, states: { ...hass.states } };
+  assert.match(c.shadowRoot.innerHTML, /data-action="toggle_entity"[^>]*aria-pressed="true"/);
+
+  click(c, "toggle_entity");
+  await flush();
+  assert.equal(hass.calls.length, 1);
+  assert.equal(hass.calls[0].domain, "input_boolean");
+  assert.equal(hass.calls[0].service, "toggle");
+  assert.deepEqual({ ...hass.calls[0].data }, { entity_id: entityId });
+  assert.equal(hass.calls[0].notifyOnError, false);
+});
+
+test("custom toggle: no button is rendered when no input_boolean is configured", () => {
+  const hass = mockHass();
+  const c = card(hass);
+  assert.doesNotMatch(c.shadowRoot.innerHTML, /data-action="toggle_entity"/);
 });
 
 test("power: an appliance that can't be turned off gets a message, then a disabled button while on", async () => {
