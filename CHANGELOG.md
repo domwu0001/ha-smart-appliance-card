@@ -1,5 +1,26 @@
 # Changelog
 
+## 2.7.1 - 2026-11-14
+
+### Fixes
+- The mini card's visual editor offers `energy_price` and `energy_price_entity` again: the energy chip of the compact view shows the cycle's cost too, and so does the full card it unfolds into.
+- README: `entity`, the alternative to `device_id`, is marked YAML only.
+
+## 2.7.0 - 2026-11-12
+
+### Features
+- `show_title` and `show_subtitle` options (also in the visual editor) hide the header's title and its subtitle, separately, for a card placed under a section heading of its own (asked in juju35/ha-vehicle-card#72).
+
+## 2.6.0 - 2026-11-10
+
+### Features
+- **Home Connect hob**: a hob on the built-in Home Connect integration is now detected. It has no program and its device model is the VIB, so it is told apart by its event sensors: it is the only appliance with both the favorite keys (also on hoods) and the preheat / alarm clock events (also on ovens). Thanks @FredM67 (#79, #80).
+
+## 2.5.2 - 2026-11-10
+
+### Improvements
+- Energy per cycle: with `energy_price` (per kWh) or `energy_price_entity` (a price sensor: current tariff, Tempo…), the chip adds the cycle's cost in Home Assistant's currency (*This cycle: 0.58 kWh · ≈ €0.12*). Both in the editor (full card), 22 languages.
+
 ## 2.5.1 - 2026-11-09
 
 ### Maintenance

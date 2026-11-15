@@ -79,6 +79,8 @@ var HcI18n = {
     ed_name_helper: 'Laisser vide pour le nom de l\'appareil',
     ed_icon: 'Icône',
     ed_show_program: 'Choix du programme',
+    ed_show_title: 'Titre',
+    ed_show_subtitle: 'Sous-titre',
     ed_show_controls: 'Boutons de commande',
     ed_show_options: 'Options du programme',
     ed_show_alerts: 'Alertes',
@@ -88,6 +90,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'input_boolean facultatif affiché dans l’en-tête de la carte et basculé lorsqu’on appuie dessus',
     ed_toggle_icon: 'Icône du bouton bascule',
     ed_toggle_color: 'Couleur du bouton bascule',
+    ed_energy_price: 'Prix de l\'énergie',
+    ed_energy_price_helper: 'Par kWh, pour le coût d\'un cycle à côté de son énergie',
+    ed_energy_price_entity: 'Capteur de prix de l\'énergie',
+    ed_energy_price_entity_helper: 'À la place d\'un prix fixe : un capteur en devise/kWh (tarif du moment, Tempo…)',
     ed_zoom: 'Bouton détail',
     ed_zoom_helper: 'Bouton en haut à droite qui passe la mini-carte en carte complète et inversement',
     zoom_in: 'Afficher la carte complète',
@@ -191,6 +197,8 @@ var HcI18n = {
     ed_name_helper: 'Leave empty to use the device name',
     ed_icon: 'Icon',
     ed_show_program: 'Program picker',
+    ed_show_title: 'Title',
+    ed_show_subtitle: 'Subtitle',
     ed_show_controls: 'Control buttons',
     ed_show_options: 'Program options',
     ed_show_power: 'Power button',
@@ -200,6 +208,10 @@ var HcI18n = {
     ed_toggle_icon: 'Toggle button icon',
     ed_toggle_color: 'Toggle button color',
 
+    ed_energy_price: 'Energy price',
+    ed_energy_price_helper: 'Per kWh, for a cycle\'s cost next to its energy',
+    ed_energy_price_entity: 'Energy price sensor',
+    ed_energy_price_entity_helper: 'Instead of a fixed price: a sensor in currency/kWh (current tariff, Tempo…)',
     ed_zoom: 'Detail button',
     ed_zoom_helper: 'Button at the top right that switches the mini card to the full card and back',
     zoom_in: 'Show the full card',
@@ -304,6 +316,8 @@ var HcI18n = {
     ed_name_helper: 'Leer lassen, um den Gerätenamen zu verwenden',
     ed_icon: 'Symbol',
     ed_show_program: 'Programmauswahl',
+    ed_show_title: 'Titel',
+    ed_show_subtitle: 'Untertitel',
     ed_show_controls: 'Steuerungsschaltflächen',
     ed_show_options: 'Programmoptionen',
     ed_show_power: 'Ein-/Aus-Schaltfläche',
@@ -313,6 +327,10 @@ var HcI18n = {
     ed_toggle_icon: 'Symbol des Toggle-Buttons',
     ed_toggle_color: 'Farbe des Toggle-Buttons',
 
+    ed_energy_price: 'Energiepreis',
+    ed_energy_price_helper: 'Pro kWh, für die Kosten eines Zyklus neben seiner Energie',
+    ed_energy_price_entity: 'Energiepreis-Sensor',
+    ed_energy_price_entity_helper: 'Statt eines festen Preises: ein Sensor in Währung/kWh (aktueller Tarif, Tempo…)',
     ed_zoom: 'Detailansicht-Schaltfläche',
     ed_zoom_helper: 'Schaltfläche oben rechts zum Wechseln zwischen kompakter und vollständiger Kartenansicht',
     zoom_in: 'Vollständige Karte anzeigen',
@@ -417,6 +435,8 @@ var HcI18n = {
     ed_name_helper: 'Déjalo vacío para usar el nombre del dispositivo',
     ed_icon: 'Icono',
     ed_show_program: 'Selector de programa',
+    ed_show_title: 'Título',
+    ed_show_subtitle: 'Subtítulo',
     ed_show_controls: 'Botones de control',
     ed_show_options: 'Opciones del programa',
     ed_show_power: 'Botón de encendido',
@@ -425,6 +445,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'input_boolean opcional que se muestra en el encabezado de la tarjeta y cambia al pulsarlo',
     ed_toggle_icon: 'Icono del botón de alternancia',
     ed_toggle_color: 'Color del botón de alternancia',
+    ed_energy_price: 'Precio de la energía',
+    ed_energy_price_helper: 'Por kWh, para el coste de un ciclo junto a su energía',
+    ed_energy_price_entity: 'Sensor de precio de la energía',
+    ed_energy_price_entity_helper: 'En lugar de un precio fijo: un sensor en moneda/kWh (tarifa actual, Tempo…)',
     ed_zoom: 'Botón de detalle',
     ed_zoom_helper: 'Botón arriba a la derecha que cambia la mini tarjeta a la tarjeta completa y viceversa',
     zoom_in: 'Mostrar la tarjeta completa',
@@ -529,6 +553,8 @@ var HcI18n = {
     ed_name_helper: 'Оставите празно за назив уређаја',
     ed_icon: 'Икона',
     ed_show_program: 'Избор програма',
+    ed_show_title: 'Наслов',
+    ed_show_subtitle: 'Поднаслов',
     ed_show_controls: 'Дугмад за контролу',
     ed_show_options: 'Опције програма',
     ed_show_power: 'Дугме за укључивање / искључивање',
@@ -537,6 +563,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Опционална ентитет у заглављу картице која се мења притиском',
     ed_toggle_icon: 'Икона дугмета за пребацивање',
     ed_toggle_color: 'Боја дугмета за пребацивање',
+    ed_energy_price: 'Цена енергије',
+    ed_energy_price_helper: 'По kWh, за цену циклуса поред његове енергије',
+    ed_energy_price_entity: 'Сензор цене енергије',
+    ed_energy_price_entity_helper: 'Уместо фиксне цене: сензор у валути/kWh (тренутна тарифа, Tempo…)',
     ed_zoom: 'Дугме за детаље',
     ed_zoom_helper: 'Дугме у горњем десном углу које пребацује мини картицу на пун приказ и назад',
     zoom_in: 'Прикажи целу картицу',
@@ -641,6 +671,8 @@ var HcI18n = {
     ed_name_helper: 'Ostavite prazno za naziv uređaja',
     ed_icon: 'Ikona',
     ed_show_program: 'Izbor programa',
+    ed_show_title: 'Naslov',
+    ed_show_subtitle: 'Podnaslov',
     ed_show_controls: 'Dugmad za kontrolu',
     ed_show_options: 'Opcije programa',
     ed_show_power: 'Dugme za uključivanje / isključivanje',
@@ -649,6 +681,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Opciona entitet u zaglavlju kartice koja se menja pritiskom',
     ed_toggle_icon: 'Ikona dugmeta za prebacivanje',
     ed_toggle_color: 'Boja dugmeta za prebacivanje',
+    ed_energy_price: 'Cena energije',
+    ed_energy_price_helper: 'Po kWh, za cenu ciklusa pored njegove energije',
+    ed_energy_price_entity: 'Senzor cene energije',
+    ed_energy_price_entity_helper: 'Umesto fiksne cene: senzor u valuti/kWh (trenutna tarifa, Tempo…)',
     ed_zoom: 'Dugme za detalje',
     ed_zoom_helper: 'Dugme u gornjem desnom uglu koje prebacuje mini karticu na pun prikaz i nazad',
     zoom_in: 'Prikaži celu karticu',
@@ -753,6 +789,8 @@ var HcI18n = {
     ed_name_helper: 'Lascia vuoto per usare il nome del dispositivo',
     ed_icon: 'Icona',
     ed_show_program: 'Selettore del programma',
+    ed_show_title: 'Titolo',
+    ed_show_subtitle: 'Sottotitolo',
     ed_show_controls: 'Pulsanti di comando',
     ed_show_options: 'Opzioni del programma',
     ed_show_power: 'Pulsante di accensione',
@@ -761,6 +799,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'input_boolean opzionale mostrato nell’intestazione della scheda e commutato quando viene premuto',
     ed_toggle_icon: 'Icona del pulsante di commutazione',
     ed_toggle_color: 'Colore del pulsante di commutazione',
+    ed_energy_price: 'Prezzo dell\'energia',
+    ed_energy_price_helper: 'Per kWh, per il costo di un ciclo accanto alla sua energia',
+    ed_energy_price_entity: 'Sensore del prezzo dell\'energia',
+    ed_energy_price_entity_helper: 'Invece di un prezzo fisso: un sensore in valuta/kWh (tariffa attuale, Tempo…)',
     ed_zoom: 'Pulsante dettaglio',
     ed_zoom_helper: 'Pulsante in alto a destra che passa dalla mini scheda alla scheda completa e viceversa',
     zoom_in: 'Mostra la scheda completa',
@@ -865,6 +907,8 @@ var HcI18n = {
     ed_name_helper: 'Leeg laten om de apparaatnaam te gebruiken',
     ed_icon: 'Pictogram',
     ed_show_program: 'Programmakeuze',
+    ed_show_title: 'Titel',
+    ed_show_subtitle: 'Ondertitel',
     ed_show_controls: 'Bedieningsknoppen',
     ed_show_options: 'Programma-opties',
     ed_show_power: 'Aan/uit-knop',
@@ -873,6 +917,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Optionele input_boolean in de kaartkop die bij indrukken wordt omgeschakeld',
     ed_toggle_icon: 'Pictogram van de schakelknop',
     ed_toggle_color: 'Kleur van de schakelknop',
+    ed_energy_price: 'Energieprijs',
+    ed_energy_price_helper: 'Per kWh, voor de kosten van een cyclus naast de energie',
+    ed_energy_price_entity: 'Energieprijssensor',
+    ed_energy_price_entity_helper: 'In plaats van een vaste prijs: een sensor in valuta/kWh (huidig tarief, Tempo…)',
     ed_zoom: 'Detailknop',
     ed_zoom_helper: 'Knop rechtsboven die de minikaart omschakelt naar de volledige kaart en terug',
     zoom_in: 'Volledige kaart tonen',
@@ -977,6 +1025,8 @@ var HcI18n = {
     ed_name_helper: 'Deixe vazio para usar o nome do dispositivo',
     ed_icon: 'Ícone',
     ed_show_program: 'Seletor de programa',
+    ed_show_title: 'Título',
+    ed_show_subtitle: 'Subtítulo',
     ed_show_controls: 'Botões de comando',
     ed_show_options: 'Opções do programa',
     ed_show_power: 'Botão ligar / desligar',
@@ -985,6 +1035,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'input_boolean opcional apresentado no cabeçalho do cartão e alternado ao premir',
     ed_toggle_icon: 'Ícone do botão de alternância',
     ed_toggle_color: 'Cor do botão de alternância',
+    ed_energy_price: 'Preço da energia',
+    ed_energy_price_helper: 'Por kWh, para o custo de um ciclo ao lado da sua energia',
+    ed_energy_price_entity: 'Sensor de preço da energia',
+    ed_energy_price_entity_helper: 'Em vez de um preço fixo: um sensor em moeda/kWh (tarifa atual, Tempo…)',
     ed_zoom: 'Botão de detalhe',
     ed_zoom_helper: 'Botão no canto superior direito que alterna entre o mini cartão e o cartão completo',
     zoom_in: 'Mostrar o cartão completo',
@@ -1089,6 +1143,8 @@ var HcI18n = {
     ed_name_helper: 'Pozostaw puste, aby użyć nazwy urządzenia',
     ed_icon: 'Ikona',
     ed_show_program: 'Wybór programu',
+    ed_show_title: 'Tytuł',
+    ed_show_subtitle: 'Podtytuł',
     ed_show_controls: 'Przyciski sterowania',
     ed_show_options: 'Opcje programu',
     ed_show_power: 'Przycisk włączania / wyłączania',
@@ -1097,6 +1153,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Opcjonalny input_boolean wyświetlany w nagłówku karty i przełączany po naciśnięciu',
     ed_toggle_icon: 'Ikona przycisku przełączania',
     ed_toggle_color: 'Kolor przycisku przełączania',
+    ed_energy_price: 'Cena energii',
+    ed_energy_price_helper: 'Za kWh, dla kosztu cyklu obok jego energii',
+    ed_energy_price_entity: 'Czujnik ceny energii',
+    ed_energy_price_entity_helper: 'Zamiast stałej ceny: czujnik w walucie/kWh (bieżąca taryfa, Tempo…)',
     ed_zoom: 'Przycisk szczegółów',
     ed_zoom_helper: 'Przycisk w prawym górnym rogu przełączający minikartę na pełną kartę i z powrotem',
     zoom_in: 'Pokaż pełną kartę',
@@ -1201,6 +1261,8 @@ var HcI18n = {
     ed_name_helper: 'Lăsați gol pentru a folosi numele dispozitivului',
     ed_icon: 'Pictogramă',
     ed_show_program: 'Selector de program',
+    ed_show_title: 'Titlu',
+    ed_show_subtitle: 'Subtitlu',
     ed_show_controls: 'Butoane de comandă',
     ed_show_options: 'Opțiunile programului',
     ed_show_power: 'Buton de pornire / oprire',
@@ -1209,6 +1271,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'input_boolean opțional afișat în antetul cardului și comutat la apăsare',
     ed_toggle_icon: 'Pictograma butonului de comutare',
     ed_toggle_color: 'Culoarea butonului de comutare',
+    ed_energy_price: 'Prețul energiei',
+    ed_energy_price_helper: 'Pe kWh, pentru costul unui ciclu lângă energia lui',
+    ed_energy_price_entity: 'Senzor de preț al energiei',
+    ed_energy_price_entity_helper: 'În locul unui preț fix: un senzor în monedă/kWh (tariful curent, Tempo…)',
     ed_zoom: 'Buton de detalii',
     ed_zoom_helper: 'Buton din dreapta sus care comută mini-cardul în cardul complet și înapoi',
     zoom_in: 'Afișează cardul complet',
@@ -1313,6 +1379,8 @@ var HcI18n = {
     ed_name_helper: 'Lad stå tomt for at bruge enhedens navn',
     ed_icon: 'Ikon',
     ed_show_program: 'Programvælger',
+    ed_show_title: 'Titel',
+    ed_show_subtitle: 'Undertitel',
     ed_show_controls: 'Betjeningsknapper',
     ed_show_options: 'Programindstillinger',
     ed_show_power: 'Tænd/sluk-knap',
@@ -1321,6 +1389,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Valgfri input_boolean, der vises i kortets overskrift og skifter ved tryk',
     ed_toggle_icon: 'Ikon for skifteknap',
     ed_toggle_color: 'Farve for skifteknap',
+    ed_energy_price: 'Energipris',
+    ed_energy_price_helper: 'Pr. kWh, til en cyklus\' pris ved siden af dens energi',
+    ed_energy_price_entity: 'Energiprissensor',
+    ed_energy_price_entity_helper: 'I stedet for en fast pris: en sensor i valuta/kWh (aktuel tarif, Tempo…)',
     ed_zoom: 'Detaljeknap',
     ed_zoom_helper: 'Knap øverst til højre, der skifter minikortet til det fulde kort og tilbage',
     zoom_in: 'Vis det fulde kort',
@@ -1425,6 +1497,8 @@ var HcI18n = {
     ed_name_helper: 'Lämna tomt för att använda enhetens namn',
     ed_icon: 'Ikon',
     ed_show_program: 'Programväljare',
+    ed_show_title: 'Rubrik',
+    ed_show_subtitle: 'Underrubrik',
     ed_show_controls: 'Kontrollknappar',
     ed_show_options: 'Programalternativ',
     ed_show_power: 'På/av-knapp',
@@ -1433,6 +1507,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Valfri input_boolean som visas i kortets rubrik och växlas när den trycks',
     ed_toggle_icon: 'Ikon för växlingsknapp',
     ed_toggle_color: 'Färg för växlingsknapp',
+    ed_energy_price: 'Energipris',
+    ed_energy_price_helper: 'Per kWh, för en cykels kostnad bredvid dess energi',
+    ed_energy_price_entity: 'Energiprissensor',
+    ed_energy_price_entity_helper: 'I stället för ett fast pris: en sensor i valuta/kWh (aktuell taxa, Tempo…)',
     ed_zoom: 'Detaljknapp',
     ed_zoom_helper: 'Knapp uppe till höger som växlar minikortet till hela kortet och tillbaka',
     zoom_in: 'Visa hela kortet',
@@ -1537,6 +1615,8 @@ var HcI18n = {
     ed_name_helper: 'Оставете празно, за да се използва името на устройството',
     ed_icon: 'Икона',
     ed_show_program: 'Избор на програма',
+    ed_show_title: 'Заглавие',
+    ed_show_subtitle: 'Подзаглавие',
     ed_show_controls: 'Бутони за управление',
     ed_show_options: 'Опции на програмата',
     ed_show_power: 'Бутон за включване / изключване',
@@ -1545,6 +1625,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Незадължителна същност в заглавката на картата, която се превключва при натискане',
     ed_toggle_icon: 'Икона на бутона за превключване',
     ed_toggle_color: 'Цвят на бутона за превключване',
+    ed_energy_price: 'Цена на енергията',
+    ed_energy_price_helper: 'За kWh, за цената на цикъла до енергията му',
+    ed_energy_price_entity: 'Сензор за цена на енергията',
+    ed_energy_price_entity_helper: 'Вместо фиксирана цена: сензор във валута/kWh (текуща тарифа, Tempo…)',
     ed_zoom: 'Бутон за подробности',
     ed_zoom_helper: 'Бутон горе вдясно, който превключва мини картата към пълната карта и обратно',
     zoom_in: 'Покажи пълната карта',
@@ -1649,6 +1733,8 @@ var HcI18n = {
     ed_name_helper: 'Оставьте пустым, чтобы использовать название устройства',
     ed_icon: 'Значок',
     ed_show_program: 'Выбор программы',
+    ed_show_title: 'Заголовок',
+    ed_show_subtitle: 'Подзаголовок',
     ed_show_controls: 'Кнопки управления',
     ed_show_options: 'Параметры программы',
     ed_show_power: 'Кнопка включения / выключения',
@@ -1657,6 +1743,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Необязательная сущность в заголовке карточки, переключаемая при нажатии',
     ed_toggle_icon: 'Значок кнопки переключения',
     ed_toggle_color: 'Цвет кнопки переключения',
+    ed_energy_price: 'Цена энергии',
+    ed_energy_price_helper: 'За кВт·ч, для стоимости цикла рядом с его энергией',
+    ed_energy_price_entity: 'Датчик цены энергии',
+    ed_energy_price_entity_helper: 'Вместо фиксированной цены: датчик в валюте/кВт·ч (текущий тариф, Tempo…)',
     ed_zoom: 'Кнопка подробностей',
     ed_zoom_helper: 'Кнопка в правом верхнем углу, переключающая мини-карточку на полную карточку и обратно',
     zoom_in: 'Показать полную карточку',
@@ -1761,6 +1851,8 @@ var HcI18n = {
     ed_name_helper: 'Залиште порожнім, щоб використати назву пристрою',
     ed_icon: 'Значок',
     ed_show_program: 'Вибір програми',
+    ed_show_title: 'Заголовок',
+    ed_show_subtitle: 'Підзаголовок',
     ed_show_controls: 'Кнопки керування',
     ed_show_options: 'Параметри програми',
     ed_show_power: 'Кнопка увімкнення / вимкнення',
@@ -1769,6 +1861,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Необов’язкова сутність у заголовку картки, яка перемикається натисканням',
     ed_toggle_icon: 'Піктограма кнопки перемикання',
     ed_toggle_color: 'Колір кнопки перемикання',
+    ed_energy_price: 'Ціна енергії',
+    ed_energy_price_helper: 'За кВт·год, для вартості циклу поруч з його енергією',
+    ed_energy_price_entity: 'Датчик ціни енергії',
+    ed_energy_price_entity_helper: 'Замість фіксованої ціни: датчик у валюті/кВт·год (поточний тариф, Tempo…)',
     ed_zoom: 'Кнопка деталей',
     ed_zoom_helper: 'Кнопка в правому верхньому куті, що перемикає мінікартку на повну картку й назад',
     zoom_in: 'Показати повну картку',
@@ -1873,6 +1969,8 @@ var HcI18n = {
     ed_name_helper: 'Hagyja üresen az eszköz nevének használatához',
     ed_icon: 'Ikon',
     ed_show_program: 'Programválasztó',
+    ed_show_title: 'Cím',
+    ed_show_subtitle: 'Alcím',
     ed_show_controls: 'Vezérlőgombok',
     ed_show_options: 'Programbeállítások',
     ed_show_power: 'Be-/kikapcsoló gomb',
@@ -1881,6 +1979,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Opcionális input_boolean, amely a kártya fejlécében jelenik meg, és megnyomásakor átvált',
     ed_toggle_icon: 'A váltógomb ikonja',
     ed_toggle_color: 'A váltógomb színe',
+    ed_energy_price: 'Energiaár',
+    ed_energy_price_helper: 'kWh-nként, a ciklus költségéhez az energiája mellett',
+    ed_energy_price_entity: 'Energiaár-érzékelő',
+    ed_energy_price_entity_helper: 'Rögzített ár helyett: pénznem/kWh érzékelő (aktuális tarifa, Tempo…)',
     ed_zoom: 'Részletek gomb',
     ed_zoom_helper: 'Jobb felső sarokban lévő gomb, amely a minikártyát teljes kártyára váltja és vissza',
     zoom_in: 'Teljes kártya megjelenítése',
@@ -1985,6 +2087,8 @@ var HcI18n = {
     ed_name_helper: 'Nechajte prázdne, ak chcete použiť názov zariadenia',
     ed_icon: 'Ikona',
     ed_show_program: 'Výber programu',
+    ed_show_title: 'Názov',
+    ed_show_subtitle: 'Podnázov',
     ed_show_controls: 'Ovládacie tlačidlá',
     ed_show_options: 'Možnosti programu',
     ed_show_power: 'Tlačidlo zapnutia / vypnutia',
@@ -1993,6 +2097,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Voliteľný input_boolean zobrazený v hlavičke karty, ktorý sa prepne po stlačení',
     ed_toggle_icon: 'Ikona prepínacieho tlačidla',
     ed_toggle_color: 'Farba prepínacieho tlačidla',
+    ed_energy_price: 'Cena energie',
+    ed_energy_price_helper: 'Za kWh, pre cenu cyklu vedľa jeho energie',
+    ed_energy_price_entity: 'Senzor ceny energie',
+    ed_energy_price_entity_helper: 'Namiesto pevnej ceny: senzor v mene/kWh (aktuálna sadzba, Tempo…)',
     ed_zoom: 'Tlačidlo podrobností',
     ed_zoom_helper: 'Tlačidlo vpravo hore, ktoré prepína minikartu na celú kartu a späť',
     zoom_in: 'Zobraziť celú kartu',
@@ -2097,6 +2205,8 @@ var HcI18n = {
     ed_name_helper: 'Ponechte prázdné pro použití názvu zařízení',
     ed_icon: 'Ikona',
     ed_show_program: 'Výběr programu',
+    ed_show_title: 'Název',
+    ed_show_subtitle: 'Podnázev',
     ed_show_controls: 'Ovládací tlačítka',
     ed_show_options: 'Možnosti programu',
     ed_show_power: 'Tlačítko zapnutí / vypnutí',
@@ -2105,6 +2215,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Volitelný input_boolean zobrazený v záhlaví karty, který se po stisknutí přepne',
     ed_toggle_icon: 'Ikona přepínacího tlačítka',
     ed_toggle_color: 'Barva přepínacího tlačítka',
+    ed_energy_price: 'Cena energie',
+    ed_energy_price_helper: 'Za kWh, pro cenu cyklu vedle jeho energie',
+    ed_energy_price_entity: 'Senzor ceny energie',
+    ed_energy_price_entity_helper: 'Místo pevné ceny: senzor v měně/kWh (aktuální sazba, Tempo…)',
     ed_zoom: 'Tlačítko podrobností',
     ed_zoom_helper: 'Tlačítko vpravo nahoře, které přepíná minikartu na celou kartu a zpět',
     zoom_in: 'Zobrazit celou kartu',
@@ -2209,6 +2323,8 @@ var HcI18n = {
     ed_name_helper: 'Pustite prazno, da se uporabi ime naprave',
     ed_icon: 'Ikona',
     ed_show_program: 'Izbira programa',
+    ed_show_title: 'Naslov',
+    ed_show_subtitle: 'Podnaslov',
     ed_show_controls: 'Upravljalni gumbi',
     ed_show_options: 'Možnosti programa',
     ed_show_power: 'Gumb za vklop / izklop',
@@ -2217,6 +2333,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Izbirni input_boolean, prikazan v glavi kartice, ki se preklopi ob pritisku',
     ed_toggle_icon: 'Ikona preklopnega gumba',
     ed_toggle_color: 'Barva preklopnega gumba',
+    ed_energy_price: 'Cena energije',
+    ed_energy_price_helper: 'Na kWh, za ceno cikla poleg njegove energije',
+    ed_energy_price_entity: 'Senzor cene energije',
+    ed_energy_price_entity_helper: 'Namesto fiksne cene: senzor v valuti/kWh (trenutna tarifa, Tempo…)',
     ed_zoom: 'Gumb za podrobnosti',
     ed_zoom_helper: 'Gumb zgoraj desno, ki preklopi mini kartico v celotno kartico in nazaj',
     zoom_in: 'Prikaži celotno kartico',
@@ -2321,6 +2441,8 @@ var HcI18n = {
     ed_name_helper: 'Atstājiet tukšu, lai izmantotu ierīces nosaukumu',
     ed_icon: 'Ikona',
     ed_show_program: 'Programmas izvēle',
+    ed_show_title: 'Virsraksts',
+    ed_show_subtitle: 'Apakšvirsraksts',
     ed_show_controls: 'Vadības pogas',
     ed_show_options: 'Programmas opcijas',
     ed_show_power: 'Ieslēgšanas / izslēgšanas poga',
@@ -2329,6 +2451,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Neobligāts input_boolean kartes galvenē, kas tiek pārslēgts, nospiežot pogu',
     ed_toggle_icon: 'Pārslēgšanas pogas ikona',
     ed_toggle_color: 'Pārslēgšanas pogas krāsa',
+    ed_energy_price: 'Enerģijas cena',
+    ed_energy_price_helper: 'Par kWh, cikla izmaksām blakus tā enerģijai',
+    ed_energy_price_entity: 'Enerģijas cenas sensors',
+    ed_energy_price_entity_helper: 'Fiksētas cenas vietā: sensors valūtā/kWh (pašreizējais tarifs, Tempo…)',
     ed_zoom: 'Detaļu poga',
     ed_zoom_helper: 'Poga augšējā labajā stūrī, kas pārslēdz minikarti uz pilno karti un atpakaļ',
     zoom_in: 'Rādīt pilno karti',
@@ -2433,6 +2559,8 @@ var HcI18n = {
     ed_name_helper: 'Αφήστε κενό για χρήση του ονόματος της συσκευής',
     ed_icon: 'Εικονίδιο',
     ed_show_program: 'Επιλογέας προγράμματος',
+    ed_show_title: 'Τίτλος',
+    ed_show_subtitle: 'Υπότιτλος',
     ed_show_controls: 'Κουμπιά ελέγχου',
     ed_show_options: 'Επιλογές προγράμματος',
     ed_show_power: 'Κουμπί ενεργοποίησης / απενεργοποίησης',
@@ -2441,6 +2569,10 @@ var HcI18n = {
     ed_toggle_entity_helper: 'Προαιρετική οντότητα στην κεφαλίδα της κάρτας που εναλλάσσεται όταν πατηθεί',
     ed_toggle_icon: 'Εικονίδιο κουμπιού εναλλαγής',
     ed_toggle_color: 'Χρώμα κουμπιού εναλλαγής',
+    ed_energy_price: 'Τιμή ενέργειας',
+    ed_energy_price_helper: 'Ανά kWh, για το κόστος ενός κύκλου δίπλα στην ενέργειά του',
+    ed_energy_price_entity: 'Αισθητήρας τιμής ενέργειας',
+    ed_energy_price_entity_helper: 'Αντί για σταθερή τιμή: αισθητήρας σε νόμισμα/kWh (τρέχον τιμολόγιο, Tempo…)',
     ed_zoom: 'Κουμπί λεπτομερειών',
     ed_zoom_helper: 'Κουμπί πάνω δεξιά που αλλάζει τη μίνι κάρτα σε πλήρη κάρτα και αντίστροφα',
     zoom_in: 'Εμφάνιση πλήρους κάρτας',
@@ -2914,6 +3046,9 @@ var HC_KEY_KINDS = [
   ['oven', ['oven_machine_state', 'oven_machine_state_cavity_01', 'oven_state', 'oven_state_upper', 'oven_current_cavity_temperature']],
   ['coffee_maker', ['bean_container_empty', 'coffee_counter']],
   ['hood', ['venting_level', 'hood', 'hood_fan_speed', 'hood_filter_usage']],
+  // A Home Connect hob has no program: it is the only appliance with both the favorite keys (also on hoods) and the
+  // preheat / alarm clock events (also on ovens), sensors the integration creates from the appliance type.
+  ['hob', (k) => (k.favorite_short_press || k.favorite_long_press) && (k.preheat_finished || k.alarm_clock_elapsed)],
   ['wine_cooler', ['wine_compartment_setpoint_temperature']],
   ['fridge', ['refrigerator_setpoint_temperature', 'refrigerator_super_mode', 'cooler_temperature', 'power_cool',
     'refrigerator_temperature_level', 'refrigerator_door']],
@@ -3388,6 +3523,9 @@ class HomeConnectBaseCard extends HTMLElement {
     this._config = Object.assign({
       show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true,
     }, config);
+    // show_title / show_subtitle: the header's title / subtitle, hidden by the stylesheet
+    this.toggleAttribute?.("hide-title", config.show_title === false);
+    this.toggleAttribute?.("hide-subtitle", config.show_subtitle === false);
     if (!this.shadowRoot) {
       this.attachShadow({ mode: 'open' });
       this.shadowRoot.addEventListener('click', (ev) => this._onClick(ev));
@@ -3686,7 +3824,23 @@ class HomeConnectBaseCard extends HTMLElement {
     if (!cycle) return '';
     var unit = this._st(ent.energy).attributes.unit_of_measurement || 'kWh';
     var value = `${new Intl.NumberFormat(this._locale(), { maximumFractionDigits: unit === 'Wh' ? 0 : 2 }).format(cycle.used)} ${unit}`;
+    var cost = this._cycleCost(unit === 'Wh' ? cycle.used / 1000 : unit === 'MWh' ? cycle.used * 1000 : cycle.used);
+    if (cost) value += ` · ≈ ${cost}`;
     return hcChip('chip extra', 'mdi:lightning-bolt', hcEsc(this._t(cycle.active ? 'cycle_energy' : 'last_cycle_energy').replace('{e}', value)), ent.energy);
+  }
+
+  // What `kwh` costs at `energy_price_entity` (a sensor in currency/kWh) or else `energy_price`, in Home Assistant's
+  // currency; '' without a price.
+  _cycleCost(kwh) {
+    var c = this._config;
+    var st = c.energy_price_entity && this._st(c.energy_price_entity);
+    var price = st ? Number(st.state) : Number(c.energy_price);
+    if (!(price > 0) || !(kwh >= 0)) return '';
+    var currency = this._hass.config?.currency;
+    var fmt = currency
+      ? new Intl.NumberFormat(this._locale(), { style: 'currency', currency: currency, maximumFractionDigits: 2 })
+      : new Intl.NumberFormat(this._locale(), { maximumFractionDigits: 2 });
+    return fmt.format(kwh * price);
   }
 
   // Start / Pause / Resume, drawn as labelled bars (full card) or round icons (mini card).
@@ -4055,6 +4209,7 @@ class HomeConnectBaseCard extends HTMLElement {
       // The title takes the room the pill and the buttons leave (basis 0, so it doesn't squeeze the pill at
       // ordinary widths); it shrinks with an ellipsis but keeps about four characters.
       '.titles { flex: 1 1 0; min-width: 5ch; font-size: 16px; }' +
+      ':host([hide-title]) .titles > .name, :host([hide-subtitle]) .titles > .sub { display: none; }' +
       '.name { font-size: 16px; font-weight: 500; line-height: 1.25; color: var(--primary-text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
       '.sub { font-size: 12px; color: var(--secondary-text-color); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
       '.hero { display: flex; align-items: center; gap: 14px; }' +
@@ -4581,7 +4736,7 @@ class HomeConnectWasherMiniCard extends hcMini(HomeConnectWasherCard) {}
 class SmartApplianceMiniCard extends hcMini(SmartApplianceCard) {}
 
 // ── smart-appliance-card-editor (visual editor, built on HA's ha-form) ──────────
-var HC_EDITOR_DEFAULTS = { show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true, toggle_color: 'green' };
+var HC_EDITOR_DEFAULTS = { show_title: true, show_subtitle: true, show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true, toggle_color: 'green' };
 
 class HomeConnectCardEditor extends HTMLElement {
   setConfig(config) {
@@ -4636,6 +4791,8 @@ class HomeConnectCardEditor extends HTMLElement {
       },
       {
         type: 'grid', name: '', schema: [
+          { name: 'show_title', selector: { boolean: {} } },
+          { name: 'show_subtitle', selector: { boolean: {} } },
           { name: 'show_program', selector: { boolean: {} } },
           { name: 'show_controls', selector: { boolean: {} } },
           { name: 'show_options', selector: { boolean: {} } },
@@ -4644,6 +4801,15 @@ class HomeConnectCardEditor extends HTMLElement {
           { name: 'show_energy', selector: { boolean: {} } },
         ].concat(this.mini || /-mini-card$/.test(this._config.type || '') ? [{ name: 'zoom', selector: { boolean: {} } }] : []),
       },
+    ].concat([
+      // The cost of a cycle next to its energy (the energy chip, on the mini card too).
+      {
+        type: 'grid', name: '', schema: [
+          { name: 'energy_price', selector: { number: { min: 0, step: 0.0001, mode: 'box' } } },
+          { name: 'energy_price_entity', selector: { entity: { domain: 'sensor' } } },
+        ],
+      },
+    ], [
       {
         name: 'language',
         selector: { select: { mode: 'dropdown', options: [{ value: '', label: t('ed_language_auto') }, { value: 'fr', label: 'Français' }, { value: 'en', label: 'English' }, { value: 'de', label: 'Deutsch' }, { value: 'es', label: 'Español' }, { value: 'sr', label: 'Српски' }, { value: 'sr-Latn', label: 'Srpski (latinica)' }, { value: 'it', label: 'Italiano' }, { value: 'nl', label: 'Nederlands' }, { value: 'pt', label: 'Português (Portugal)' }, { value: 'pl', label: 'Polski' }, { value: 'ro', label: 'Română' }, { value: 'da', label: 'Dansk' }, { value: 'sv', label: 'Svenska' }, { value: 'bg', label: 'Български' }, { value: 'ru', label: 'Русский' }, { value: 'uk', label: 'Українська' }, { value: 'hu', label: 'Magyar' }, { value: 'sk', label: 'Slovenčina' }, { value: 'cs', label: 'Čeština' }, { value: 'sl', label: 'Slovenščina' }, { value: 'lv', label: 'Latviešu' }, { value: 'el', label: 'Ελληνικά' }] } },
@@ -4652,7 +4818,7 @@ class HomeConnectCardEditor extends HTMLElement {
         type: 'expandable', name: 'entities', title: t('ed_entities'), flatten: false,
         schema: roles.map((r) => ({ name: r, selector: { entity: { domain: domains[r] } } })),
       },
-    ];
+    ]);
   }
 
   _render() {

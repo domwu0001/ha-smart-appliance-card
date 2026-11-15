@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/juju35/ha-smart-appliance-card/blob/main/LICENSE)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/julienstep9)
 
+<p align="center"><img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/images/icon.svg" alt="Smart Appliance Card" width="120"></p>
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/bosch.svg" alt="Bosch" height="20">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/siemens.svg" alt="Siemens" height="15">&nbsp;&nbsp;
@@ -45,7 +47,7 @@ Pick the appliance: the card works out its type and its brand, and finds all its
 - Temperatures of fridges, freezers and wine cabinets, and of ovens while cooking
 - Door state, salt and rinse aid alerts, coffee machine bean container, water tank and drip tray alerts
 - A reminder chip when a program has finished and the door hasn't been opened since ("Finished 25 minutes ago, door still closed")
-- Energy per cycle: with an energy meter on the appliance (or a smart plug's, set as `entities.energy`), *This cycle: 0.6 kWh* while a program runs, then *Last cycle: 0.9 kWh*
+- Energy per cycle: with an energy meter on the appliance (or a smart plug's, set as `entities.energy`), *This cycle: 0.6 kWh* while a program runs, then *Last cycle: 0.9 kWh*, with its cost when a price is set
 - A click on a chip (door, temperature, alert…) opens the more-info dialog of its entity
 - Visual editor in the dashboard UI (no YAML needed)
 - English, French, German, Spanish, Serbian (Cyrillic and Latin), Italian, Dutch, European Portuguese, Polish, Romanian, Danish, Swedish, Bulgarian, Russian, Ukrainian, Hungarian, Slovak, Czech, Slovenian, Latvian and Greek, follows the Home Assistant language
@@ -56,7 +58,7 @@ Pick the appliance: the card works out its type and its brand, and finds all its
 
 | Integration | Appliances | What the cards show |
 |---|---|---|
-| [Home Connect](https://www.home-assistant.io/integrations/home_connect/) (built in) — Bosch, Siemens, Neff, Gaggenau, Constructa | Dishwashers, washing machines, tumble dryers, washer-dryers, ovens, microwaves, coffee machines, cooker hoods, fridges, freezers, wine cabinets | Status, progress, finish time, program picker with its options, **Start** (remote start enabled), **Pause / Resume**, **Stop**, door, salt and rinse aid alerts, coffee machine alerts, oven temperature, fridge setpoints and super modes, hood fan stage and light |
+| [Home Connect](https://www.home-assistant.io/integrations/home_connect/) (built in) — Bosch, Siemens, Neff, Gaggenau, Constructa | Dishwashers, washing machines, tumble dryers, washer-dryers, ovens, microwaves, hobs, coffee machines, cooker hoods, fridges, freezers, wine cabinets | Status, progress, finish time, program picker with its options, **Start** (remote start enabled), **Pause / Resume**, **Stop**, door, salt and rinse aid alerts, coffee machine alerts, oven temperature, fridge setpoints and super modes, hood fan stage and light |
 | [Home Connect Local](https://github.com/chris-mc1/homeconnect_local_hass) (custom, local network, no cloud) — Bosch, Siemens, Neff, Gaggenau, Constructa | Same appliances as Home Connect, type read from the device model | Status, progress, time left, program picker with its options, **Start**, **Pause / Resume**, **Stop**, power, door (binary sensor), salt and rinse aid levels, coffee machine tanks, fridge super modes, lights |
 | [Miele](https://www.home-assistant.io/integrations/miele/) (built in) | Washing machines, tumble dryers, washer-dryers, dishwashers, ovens (steam and combi included), microwaves, hobs, coffee machines, cooker hoods, fridges, freezers, wine cabinets | Status and program phase, program, progress and finish time from the elapsed and remaining times, **Start**, **Pause**, **Stop**, power, door, zone temperatures, super cooling and super freezing |
 | [SmartThings](https://www.home-assistant.io/integrations/smartthings/) (built in) — Samsung | Washing machines, tumble dryers, washer-dryers, dishwashers, ovens, cooker hoods, fridges, freezers | Machine and job state, progress, finish time, **Start / Pause / Resume / Stop** through the operating state, dishwasher course picker, door, temperatures, rapid cooling and freezing |
@@ -78,7 +80,7 @@ Each type is detected by itself; `kind` is the value to set when it can't be (a 
 | Washer-dryer | `washer_dryer` | ✅ | ✅ | ✅ | ✅ | — | — |
 | Oven | `oven` | ✅ | ✅ | ✅ | ✅ | ✅ | — |
 | Microwave | `microwave` | ✅ | ✅ | — | ✅ | — | — |
-| Hob | `hob` | — | ✅ | — | ✅ | — | — |
+| Hob | `hob` | ✅ | ✅ | — | ✅ | — | — |
 | Coffee machine | `coffee_maker` | ✅ | ✅ | — | — | — | — |
 | Cooker hood | `hood` | ✅ | ✅ | ✅ | ✅ | — | — |
 | Fridge | `fridge` | ✅ | ✅ | ✅ | ✅ | ✅ | — |
@@ -153,7 +155,7 @@ device_id: bad11e7fd00845a2fb485b38c97cf675
 
 The mini card shows the appliance, its state, the program, the progress and finish time, the alerts, and round Start / Pause / Resume, power and (when configured) toggle buttons. The detail button (top right) unfolds the full card with every option; a click anywhere else on the page folds it back. It takes the same options as the full card, which apply once unfolded, plus `zoom`. At its default size in a Sections view (6 columns), the round buttons sit under the text and the status pill shows only its coloured dot, the state being written above the program.
 
-Use either `device_id` (what the visual editor writes) or `entity` (any entity of the appliance). With neither, the card uses the first supported appliance it finds (of the `kind` given, if any).
+Use either `device_id` (what the visual editor writes) or `entity` (any entity of the appliance, YAML only). With neither, the card uses the first supported appliance it finds (of the `kind` given, if any).
 
 ### Full options
 
@@ -184,8 +186,10 @@ entities:
 | Option | Required | Default | Description |
 |---|---|---|---|
 | `device_id` | ❌* | Auto | Appliance device (*or `entity`; the first supported appliance is used if both are missing) |
-| `entity` | ❌ | — | Any entity of the appliance, used to find the device |
+| `entity` | ❌ | — | Any entity of the appliance, used to find the device (YAML only: the visual editor sets `device_id`) |
 | `name` | ❌ | Device name | Card title |
+| `show_title` | ❌ | `true` | Show the title in the header (e.g. `false` under a section heading of your own) |
+| `show_subtitle` | ❌ | `true` | Show the subtitle under the title |
 | `kind` | ❌ | Auto | Appliance type when it can't be detected: `dishwasher`, `washer`, `dryer`, `washer_dryer`, `oven`, `microwave`, `hob`, `coffee_maker`, `hood`, `fridge`, `freezer`, `wine_cooler`, `styler` |
 | `brand` | ❌ | Auto | Brand for the badge and button colour when the integration doesn't give it: `bosch`, `siemens`, `neff`, `gaggenau`, `constructa`, `miele`, `samsung`, `lg`, `whirlpool`, `maytag`, `kitchenaid`, `consul` |
 | `icon` | ❌ | Illustration | Replaces the appliance illustration with an icon |
@@ -198,6 +202,8 @@ entities:
 | `toggle_entity` | ❌ | — | Optional `input_boolean` shown as a separate toggle button before the power button (also on mini cards) |
 | `toggle_icon` | ❌ | State-dependent toggle icon | Icon for the optional toggle button (Home Assistant icon selector / MDI icon) |
 | `toggle_color` | ❌ | `green` | Active-state background and icon colour; one of the Home Assistant palette colours: `red`, `pink`, `purple`, `deep-purple`, `indigo`, `blue`, `light-blue`, `cyan`, `teal`, `green`, `light-green`, `lime`, `yellow`, `amber`, `orange`, `deep-orange`, `brown`, `grey`, `blue-grey` |
+| `energy_price` | ❌ | — | Price per kWh: the cycle's cost next to its energy (*This cycle: 0.58 kWh · ≈ €0.12*), in Home Assistant's currency |
+| `energy_price_entity` | ❌ | — | A sensor giving the price per kWh (current tariff, Tempo…), used instead of `energy_price` |
 | `zoom` | ❌ | `true` | Mini cards only: detail button at the top right that unfolds the full card (a click elsewhere folds it back) |
 | `language` | ❌ | Auto | Force language: `fr`, `en`, `de`, `es`, `sr`, `sr-Latn`, `it`, `nl`, `pt`, `pl`, `ro`, `da`, `sv`, `bg`, `ru`, `uk`, `hu`, `sk`, `cs`, `sl`, `lv` or `el` (auto-detects from HA settings) |
 | `entities` | ❌ | Auto | Override detected entities (see below) |

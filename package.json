@@ -1,6 +1,6 @@
 {
   "name": "ha-smart-appliance-card",
-  "version": "2.5.1",
+  "version": "2.7.1",
   "description": "Animated Lovelace cards for home appliances (Home Connect, Home Connect Local, Miele, SmartThings, LG ThinQ, Whirlpool, Matter) in Home Assistant.",
   "private": true,
   "type": "module",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "acorn": "^8.19.0",
+    "css-tree": "^3.2.1",
     "playwright": "^1.64.1"
   }
 }
