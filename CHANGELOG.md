@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.9.1 - 2026-11-19
+
+### Fixes
+- **Home Connect Local**: the power state select (*Power state*) is no longer listed among the program options when the appliance also has the power switch the card shows as its On/Off button (two power states). With more power states there is no switch, and the select stays.
+
 ## 2.9.0 - 2026-11-18
 
 ### Features

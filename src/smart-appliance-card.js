@@ -3119,9 +3119,12 @@ function hcDeviceRoles(hass, deviceId) {
   var roles = {};
   Object.keys(table).forEach((role) => { roles[role] = hcFindRole(hass, list, table[role]); });
   // Home Connect lists every switch and select as a program option; elsewhere diagnostics are left out (and, for
-  // Home Connect Local, the appliance settings too).
+  // Home Connect Local, the appliance settings too). Home Connect Local's power state select repeats its power switch
+  // (the On/Off button) when the appliance has only two power states; with more, there is no switch and the select
+  // stays, as the only way to set them.
+  var powerDup = (e) => e.translation_key === 'select_power_state' && Boolean(roles.power);
   var opts = platform === 'home_connect' ? list : list.filter((e) => e.entity_category !== 'diagnostic' &&
-    (platform !== 'homeconnect_ws' || (e.entity_category !== 'config' && HC_NOT_OPTIONS.indexOf(e.translation_key) < 0)) &&
+    (platform !== 'homeconnect_ws' || (e.entity_category !== 'config' && HC_NOT_OPTIONS.indexOf(e.translation_key) < 0 && !powerDup(e))) &&
     (platform !== 'localthings' || e.entity_category !== 'config'));
   var ids = opts.map((e) => e.entity_id);
   cached = {
