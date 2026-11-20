@@ -1,5 +1,39 @@
 # Changelog
 
+## 2.9.1 - 2026-11-19
+
+### Fixes
+- **Home Connect Local**: the power state select (*Power state*) is no longer listed among the program options when the appliance also has the power switch the card shows as its On/Off button (two power states). With more power states there is no switch, and the select stays.
+
+## 2.9.0 - 2026-11-18
+
+### Features
+- Support for [LocalThings](https://github.com/mbillow/localthings), Samsung appliances on the local network: machine state with the oven's cavity state or the laundry step, progress and finish time, cycle or oven mode picker, Start / Pause / Resume / Stop buttons, remote control, power and door; the type is read from the device name. An oven cooking without a timer shows no percentage.
+
+## 2.8.2 - 2026-11-18
+
+### Fixes
+- Illustrated header: `auto` now follows the Home Assistant theme alone — a light theme keeps the day picture after sunset, a dark theme still shows the night one.
+
+## 2.8.1 - 2026-11-17
+
+### Fixes
+- Illustrated header in Safari (WebKit): the appliance no longer lands on the title and the status pill — its box gets an explicit width instead of the SVG's default 300 px, so it stays at the banner's right.
+
+## 2.8.0 - 2026-11-17
+
+### Features
+- **Illustrated header** on the full and the mini card (90 px): the appliance's own animated illustration stands in its room (a laundry room for washers, dryers and the Styler, a kitchen for the others) on a 10 px tiled floor strip, with the title and the subtitle on the left. The round icon is tinted by the state (at work, warning, fault, done; neutral grey when idle or off) and carries the brand's logo (or its initial) as a badge.
+- Night picture after sunset (`sun.sun`) or with Home Assistant's dark theme, forced with `illustration_theme: day | night`; `illustration: false` keeps the classic header. Both options are in the visual editor, the mini card's included.
+- The classic header's icon follows the state colours too.
+- Status pill on every header (full and mini card, illustrated or classic): a dot and the state, in the icon's colour, on the title row right after the title only when the whole title and its whole label fit there (measured, in every language); otherwise on its own line under the subtitle (then kept to one line), and only its dot when even that does not fit in the banner above the floor strip or on a card 200 px wide or less. The mini card's subtitle names the program instead of repeating the state.
+- The mini card's expand / collapse button sits in the banner's top right corner (24 px, frosted), like the other cards.
+- Night picture with the dark theme even while the sun is up (a day picture would glare on a dark dashboard); `illustration_theme: day | night` still forces one.
+
+### Fixes
+- Hob: the body no longer shows only its state — a **Cooking zones** section lists each zone in its tile (LG ThinQ per-location power level out of its maximum, state and timer left; Miele plates), with how many are on; the chips add remote control (LG ThinQ), child lock, the power drawn when the integration reports it, and a wine cabinet's light.
+- The body no longer repeats the header pill word for word: beside the percentage, the time left instead of "Running" (the finish time under the bar); the big idle / ready state is left to the pill. On a card so narrow that the banner's pill keeps only its dot, the state is written in the body again (full and mini card). On that narrow card the running state also comes back beside the percentage, above the time left.
+
 ## 2.7.1 - 2026-11-14
 
 ### Fixes

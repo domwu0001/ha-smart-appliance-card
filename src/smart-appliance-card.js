@@ -21,6 +21,10 @@ var HcI18n = {
     st_run_fridge: 'Super froid',
     st_run_freezer: 'Super congélation',
     light_on: 'Éclairage allumé',
+    zones: 'Zones de cuisson',
+    zones_on: '{n} sur {t} allumées',
+    child_lock: 'Sécurité enfants',
+    remote_on: 'Commande à distance',
     bean_container: 'Bac à grains vide',
     water_tank: 'Réservoir d\'eau vide',
     drip_tray: 'Bac d\'égouttage plein',
@@ -95,6 +99,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Capteur de prix de l\'énergie',
     ed_energy_price_entity_helper: 'À la place d\'un prix fixe : un capteur en devise/kWh (tarif du moment, Tempo…)',
     ed_zoom: 'Bouton détail',
+    ed_illustration: 'Illustration',
+    ed_illustration_theme: 'Thème de l\'illustration',
+    theme_auto: 'Automatique (suit le thème)',
+    theme_day: 'Jour',
+    theme_night: 'Nuit',
     ed_zoom_helper: 'Bouton en haut à droite qui passe la mini-carte en carte complète et inversement',
     zoom_in: 'Afficher la carte complète',
     zoom_out: 'Revenir à la vue compacte',
@@ -139,6 +148,10 @@ var HcI18n = {
     st_run_fridge: 'Super cooling',
     st_run_freezer: 'Super freezing',
     light_on: 'Light on',
+    zones: 'Cooking zones',
+    zones_on: '{n} of {t} on',
+    child_lock: 'Child lock',
+    remote_on: 'Remote control',
     bean_container: 'Bean container empty',
     water_tank: 'Water tank empty',
     drip_tray: 'Drip tray full',
@@ -213,6 +226,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energy price sensor',
     ed_energy_price_entity_helper: 'Instead of a fixed price: a sensor in currency/kWh (current tariff, Tempo…)',
     ed_zoom: 'Detail button',
+    ed_illustration: 'Illustration',
+    ed_illustration_theme: 'Illustration theme',
+    theme_auto: 'Automatic (follows the theme)',
+    theme_day: 'Day',
+    theme_night: 'Night',
     ed_zoom_helper: 'Button at the top right that switches the mini card to the full card and back',
     zoom_in: 'Show the full card',
     zoom_out: 'Back to the compact view',
@@ -258,6 +276,10 @@ var HcI18n = {
     st_run_fridge: 'Superkühlen',
     st_run_freezer: 'Supergefrieren',
     light_on: 'Licht an',
+    zones: 'Kochzonen',
+    zones_on: '{n} von {t} an',
+    child_lock: 'Kindersicherung',
+    remote_on: 'Fernsteuerung',
     bean_container: 'Bohnenbehälter leer',
     water_tank: 'Wassertank leer',
     drip_tray: 'Tropfschale voll',
@@ -332,6 +354,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energiepreis-Sensor',
     ed_energy_price_entity_helper: 'Statt eines festen Preises: ein Sensor in Währung/kWh (aktueller Tarif, Tempo…)',
     ed_zoom: 'Detailansicht-Schaltfläche',
+    ed_illustration: 'Illustration',
+    ed_illustration_theme: 'Illustrationsthema',
+    theme_auto: 'Automatisch (folgt dem Design)',
+    theme_day: 'Tag',
+    theme_night: 'Nacht',
     ed_zoom_helper: 'Schaltfläche oben rechts zum Wechseln zwischen kompakter und vollständiger Kartenansicht',
     zoom_in: 'Vollständige Karte anzeigen',
     zoom_out: 'Zur kompakten Ansicht zurückkehren',
@@ -377,6 +404,10 @@ var HcI18n = {
     st_run_fridge: 'Superrefrigeración',
     st_run_freezer: 'Supercongelación',
     light_on: 'Luz encendida',
+    zones: 'Zonas de cocción',
+    zones_on: '{n} de {t} encendidas',
+    child_lock: 'Bloqueo infantil',
+    remote_on: 'Control remoto',
     bean_container: 'Depósito de café en grano vacío',
     water_tank: 'Depósito de agua vacío',
     drip_tray: 'Bandeja de goteo llena',
@@ -450,6 +481,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Sensor de precio de la energía',
     ed_energy_price_entity_helper: 'En lugar de un precio fijo: un sensor en moneda/kWh (tarifa actual, Tempo…)',
     ed_zoom: 'Botón de detalle',
+    ed_illustration: 'Ilustración',
+    ed_illustration_theme: 'Tema de la ilustración',
+    theme_auto: 'Automático (sigue el tema)',
+    theme_day: 'Día',
+    theme_night: 'Noche',
     ed_zoom_helper: 'Botón arriba a la derecha que cambia la mini tarjeta a la tarjeta completa y viceversa',
     zoom_in: 'Mostrar la tarjeta completa',
     zoom_out: 'Volver a la vista compacta',
@@ -495,6 +531,10 @@ var HcI18n = {
     st_run_fridge: 'Супер хлађење',
     st_run_freezer: 'Супер замрзавање',
     light_on: 'Светло укључено',
+    zones: 'Зоне кувања',
+    zones_on: '{n} од {t} укључено',
+    child_lock: 'Закључавање за децу',
+    remote_on: 'Даљинско управљање',
     bean_container: 'Посуда за зрна празна',
     water_tank: 'Резервоар за воду празан',
     drip_tray: 'Посуда за капање пуна',
@@ -568,6 +608,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Сензор цене енергије',
     ed_energy_price_entity_helper: 'Уместо фиксне цене: сензор у валути/kWh (тренутна тарифа, Tempo…)',
     ed_zoom: 'Дугме за детаље',
+    ed_illustration: 'Илустрација',
+    ed_illustration_theme: 'Тема илустрације',
+    theme_auto: 'Аутоматски (прати тему)',
+    theme_day: 'Дан',
+    theme_night: 'Ноћ',
     ed_zoom_helper: 'Дугме у горњем десном углу које пребацује мини картицу на пун приказ и назад',
     zoom_in: 'Прикажи целу картицу',
     zoom_out: 'Назад на компактни приказ',
@@ -613,6 +658,10 @@ var HcI18n = {
     st_run_fridge: 'Super hlađenje',
     st_run_freezer: 'Super zamrzavanje',
     light_on: 'Svetlo uključeno',
+    zones: 'Zone kuvanja',
+    zones_on: '{n} od {t} uključeno',
+    child_lock: 'Zaključavanje za decu',
+    remote_on: 'Daljinsko upravljanje',
     bean_container: 'Posuda za zrna prazna',
     water_tank: 'Rezervoar za vodu prazan',
     drip_tray: 'Posuda za kapanje puna',
@@ -686,6 +735,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Senzor cene energije',
     ed_energy_price_entity_helper: 'Umesto fiksne cene: senzor u valuti/kWh (trenutna tarifa, Tempo…)',
     ed_zoom: 'Dugme za detalje',
+    ed_illustration: 'Ilustracija',
+    ed_illustration_theme: 'Tema ilustracije',
+    theme_auto: 'Automatski (prati temu)',
+    theme_day: 'Dan',
+    theme_night: 'Noć',
     ed_zoom_helper: 'Dugme u gornjem desnom uglu koje prebacuje mini karticu na pun prikaz i nazad',
     zoom_in: 'Prikaži celu karticu',
     zoom_out: 'Nazad na kompaktni prikaz',
@@ -731,6 +785,10 @@ var HcI18n = {
     st_run_fridge: 'Super raffreddamento',
     st_run_freezer: 'Super congelamento',
     light_on: 'Luce accesa',
+    zones: 'Zone di cottura',
+    zones_on: '{n} di {t} accese',
+    child_lock: 'Blocco bambini',
+    remote_on: 'Controllo remoto',
     bean_container: 'Contenitore caffè in grani vuoto',
     water_tank: 'Serbatoio dell\'acqua vuoto',
     drip_tray: 'Vaschetta raccogligocce piena',
@@ -804,6 +862,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Sensore del prezzo dell\'energia',
     ed_energy_price_entity_helper: 'Invece di un prezzo fisso: un sensore in valuta/kWh (tariffa attuale, Tempo…)',
     ed_zoom: 'Pulsante dettaglio',
+    ed_illustration: 'Illustrazione',
+    ed_illustration_theme: 'Tema dell\'illustrazione',
+    theme_auto: 'Automatico (segue il tema)',
+    theme_day: 'Giorno',
+    theme_night: 'Notte',
     ed_zoom_helper: 'Pulsante in alto a destra che passa dalla mini scheda alla scheda completa e viceversa',
     zoom_in: 'Mostra la scheda completa',
     zoom_out: 'Torna alla vista compatta',
@@ -849,6 +912,10 @@ var HcI18n = {
     st_run_fridge: 'Supercool',
     st_run_freezer: 'Supervries',
     light_on: 'Licht aan',
+    zones: 'Kookzones',
+    zones_on: '{n} van {t} aan',
+    child_lock: 'Kinderslot',
+    remote_on: 'Bediening op afstand',
     bean_container: 'Bonenreservoir leeg',
     water_tank: 'Waterreservoir leeg',
     drip_tray: 'Lekbak vol',
@@ -922,6 +989,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energieprijssensor',
     ed_energy_price_entity_helper: 'In plaats van een vaste prijs: een sensor in valuta/kWh (huidig tarief, Tempo…)',
     ed_zoom: 'Detailknop',
+    ed_illustration: 'Illustratie',
+    ed_illustration_theme: 'Thema van de illustratie',
+    theme_auto: 'Automatisch (volgt het thema)',
+    theme_day: 'Dag',
+    theme_night: 'Nacht',
     ed_zoom_helper: 'Knop rechtsboven die de minikaart omschakelt naar de volledige kaart en terug',
     zoom_in: 'Volledige kaart tonen',
     zoom_out: 'Terug naar de compacte weergave',
@@ -967,6 +1039,10 @@ var HcI18n = {
     st_run_fridge: 'Super refrigeração',
     st_run_freezer: 'Super congelação',
     light_on: 'Luz acesa',
+    zones: 'Zonas de cozedura',
+    zones_on: '{n} de {t} ligadas',
+    child_lock: 'Bloqueio para crianças',
+    remote_on: 'Controlo remoto',
     bean_container: 'Depósito de grãos vazio',
     water_tank: 'Depósito de água vazio',
     drip_tray: 'Tabuleiro de pingos cheio',
@@ -1040,6 +1116,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Sensor de preço da energia',
     ed_energy_price_entity_helper: 'Em vez de um preço fixo: um sensor em moeda/kWh (tarifa atual, Tempo…)',
     ed_zoom: 'Botão de detalhe',
+    ed_illustration: 'Ilustração',
+    ed_illustration_theme: 'Tema da ilustração',
+    theme_auto: 'Automático (segue o tema)',
+    theme_day: 'Dia',
+    theme_night: 'Noite',
     ed_zoom_helper: 'Botão no canto superior direito que alterna entre o mini cartão e o cartão completo',
     zoom_in: 'Mostrar o cartão completo',
     zoom_out: 'Voltar à vista compacta',
@@ -1085,6 +1166,10 @@ var HcI18n = {
     st_run_fridge: 'Super chłodzenie',
     st_run_freezer: 'Super zamrażanie',
     light_on: 'Światło włączone',
+    zones: 'Pola grzewcze',
+    zones_on: '{n} z {t} włączone',
+    child_lock: 'Blokada rodzicielska',
+    remote_on: 'Zdalne sterowanie',
     bean_container: 'Pojemnik na ziarna pusty',
     water_tank: 'Zbiornik na wodę pusty',
     drip_tray: 'Tacka ociekowa pełna',
@@ -1158,6 +1243,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Czujnik ceny energii',
     ed_energy_price_entity_helper: 'Zamiast stałej ceny: czujnik w walucie/kWh (bieżąca taryfa, Tempo…)',
     ed_zoom: 'Przycisk szczegółów',
+    ed_illustration: 'Ilustracja',
+    ed_illustration_theme: 'Motyw ilustracji',
+    theme_auto: 'Automatycznie (według motywu)',
+    theme_day: 'Dzień',
+    theme_night: 'Noc',
     ed_zoom_helper: 'Przycisk w prawym górnym rogu przełączający minikartę na pełną kartę i z powrotem',
     zoom_in: 'Pokaż pełną kartę',
     zoom_out: 'Wróć do widoku kompaktowego',
@@ -1203,6 +1293,10 @@ var HcI18n = {
     st_run_fridge: 'Super răcire',
     st_run_freezer: 'Super congelare',
     light_on: 'Lumină aprinsă',
+    zones: 'Zone de gătit',
+    zones_on: '{n} din {t} pornite',
+    child_lock: 'Blocare pentru copii',
+    remote_on: 'Control de la distanță',
     bean_container: 'Recipient de boabe gol',
     water_tank: 'Rezervor de apă gol',
     drip_tray: 'Tavă de scurgere plină',
@@ -1276,6 +1370,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Senzor de preț al energiei',
     ed_energy_price_entity_helper: 'În locul unui preț fix: un senzor în monedă/kWh (tariful curent, Tempo…)',
     ed_zoom: 'Buton de detalii',
+    ed_illustration: 'Ilustrație',
+    ed_illustration_theme: 'Tema ilustrației',
+    theme_auto: 'Automat (urmează tema)',
+    theme_day: 'Zi',
+    theme_night: 'Noapte',
     ed_zoom_helper: 'Buton din dreapta sus care comută mini-cardul în cardul complet și înapoi',
     zoom_in: 'Afișează cardul complet',
     zoom_out: 'Înapoi la vizualizarea compactă',
@@ -1321,6 +1420,10 @@ var HcI18n = {
     st_run_fridge: 'Superkøl',
     st_run_freezer: 'Superfrys',
     light_on: 'Lys tændt',
+    zones: 'Kogezoner',
+    zones_on: '{n} af {t} tændt',
+    child_lock: 'Børnesikring',
+    remote_on: 'Fjernbetjening',
     bean_container: 'Bønnebeholder tom',
     water_tank: 'Vandtank tom',
     drip_tray: 'Drypbakke fuld',
@@ -1394,6 +1497,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energiprissensor',
     ed_energy_price_entity_helper: 'I stedet for en fast pris: en sensor i valuta/kWh (aktuel tarif, Tempo…)',
     ed_zoom: 'Detaljeknap',
+    ed_illustration: 'Illustration',
+    ed_illustration_theme: 'Illustrationstema',
+    theme_auto: 'Automatisk (følger temaet)',
+    theme_day: 'Dag',
+    theme_night: 'Nat',
     ed_zoom_helper: 'Knap øverst til højre, der skifter minikortet til det fulde kort og tilbage',
     zoom_in: 'Vis det fulde kort',
     zoom_out: 'Tilbage til kompakt visning',
@@ -1439,6 +1547,10 @@ var HcI18n = {
     st_run_fridge: 'Superkyl',
     st_run_freezer: 'Superfrys',
     light_on: 'Belysning på',
+    zones: 'Kokzoner',
+    zones_on: '{n} av {t} på',
+    child_lock: 'Barnlås',
+    remote_on: 'Fjärrstyrning',
     bean_container: 'Bönbehållaren är tom',
     water_tank: 'Vattentanken är tom',
     drip_tray: 'Droppbrickan är full',
@@ -1512,6 +1624,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energiprissensor',
     ed_energy_price_entity_helper: 'I stället för ett fast pris: en sensor i valuta/kWh (aktuell taxa, Tempo…)',
     ed_zoom: 'Detaljknapp',
+    ed_illustration: 'Illustration',
+    ed_illustration_theme: 'Illustrationstema',
+    theme_auto: 'Automatiskt (följer temat)',
+    theme_day: 'Dag',
+    theme_night: 'Natt',
     ed_zoom_helper: 'Knapp uppe till höger som växlar minikortet till hela kortet och tillbaka',
     zoom_in: 'Visa hela kortet',
     zoom_out: 'Tillbaka till kompakt vy',
@@ -1557,6 +1674,10 @@ var HcI18n = {
     st_run_fridge: 'Супер охлаждане',
     st_run_freezer: 'Супер замразяване',
     light_on: 'Лампата свети',
+    zones: 'Зони за готвене',
+    zones_on: '{n} от {t} включени',
+    child_lock: 'Детска защита',
+    remote_on: 'Дистанционно управление',
     bean_container: 'Контейнерът за зърна е празен',
     water_tank: 'Резервоарът за вода е празен',
     drip_tray: 'Тавата за отцеждане е пълна',
@@ -1630,6 +1751,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Сензор за цена на енергията',
     ed_energy_price_entity_helper: 'Вместо фиксирана цена: сензор във валута/kWh (текуща тарифа, Tempo…)',
     ed_zoom: 'Бутон за подробности',
+    ed_illustration: 'Илюстрация',
+    ed_illustration_theme: 'Тема на илюстрацията',
+    theme_auto: 'Автоматично (следва темата)',
+    theme_day: 'Ден',
+    theme_night: 'Нощ',
     ed_zoom_helper: 'Бутон горе вдясно, който превключва мини картата към пълната карта и обратно',
     zoom_in: 'Покажи пълната карта',
     zoom_out: 'Обратно към компактния изглед',
@@ -1675,6 +1801,10 @@ var HcI18n = {
     st_run_fridge: 'Суперохлаждение',
     st_run_freezer: 'Суперзаморозка',
     light_on: 'Подсветка включена',
+    zones: 'Конфорки',
+    zones_on: '{n} из {t} включено',
+    child_lock: 'Защита от детей',
+    remote_on: 'Дистанционное управление',
     bean_container: 'Контейнер для зёрен пуст',
     water_tank: 'Резервуар для воды пуст',
     drip_tray: 'Поддон для капель полон',
@@ -1748,6 +1878,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Датчик цены энергии',
     ed_energy_price_entity_helper: 'Вместо фиксированной цены: датчик в валюте/кВт·ч (текущий тариф, Tempo…)',
     ed_zoom: 'Кнопка подробностей',
+    ed_illustration: 'Иллюстрация',
+    ed_illustration_theme: 'Тема иллюстрации',
+    theme_auto: 'Автоматически (по теме)',
+    theme_day: 'День',
+    theme_night: 'Ночь',
     ed_zoom_helper: 'Кнопка в правом верхнем углу, переключающая мини-карточку на полную карточку и обратно',
     zoom_in: 'Показать полную карточку',
     zoom_out: 'Вернуться к компактному виду',
@@ -1793,6 +1928,10 @@ var HcI18n = {
     st_run_fridge: 'Суперохолодження',
     st_run_freezer: 'Суперзаморожування',
     light_on: 'Світло увімкнено',
+    zones: 'Конфорки',
+    zones_on: '{n} з {t} увімкнено',
+    child_lock: 'Захист від дітей',
+    remote_on: 'Дистанційне керування',
     bean_container: 'Контейнер для зерен порожній',
     water_tank: 'Резервуар для води порожній',
     drip_tray: 'Піддон для крапель повний',
@@ -1866,6 +2005,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Датчик ціни енергії',
     ed_energy_price_entity_helper: 'Замість фіксованої ціни: датчик у валюті/кВт·год (поточний тариф, Tempo…)',
     ed_zoom: 'Кнопка деталей',
+    ed_illustration: 'Ілюстрація',
+    ed_illustration_theme: 'Тема ілюстрації',
+    theme_auto: 'Автоматично (за темою)',
+    theme_day: 'День',
+    theme_night: 'Ніч',
     ed_zoom_helper: 'Кнопка в правому верхньому куті, що перемикає мінікартку на повну картку й назад',
     zoom_in: 'Показати повну картку',
     zoom_out: 'Повернутися до компактного вигляду',
@@ -1911,6 +2055,10 @@ var HcI18n = {
     st_run_fridge: 'Szuperhűtés',
     st_run_freezer: 'Szuperfagyasztás',
     light_on: 'Világítás bekapcsolva',
+    zones: 'Főzőzónák',
+    zones_on: '{t}-ből {n} bekapcsolva',
+    child_lock: 'Gyerekzár',
+    remote_on: 'Távvezérlés',
     bean_container: 'A babtartály üres',
     water_tank: 'A víztartály üres',
     drip_tray: 'A csepptálca megtelt',
@@ -1984,6 +2132,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Energiaár-érzékelő',
     ed_energy_price_entity_helper: 'Rögzített ár helyett: pénznem/kWh érzékelő (aktuális tarifa, Tempo…)',
     ed_zoom: 'Részletek gomb',
+    ed_illustration: 'Illusztráció',
+    ed_illustration_theme: 'Illusztráció témája',
+    theme_auto: 'Automatikus (a témát követi)',
+    theme_day: 'Nappal',
+    theme_night: 'Éjszaka',
     ed_zoom_helper: 'Jobb felső sarokban lévő gomb, amely a minikártyát teljes kártyára váltja és vissza',
     zoom_in: 'Teljes kártya megjelenítése',
     zoom_out: 'Vissza a kompakt nézethez',
@@ -2029,6 +2182,10 @@ var HcI18n = {
     st_run_fridge: 'Superchladenie',
     st_run_freezer: 'Supermrazenie',
     light_on: 'Osvetlenie zapnuté',
+    zones: 'Varné zóny',
+    zones_on: '{n} z {t} zapnuté',
+    child_lock: 'Detská poistka',
+    remote_on: 'Diaľkové ovládanie',
     bean_container: 'Zásobník na zrná je prázdny',
     water_tank: 'Nádržka na vodu je prázdna',
     drip_tray: 'Odkvapkávacia miska je plná',
@@ -2102,6 +2259,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Senzor ceny energie',
     ed_energy_price_entity_helper: 'Namiesto pevnej ceny: senzor v mene/kWh (aktuálna sadzba, Tempo…)',
     ed_zoom: 'Tlačidlo podrobností',
+    ed_illustration: 'Ilustrácia',
+    ed_illustration_theme: 'Téma ilustrácie',
+    theme_auto: 'Automaticky (podľa témy)',
+    theme_day: 'Deň',
+    theme_night: 'Noc',
     ed_zoom_helper: 'Tlačidlo vpravo hore, ktoré prepína minikartu na celú kartu a späť',
     zoom_in: 'Zobraziť celú kartu',
     zoom_out: 'Späť na kompaktné zobrazenie',
@@ -2147,6 +2309,10 @@ var HcI18n = {
     st_run_fridge: 'Superchlazení',
     st_run_freezer: 'Supermrazení',
     light_on: 'Osvětlení zapnuto',
+    zones: 'Varné zóny',
+    zones_on: '{n} z {t} zapnuto',
+    child_lock: 'Dětská pojistka',
+    remote_on: 'Dálkové ovládání',
     bean_container: 'Zásobník na zrnka je prázdný',
     water_tank: 'Nádržka na vodu je prázdná',
     drip_tray: 'Odkapávací miska je plná',
@@ -2220,6 +2386,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Senzor ceny energie',
     ed_energy_price_entity_helper: 'Místo pevné ceny: senzor v měně/kWh (aktuální sazba, Tempo…)',
     ed_zoom: 'Tlačítko podrobností',
+    ed_illustration: 'Ilustrace',
+    ed_illustration_theme: 'Motiv ilustrace',
+    theme_auto: 'Automaticky (podle motivu)',
+    theme_day: 'Den',
+    theme_night: 'Noc',
     ed_zoom_helper: 'Tlačítko vpravo nahoře, které přepíná minikartu na celou kartu a zpět',
     zoom_in: 'Zobrazit celou kartu',
     zoom_out: 'Zpět na kompaktní zobrazení',
@@ -2265,6 +2436,10 @@ var HcI18n = {
     st_run_fridge: 'Superhlajenje',
     st_run_freezer: 'Superzamrzovanje',
     light_on: 'Luč prižgana',
+    zones: 'Kuhalne cone',
+    zones_on: '{n} od {t} vklopljenih',
+    child_lock: 'Otroška zaščita',
+    remote_on: 'Daljinsko upravljanje',
     bean_container: 'Posoda za zrna je prazna',
     water_tank: 'Rezervoar za vodo je prazen',
     drip_tray: 'Pladenj za kapljanje je poln',
@@ -2338,6 +2513,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Senzor cene energije',
     ed_energy_price_entity_helper: 'Namesto fiksne cene: senzor v valuti/kWh (trenutna tarifa, Tempo…)',
     ed_zoom: 'Gumb za podrobnosti',
+    ed_illustration: 'Ilustracija',
+    ed_illustration_theme: 'Tema ilustracije',
+    theme_auto: 'Samodejno (sledi temi)',
+    theme_day: 'Dan',
+    theme_night: 'Noč',
     ed_zoom_helper: 'Gumb zgoraj desno, ki preklopi mini kartico v celotno kartico in nazaj',
     zoom_in: 'Prikaži celotno kartico',
     zoom_out: 'Nazaj na strnjen pogled',
@@ -2383,6 +2563,10 @@ var HcI18n = {
     st_run_fridge: 'Superdzesēšana',
     st_run_freezer: 'Supersaldēšana',
     light_on: 'Gaisma ieslēgta',
+    zones: 'Gatavošanas zonas',
+    zones_on: '{n} no {t} ieslēgtas',
+    child_lock: 'Bērnu slēdzene',
+    remote_on: 'Tālvadība',
     bean_container: 'Pupiņu tvertne ir tukša',
     water_tank: 'Ūdens tvertne ir tukša',
     drip_tray: 'Pilienu paplāte ir pilna',
@@ -2456,6 +2640,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Enerģijas cenas sensors',
     ed_energy_price_entity_helper: 'Fiksētas cenas vietā: sensors valūtā/kWh (pašreizējais tarifs, Tempo…)',
     ed_zoom: 'Detaļu poga',
+    ed_illustration: 'Ilustrācija',
+    ed_illustration_theme: 'Ilustrācijas tēma',
+    theme_auto: 'Automātiski (atbilstoši tēmai)',
+    theme_day: 'Diena',
+    theme_night: 'Nakts',
     ed_zoom_helper: 'Poga augšējā labajā stūrī, kas pārslēdz minikarti uz pilno karti un atpakaļ',
     zoom_in: 'Rādīt pilno karti',
     zoom_out: 'Atpakaļ uz kompakto skatu',
@@ -2501,6 +2690,10 @@ var HcI18n = {
     st_run_fridge: 'Γρήγορη ψύξη',
     st_run_freezer: 'Γρήγορη κατάψυξη',
     light_on: 'Φωτισμός αναμμένος',
+    zones: 'Ζώνες μαγειρέματος',
+    zones_on: '{n} από {t} αναμμένες',
+    child_lock: 'Κλείδωμα για παιδιά',
+    remote_on: 'Απομακρυσμένος έλεγχος',
     bean_container: 'Το δοχείο κόκκων είναι άδειο',
     water_tank: 'Το δοχείο νερού είναι άδειο',
     drip_tray: 'Ο δίσκος σταγόνων είναι γεμάτος',
@@ -2574,6 +2767,11 @@ var HcI18n = {
     ed_energy_price_entity: 'Αισθητήρας τιμής ενέργειας',
     ed_energy_price_entity_helper: 'Αντί για σταθερή τιμή: αισθητήρας σε νόμισμα/kWh (τρέχον τιμολόγιο, Tempo…)',
     ed_zoom: 'Κουμπί λεπτομερειών',
+    ed_illustration: 'Εικονογράφηση',
+    ed_illustration_theme: 'Θέμα εικονογράφησης',
+    theme_auto: 'Αυτόματο (ακολουθεί το θέμα)',
+    theme_day: 'Ημέρα',
+    theme_night: 'Νύχτα',
     ed_zoom_helper: 'Κουμπί πάνω δεξιά που αλλάζει τη μίνι κάρτα σε πλήρη κάρτα και αντίστροφα',
     zoom_in: 'Εμφάνιση πλήρους κάρτας',
     zoom_out: 'Επιστροφή στη συμπαγή προβολή',
@@ -2782,6 +2980,9 @@ var HC_COMMON_ROLES = {
   light: { domain: 'light', keys: ['cooking_lighting', 'light', 'oven_light'], test: () => true },
   // The appliance's energy meter (kWh / Wh, total_increasing): what a cycle used.
   energy: { domain: 'sensor', keys: ['energy', 'energy_consumption', 'total_energy'], test: (s) => s.attributes.device_class === 'energy' },
+  // What the appliance draws now (W / kW), and its child lock (a setting: it stays among the option switches too).
+  watts: { domain: 'sensor', keys: ['power', 'power_consumption', 'current_power'], test: (s) => s.attributes.device_class === 'power' },
+  child_lock: { domain: 'switch', keys: ['child_lock', 'switch_child_lock'] },
 };
 
 // The other integrations, role by role. They name things differently and some have no translation key at
@@ -2873,6 +3074,23 @@ var HC_PLATFORM_ROLES = {
     boost: { domain: 'switch', keys: ['switch_super_refrigerator', 'switch_super_freezer'] },
     light: { domain: 'light', keys: ['light_cooking_lighting', 'light_internal'], test: () => true },
   },
+  // LocalThings (mbillow/localthings): Samsung appliances over the local network. Its machine state is already
+  // idle / active / pause; the step is the oven's cavity state or the laundry progress. A washer or dryer cycle select
+  // is keyed by its course table (washer_cycle_table_02…).
+  localthings: {
+    operation_state: { domain: 'sensor', keys: ['machine_state'] },
+    phase: { domain: 'sensor', keys: ['oven_state', 'progress'] },
+    progress: { domain: 'sensor', keys: ['progress_percentage'] },
+    finish_time: { domain: 'sensor', keys: ['finish_time'], test: hcIsTimestamp },
+    remaining: { domain: 'sensor', keys: ['completion_minutes'] },
+    selected_program: { domain: 'select', keys: ['cycle', 'oven_mode'], tk: /^(washer|dryer)_cycle_table_/ },
+    start: { domain: 'button', keys: ['start', 'start_cooking'] },
+    pause: { domain: 'button', keys: ['pause'] },
+    stop: { domain: 'button', keys: ['stop'] },
+    power: { domain: 'switch', keys: ['power_switch'] },
+    remote_start: { domain: 'binary_sensor', keys: ['remote_control'] },
+    door: { domain: 'binary_sensor', keys: ['door_open', 'door'], test: hcIsDoor },
+  },
 };
 var HC_PLATFORMS = Object.keys(HC_PLATFORM_ROLES);
 // Switches of Home Connect Local that are appliance settings, not program options.
@@ -2930,6 +3148,12 @@ function hcNormState(platform, raw, phase) {
     if (raw === 'pause' || raw === 'paused') return 'pause';
     return phase === 'finish' || phase === 'finished' ? 'finished' : 'ready';
   }
+  if (platform === 'localthings') {
+    // The cavity state and the laundry progress hold `finish` a few minutes after the machine goes back to idle.
+    if (raw === 'active') return phase === 'delaywash' ? 'delayedstart' : 'run';
+    if (raw === 'pause') return 'pause';
+    return phase === 'finish' ? 'finished' : 'ready';
+  }
   var map = HC_STATE_MAPS[platform];
   if (!map) return raw;
   return map[raw] || HC_STATE_DEFAULT[platform] || raw;
@@ -2985,9 +3209,13 @@ function hcDeviceRoles(hass, deviceId) {
   var roles = {};
   Object.keys(table).forEach((role) => { roles[role] = hcFindRole(hass, list, table[role]); });
   // Home Connect lists every switch and select as a program option; elsewhere diagnostics are left out (and, for
-  // Home Connect Local, the appliance settings too).
+  // Home Connect Local, the appliance settings too). Home Connect Local's power state select repeats its power switch
+  // (the On/Off button) when the appliance has only two power states; with more, there is no switch and the select
+  // stays, as the only way to set them.
+  var powerDup = (e) => e.translation_key === 'select_power_state' && Boolean(roles.power);
   var opts = platform === 'home_connect' ? list : list.filter((e) => e.entity_category !== 'diagnostic' &&
-    (platform !== 'homeconnect_ws' || (e.entity_category !== 'config' && HC_NOT_OPTIONS.indexOf(e.translation_key) < 0)));
+    (platform !== 'homeconnect_ws' || (e.entity_category !== 'config' && HC_NOT_OPTIONS.indexOf(e.translation_key) < 0 && !powerDup(e))) &&
+    (platform !== 'localthings' || e.entity_category !== 'config'));
   var ids = opts.map((e) => e.entity_id);
   cached = {
     count: list.length,
@@ -2996,6 +3224,7 @@ function hcDeviceRoles(hass, deviceId) {
     switches: ids.filter((id) => id.indexOf('switch.') === 0),
     selects: ids.filter((id) => id.indexOf('select.') === 0),
     temps: hcTempIds(hass, list),
+    zones: hcZoneIds(hass, list),
   };
   byDevice.set(deviceId, cached);
   return cached;
@@ -3004,6 +3233,7 @@ function hcDeviceRoles(hass, deviceId) {
 function hcFindRole(hass, list, m) {
   var inDomain = list.filter((e) => e.entity_id.split('.')[0] === m.domain);
   var hit = inDomain.find((e) => m.keys.indexOf(e.translation_key) >= 0);
+  if (!hit && m.tk) hit = inDomain.find((e) => m.tk.test(e.translation_key || ''));
   if (!hit && m.id) hit = inDomain.find((e) => m.id.test(e.entity_id));
   if (!hit && m.test) hit = inDomain.find((e) => m.test(hass.states[e.entity_id]));
   return hit ? hit.entity_id : undefined;
@@ -3017,6 +3247,36 @@ function hcTempIds(hass, list) {
   return pick('climate', (s) => s.attributes.current_temperature != null)
     .concat(pick('sensor', (s) => s.attributes.device_class === 'temperature' || unit(s)))
     .concat(pick('number', unit)).slice(0, 3);
+}
+
+// A hob's cooking zones: one per power level (LG ThinQ's per-location power level, Miele's plates), else one per
+// per-location state; each zone's state and timer joined to it by the longest shared entity_id start (the location's
+// slug: `number.hob_left_front_power_level` with `sensor.hob_left_front_remaining_time`). At most 8 zones.
+var HC_ZONE_LEVEL = /^(power_level|plate)(_for_location)?$/;
+function hcZoneIds(hass, list) {
+  var key = (e) => e.translation_key || '';
+  var isTimer = (s) => ['timestamp', 'duration'].indexOf(s.attributes.device_class) >= 0 || HC_MINUTES[s.attributes.unit_of_measurement] != null;
+  var levels = list.filter((e) => /^(sensor|number)\./.test(e.entity_id) && (HC_ZONE_LEVEL.test(key(e)) ||
+    (!e.translation_key && /_(power_level|plate_\d+)$/.test(e.entity_id))));
+  var loc = list.filter((e) => e.entity_id.indexOf('sensor.') === 0 && /_for_location$/.test(key(e)) && !HC_ZONE_LEVEL.test(key(e)));
+  var states = loc.filter((e) => !isTimer(hass.states[e.entity_id]));
+  var timers = loc.filter((e) => isTimer(hass.states[e.entity_id]));
+  var zones = (levels.length ? levels : states).slice(0, 8).map((e) => ({ level: levels.length ? e.entity_id : undefined,
+    state: levels.length ? undefined : e.entity_id, timer: undefined, ids: [e.entity_id] }));
+  var shared = (a, b) => { var n = 0; while (n < a.length && a[n] === b[n]) n++; return n; };
+  var obj = (id) => id.split('.')[1];
+  // Joined only to the zone it shares strictly the most with: a tie (no location in the id) joins nothing.
+  var join = (e, role) => {
+    var best = -1, at = -1, tie = false;
+    zones.forEach((z, i) => {
+      var n = shared(obj(e.entity_id), obj(z.ids[0]));
+      if (n > best) { best = n; at = i; tie = false; } else if (n === best) tie = true;
+    });
+    if (at >= 0 && !tie && !zones[at][role]) { zones[at][role] = e.entity_id; zones[at].ids.push(e.entity_id); }
+  };
+  if (levels.length) for (var e of states) join(e, 'state');
+  for (var t of timers) join(t, 'timer');
+  return zones;
 }
 
 // Appliance type, from the device itself where the integration says it (Miele's model, LG's device type), else
@@ -3035,6 +3295,11 @@ var HC_WS_TYPES = {
   Dishwasher: 'dishwasher', Washer: 'washer', Dryer: 'dryer', WasherDryer: 'washer_dryer', Oven: 'oven', Microwave: 'microwave',
   CoffeeMaker: 'coffee_maker', Hood: 'hood', Hob: 'hob', Cooktop: 'hob', Refrigerator: 'fridge', FridgeFreezer: 'fridge',
   Freezer: 'freezer', WineCooler: 'wine_cooler',
+};
+// LocalThings names the device after its type: "Samsung Oven (NV7B4445VAK)".
+var HC_LOCALTHINGS_TYPES = {
+  Washer: 'washer', Dryer: 'dryer', Dishwasher: 'dishwasher', Oven: 'oven', Range: 'oven', Microwave: 'microwave',
+  Cooktop: 'hob', 'Range Hood': 'hood', Refrigerator: 'fridge', 'Air Dresser': 'styler',
 };
 // [kind, translation keys any one of which gives it away], in order.
 var HC_KEY_KINDS = [
@@ -3083,6 +3348,10 @@ function hcDetectKind(hass, deviceId, list) {
   }
   // Home Connect Local names the device model after the appliance type (Dishwasher, WasherDryer…).
   if (platform === 'homeconnect_ws' && HC_WS_TYPES[dev.model]) return HC_WS_TYPES[dev.model];
+  if (platform === 'localthings') {
+    var lt = String(dev.name || '').match(/^Samsung (.+?)(?: \(.*\))?$/);
+    if (lt && HC_LOCALTHINGS_TYPES[lt[1]]) return HC_LOCALTHINGS_TYPES[lt[1]];
+  }
   // Home Connect programs.
   var progs = list.filter((e) => e.entity_id.indexOf('select.') === 0)
     .map((e) => ((hass.states[e.entity_id]?.attributes.options) || []).join(' ')).join(' ');
@@ -3167,8 +3436,6 @@ function hcHumanize(value) {
   return v.charAt(0).toUpperCase() + v.slice(1);
 }
 
-// Header icon: the tinted round icon of the project page on the showcase site, the appliance's own icon in it.
-var HC_ACCENT = '#039be5';
 
 // Appliance illustrations (front view). The state color lights the display; when running the
 // washer drum turns and the dishwasher projects its floor light, like the real appliances.
@@ -3176,10 +3443,15 @@ var HC_ACCENT = '#039be5';
 var HC_PX = {
   base: 158, // padding, header and illustration
   miniBase: 142, // padding, header and the illustration row of a mini card
+  bannerBase: 150, // illustrated header, the state row under it (one line and the power button) and the padding
+  bannerMini: 154, // illustrated header, the mini card's state row and the padding
+  bannerTime: 20, // the finish time under the state, with the illustrated header
+  bannerChips: 24, // the chips under the state, with the illustrated header
   program: 58,
   section: 26,
   selectRow: 56,
   toggleRow: 28,
+  zoneRow: 62, // a row of hob zone tiles
   reload: 30,
   error: 26,
   controls: 44,
@@ -3495,6 +3767,124 @@ var hcPicture = (art, state, illustrated, lit) => {
   return `<div class="picture st-${hcEsc(state)}${state === 'run' || lit ? ' running' : ''}">${art}${badge}</div>`;
 };
 
+// ── Illustrated header ("banner") ────────────────────────────────────────────
+// The appliance in its room: a laundry room for washers, dryers and the Styler, a kitchen for the others. The room is
+// a 200 × 80 picture drawn at the banner's right, over a 10 px tiled floor strip edge to edge; the appliance's own
+// illustration (HC_ART, with its animations) stands on the strip at the right.
+var hcWin = (x, y, w, h, n) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="1.5" fill="${n ? '#1b2f52' : '#bfe0f7'}" stroke="${n ? '#4a5568' : '#fff'}" stroke-width="1.6"/>` +
+  (n ? `<circle cx="${x + w * 0.7}" cy="${y + h * 0.3}" r="2.4" fill="#f3eed2"/>` : `<circle cx="${x + w * 0.7}" cy="${y + h * 0.35}" r="3" fill="#ffd65a"/>`) +
+  `<line x1="${x + w / 2}" y1="${y}" x2="${x + w / 2}" y2="${y + h}" stroke="${n ? '#4a5568' : '#fff'}" stroke-width="1.2"/>`;
+var hcLines = (n, f) => Array.from({ length: n }, (_, i) => f(i)).join('');
+var HC_SCENES = {
+  kitchen: (n) => `<rect width="200" height="80" fill="${n ? '#283040' : '#eef3f4'}"/><g stroke="${n ? '#343d4f' : '#dfe7ea'}" stroke-width=".6">` +
+    hcLines(20, (i) => `<line x1="${i * 10}" y1="30" x2="${i * 10}" y2="80"/>`) +
+    [40, 50, 60, 70].map((y) => `<line x1="0" y1="${y}" x2="200" y2="${y}"/>`).join('') +
+    `</g><rect x="0" y="0" width="200" height="28" fill="${n ? '#323b4e' : '#ffffff'}"/><g fill="${n ? '#3d475c' : '#e8eef1'}" stroke="${n ? '#4a5568' : '#cfd9de'}" stroke-width=".6">` +
+    [4, 48, 92].map((x) => `<rect x="${x}" y="2" width="40" height="24" rx="1.5"/>`).join('') + `</g>${hcWin(150, 6, 34, 22, n)}`,
+  laundry: (n) => `<rect width="200" height="80" fill="${n ? '#25313a' : '#e9f3f7'}"/><g stroke="${n ? '#2f3d48' : '#d4e6ee'}" stroke-width=".6">` +
+    hcLines(20, (i) => `<line x1="${i * 10}" y1="0" x2="${i * 10}" y2="80"/>`) + hcLines(8, (i) => `<line x1="0" y1="${i * 10}" x2="200" y2="${i * 10}"/>`) +
+    `</g><rect x="90" y="20" width="60" height="2.4" fill="${n ? '#4a5568' : '#b9c4cc'}"/><rect x="96" y="8" width="8" height="12" rx="2" fill="#2f80ed"/>` +
+    '<rect x="108" y="10" width="7" height="10" rx="2" fill="#d4537e"/><rect x="119" y="9" width="8" height="11" rx="2" fill="#1d9e75"/>' +
+    `<g transform="translate(100 76)"><path d="M-12 0 L-14 -16 H14 L12 0Z" fill="${n ? '#6b5a40' : '#d9b778'}"/><g stroke="${n ? '#5a4a34' : '#c09a5a'}" stroke-width=".8">` +
+    [-10, -5, 0, 5, 10].map((x) => `<line x1="${x}" y1="-15" x2="${x * 0.9}" y2="-1"/>`).join('') +
+    '</g><path d="M-10 -16 q4 -6 10 -2 q6 -5 10 2" fill="#86b9de"/></g>' +
+    `<path d="M30 6 V0 M30 6 h40" stroke="${n ? '#4a5568' : '#9aa3ae'}" stroke-width=".8"/>` +
+    '<g class="hc-swing" style="transform-origin:44px 6px"><path d="M40 6 l-4 12 h10 l-2 -12" fill="#f5b400"/></g>' +
+    '<g class="hc-swing r" style="transform-origin:60px 6px"><path d="M56 6 l-3 10 h8 l-1 -10" fill="#e5484d"/></g>',
+};
+var HC_LAUNDRY = ['washer', 'dryer', 'washer_dryer', 'styler'];
+// Appliances that stand on a counter or hang on the wall rather than on the floor: lowered (in px of the 72 px
+// picture) so that they rest on the strip.
+var HC_BANNER_DROP = { microwave: 15 };
+
+// The header icon's colour follows the state: at work in the state's colour, waiting or warning in amber, a fault in
+// red, done in green, idle or off in neutral grey.
+var HC_ICON_COLORS = {
+  run: HC_STATE_COLORS.run,
+  delayedstart: HC_STATE_COLORS.delayedstart,
+  finished: HC_STATE_COLORS.finished,
+  pause: HC_STATE_COLORS.pause,
+  actionrequired: HC_STATE_COLORS.actionrequired,
+  error: HC_STATE_COLORS.error,
+  aborting: HC_STATE_COLORS.aborting,
+};
+// Shadow DOM already keeps ids apart between cards; each card still numbers its own, so a picture copied out of it
+// (or two banners in one root) never share one.
+var hcUid = 0;
+
+// Night picture: forced by illustration_theme, else Home Assistant's dark theme alone (a light theme keeps the day picture after sunset).
+function hcIsNight(hass, config) {
+  var theme = config?.illustration_theme;
+  if (theme === 'night') return true;
+  if (theme === 'day') return false;
+  return !!hass?.themes?.darkMode;
+}
+
+// The banner, 90 px high on the full and the mini card, edge to edge at the top of the card (over its 12 px padding).
+// The room fills the right (at most 250 px, faded in on its left), the text sits on the wall colour at the left, and
+// the appliance (72 px high) stands on the floor strip. Narrow cards keep the appliance and drop the room.
+var HC_BANNER_STYLE = '<style>' +
+  '.banner { position: relative; flex: none; height: 90px; margin: -12px -12px 0; overflow: hidden;' +
+    ' border-radius: var(--ha-card-border-radius, 12px) var(--ha-card-border-radius, 12px) 0 0;' +
+    ' --sky-text: #0d2a45; --sky-muted: #3b5b78; color: var(--sky-text); background: #eef3f4; }' +
+  '.banner.sc-laundry { background: #e9f3f7; } .banner.night { --sky-text: #fff; --sky-muted: rgba(255,255,255,.78); background: #283040; }' +
+  '.banner.night.sc-laundry { background: #25313a; }' +
+  '.banner .scene { position: absolute; right: 0; bottom: 10px; height: 80px; width: min(250px, 62%);' +
+    ' -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14%); mask-image: linear-gradient(90deg, transparent 0, #000 14%); }' +
+  // The floor: a 10 px strip of tiles, edge to edge.
+  '.banner .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; box-shadow: inset 0 2px 0 #b8c0c6;' +
+    ' background: repeating-linear-gradient(90deg, #d9dfe3 0 18px, #c6cdd2 18px 19px); }' +
+  '.banner.night .ground { background: repeating-linear-gradient(90deg, #3a4250 0 18px, #2e3542 18px 19px); box-shadow: inset 0 2px 0 #4a5466; }' +
+  // The text runs up to the appliance: the room behind it is faded out on its left.
+  '.banner .htext { position: absolute; z-index: 1; left: 0; top: 0; bottom: 10px; right: 74px; box-sizing: border-box;' +
+    ' display: flex; align-items: center; gap: 10px; padding: 8px 8px 8px 14px; min-width: 0; }' +
+  // Title row: the title, then the status pill 8 px after it (see .trow and _fitPill); the subtitle under them.
+  '.banner .htext .titles { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; justify-content: center; }' +
+  '.banner .st { --c: var(--hc-icon); padding: 1px 8px; line-height: 16px;' +
+    ' background: color-mix(in srgb, var(--c) 18%, rgba(255,255,255,.78)); color: color-mix(in srgb, var(--c) 45%, #0d2a45); }' +
+  '.banner.night .st { background: color-mix(in srgb, var(--c) 30%, rgba(8,18,38,.55)); color: color-mix(in srgb, var(--c) 35%, #ffffff); }' +
+  '.banner .st .dot { width: 7px; height: 7px; background: var(--c); }' +
+  '.banner .titles.pill-dot .st { padding: 4px; }' +
+  '@container hc-card (max-width: 200px) { .banner .st { padding: 4px; } }' +
+  '.banner .htext .name { color: var(--sky-text); }' +
+  '.banner .htext .sub { font-size: 13px; color: var(--sky-muted); }' +
+  // The round icon on the wall, in the state's colour; the brand on a white tile at its bottom right.
+  '.banner .htext .logo { display: grid; width: 40px; height: 40px; color: var(--hc-icon); background: rgba(255,255,255,.62);' +
+    ' box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--hc-icon) 22%, transparent); }' +
+  '.banner.night .htext .logo { color: color-mix(in srgb, var(--hc-icon) 72%, #fff); background: rgba(255,255,255,.12);' +
+    ' box-shadow: inset 0 0 0 1px rgba(255,255,255,.14); }' +
+  '.banner .htext .logo ha-icon { --mdc-icon-size: 24px; }' +
+  '.banner .htext .hc-badge { width: 18px; height: 18px; right: -4px; bottom: -4px; border-radius: 5px;' +
+    ' box-shadow: 0 0 0 1px rgba(13,42,69,.16), 0 1px 3px rgba(13,42,69,.18); }' +
+  '.banner .htext .hc-badge.logo-b { padding: 2px; background: #fff; }' +
+  '.banner .bart { position: absolute; right: 6px; bottom: calc(10px - var(--hc-drop, 0px)); height: 72px; }' +
+  // The detail button keeps the top right corner: the appliance steps aside so that nothing covers it.
+  '.banner.has-zoom .bart { right: 36px; }' +
+  // Explicit widths (72 × 80 / 94): WebKit sizes an absolute box from its SVG's default 300 px width otherwise, and
+  // the appliance then lands on the title at the left of a 300 px wide box.
+  '.banner .bart { width: 61.3px; } .banner .bart .picture { width: 100%; height: 72px; }' +
+  '.banner .bart .picture svg:first-child { filter: drop-shadow(0 2px 3px rgba(0,0,0,.2)); }' +
+  // The expand / collapse button: 24 px, round, frosted, in the banner's top right corner.
+  '.banner .zoom { position: absolute; z-index: 2; top: 5px; right: 5px; margin: 0; color: #33506b; background: rgba(255,255,255,.55);' +
+    ' box-shadow: inset 0 0 0 1px rgba(255,255,255,.7); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }' +
+  '.banner .zoom:hover { color: #33506b; background: rgba(255,255,255,.75); }' +
+  '.banner.night .zoom { color: #fff; background: rgba(255,255,255,.12); box-shadow: inset 0 0 0 1px rgba(255,255,255,.2); }' +
+  '.banner.night .zoom:hover { color: #fff; background: rgba(255,255,255,.22); }' +
+  '.hc-swing { transform-box: view-box; animation: hc-flag 2s ease-in-out infinite; } .hc-swing.r { animation-direction: reverse; }' +
+  '@keyframes hc-flag { 0%, 100% { transform: rotate(-14deg); } 50% { transform: rotate(14deg); } }' +
+  '.banner.has-zoom .htext { right: 102px; }' +
+  '@container (max-width: 360px) { .banner .scene { display: none; } }' +
+  // A narrow card: a smaller appliance leaves the title and the whole pill their room.
+  '@container hc-card (max-width: 260px) { .banner .bart, .banner .bart .picture { height: 56px; } .banner .bart { right: 4px; width: 47.7px; }' +
+    ' .banner.has-zoom .bart { right: 34px; } .banner .htext { right: 58px; } .banner.has-zoom .htext { right: 86px; } }' +
+  '@media (prefers-reduced-motion: reduce) { .hc-swing { animation: none; } }' +
+'</style>';
+
+// The banner's ground strip (the floor), that the title block keeps clear of, and the gap between the title and the
+// status pill on its row (.trow).
+const PILL_GROUND_PX = 10;
+const PILL_GAP_PX = 8;
+
 // ── Base card ────────────────────────────────────────────────────────────────
 class HomeConnectBaseCard extends HTMLElement {
   static get kind() { return 'dishwasher'; }
@@ -3574,6 +3964,7 @@ class HomeConnectBaseCard extends HTMLElement {
       });
       this._io.observe(this);
     }
+    this._watchPill();
     // Back on screen: redraw now (state reset on disconnect) instead of waiting for the next hass update.
     this._update();
   }
@@ -3583,6 +3974,7 @@ class HomeConnectBaseCard extends HTMLElement {
     document.removeEventListener('visibilitychange', this._onVisibility);
     this._io?.disconnect();
     this._io = null;
+    this._unwatchPill();
     clearTimeout(this._confirmTimer);
     clearTimeout(this._errorTimer);
     // The cancelled timers would have reset these: an armed Stop or an old error must not survive leaving the view.
@@ -3604,9 +3996,15 @@ class HomeConnectBaseCard extends HTMLElement {
       return;
     }
     this.shadowRoot.querySelectorAll('[data-tick]').forEach((el) => {
+      if (el.dataset.tick === 'zone') {
+        var left = this._leftText(new Date(el.dataset.finish));
+        if (el.lastChild && el.lastChild.nodeValue !== left) el.lastChild.nodeValue = left;
+        return;
+      }
+      var fmt = { left: this._leftText, ends: this._endsAt, time: this._timeLine }[el.dataset.tick] || this._timeLine;
       var txt = el.dataset.tick === 'waiting'
         ? (i.waiting && this._t('door_waiting').replace('{t}', this._ago(i.waiting)))
-        : (i.finish && this._timeLine(i.finish));
+        : (i.finish && fmt.call(this, i.finish));
       if (txt && el.textContent !== txt) el.textContent = txt;
     });
   }
@@ -3640,11 +4038,12 @@ class HomeConnectBaseCard extends HTMLElement {
       ent[role] = over[role] || found.roles[role];
     });
     // Super modes and the hood's fan level stay settings the card offers.
-    var used = HC_ALL_ROLES.filter((role) => role !== 'boost' && role !== 'venting').map((role) => ent[role]);
+    var used = HC_ALL_ROLES.filter((role) => role !== 'boost' && role !== 'venting' && role !== 'child_lock').map((role) => ent[role]);
     // Everything else the integration exposes as a switch or select is a program option.
     ent.option_switches = found.switches.filter((id) => used.indexOf(id) < 0);
     ent.option_selects = found.selects.filter((id) => used.indexOf(id) < 0);
     ent.temps = found.temps || [];
+    ent.zones = found.zones || [];
     return { deviceId: deviceId, ent: ent, platform: found.platform };
   }
 
@@ -3676,7 +4075,8 @@ class HomeConnectBaseCard extends HTMLElement {
   _update() {
     if (!this._config || !this._hass || !this.shadowRoot) return;
     var r = this._resolve();
-    var ids = HC_ALL_ROLES.map((role) => r.ent[role]).concat(r.ent.option_switches, r.ent.option_selects, r.ent.temps, this._config.toggle_entity);
+    var ids = HC_ALL_ROLES.map((role) => r.ent[role]).concat(r.ent.option_switches, r.ent.option_selects, r.ent.temps, this._config.toggle_entity,
+      ...r.ent.zones.map((z) => z.ids));
     var hass = this._hass;
     var states = JSON.stringify(ids.map((id) => {
       var s = id && hass.states[id];
@@ -3692,7 +4092,7 @@ class HomeConnectBaseCard extends HTMLElement {
     var dev = r.deviceId && hass.devices ? hass.devices[r.deviceId] : null;
     var sig = JSON.stringify([this._lang(), r.deviceId, dev ? [dev.name_by_user, dev.name] : null,
       hass.locale?.time_format, this._zoomed, this._confirming, this._reloading, this._starting,
-      this._error ? [this._error.key, this._error.detail] : null, hcNoPowerOff.has(this._powerKey(r)), Array.from(this._pending), states]);
+      this._error ? [this._error.key, this._error.detail] : null, this._config.illustration !== false && hcIsNight(hass, this._config), hcNoPowerOff.has(this._powerKey(r)), Array.from(this._pending), states]);
     if (sig === this._sig) return;
     // Don't rebuild while a dropdown is open in the card.
     var active = this.shadowRoot.activeElement;
@@ -3703,7 +4103,55 @@ class HomeConnectBaseCard extends HTMLElement {
     // must stay focused for a second Enter to confirm it).
     var focus = hcFocusKey(active);
     this._render(r);
+    this._fitPill();
     if (focus) this._refocus(focus);
+  }
+
+  // The status pill goes on the title row, right after the title, only when the whole title and the pill's whole
+  // label fit there; otherwise it takes its own line under the subtitle (the subtitle then on one line). In the
+  // banner, when title, subtitle and pill still do not fit above the ground strip (or the pill's label runs past the
+  // text, over the picture), the pill keeps its dot only.
+  // Measured after each render and on every new width (or once the web font is loaded), never by a fixed width.
+  _fitPill() {
+    for (const t of this.shadowRoot?.querySelectorAll?.(".titles") || []) {
+      const row = t.querySelector?.(".trow");
+      const name = row?.querySelector(".name");
+      const chips = row ? [...row.children].filter((n) => n.classList.contains("st")) : [];
+      if (!name?.getBoundingClientRect || !chips.length) continue;
+      t.classList.remove("pill-below", "pill-dot");
+      // The title's whole width (scrollWidth is rounded: 1 px more, so that a title that fits is never cut).
+      const need = chips.reduce((w, c) => w + PILL_GAP_PX + c.getBoundingClientRect().width, name.scrollWidth + 1);
+      if (need <= row.getBoundingClientRect().width + 0.5) continue;
+      t.classList.add("pill-below");
+      const banner = t.closest(".banner");
+      if (!banner) continue;
+      const box = banner.getBoundingClientRect();
+      const ground = box.bottom - PILL_GROUND_PX;
+      const right = t.getBoundingClientRect().right;
+      const out = [name, ...t.querySelectorAll(".sub"), ...chips].some((n) => {
+        const r = n.getBoundingClientRect();
+        return r.height > 0 && (r.top < box.top - 0.5 || r.bottom > ground + 0.5 || r.right > right + 0.5);
+      });
+      if (out) t.classList.add("pill-dot");
+    }
+  }
+
+  _watchPill() {
+    if (typeof ResizeObserver !== "function") return;
+    this._pillResize ??= new ResizeObserver((entries) => {
+      const w = Math.round(entries.at(-1).contentRect.width);
+      if (w === this._pillWidth) return;
+      this._pillWidth = w;
+      cancelAnimationFrame(this._pillFrame);
+      this._pillFrame = requestAnimationFrame(() => this._fitPill());
+    });
+    this._pillResize.observe(this);
+    document.fonts?.ready?.then(() => this._fitPill());
+  }
+
+  _unwatchPill() {
+    this._pillResize?.disconnect();
+    this._pillWidth = null;
   }
 
   _refocus(focus) {
@@ -3723,15 +4171,15 @@ class HomeConnectBaseCard extends HTMLElement {
   // "Ends at 10:32 · 1 hr 5 min left", shared between the full and mini layouts. The 12 h / 24 h
   // preference follows the Home Assistant locale; the card language picks the words and the unit names.
   _timeLine(finish) {
-    var mins = Math.max(0, Math.round((finish.getTime() - Date.now()) / 60000));
-    var h = Math.floor(mins / 60), m = mins % 60;
-    var unit = (u, n) => new Intl.NumberFormat(this._locale(), { style: 'unit', unit: u, unitDisplay: 'short' }).format(n);
-    var left = h && m ? `${unit('hour', h)} ${unit('minute', m)}` : (h ? unit('hour', h) : unit('minute', m));
+    return `${this._endsAt(finish)} · ${this._leftText(finish)}`;
+  }
+
+  // "Ends at 10:32": the full card's line under the bar, the time left being beside the percentage.
+  _endsAt(finish) {
     var opts = { hour: '2-digit', minute: '2-digit' };
     var tf = this._hass.locale?.time_format;
     if (tf === '12' || tf === '24') opts.hour12 = tf === '12';
-    var at = finish.toLocaleTimeString(this._locale(), opts);
-    return `${this._t('ends_at')} ${at} · ${this._t('remaining').replace('{t}', left)}`;
+    return `${this._t('ends_at')} ${finish.toLocaleTimeString(this._locale(), opts)}`;
   }
 
   // "25 minutes ago", "3 hours ago", "yesterday", in the card's language.
@@ -3870,8 +4318,8 @@ class HomeConnectBaseCard extends HTMLElement {
       return ent.active_program && this._avail(ent.selected_program)
         ? { domain: 'select', service: 'select_option', data: { entity_id: ent.active_program, option: this._val(ent.selected_program) } } : null;
     }
-    // Miele resumes with its Start button.
-    var btnId = ent[action] || (action === 'resume' && r.platform === 'miele' ? ent.start : undefined);
+    // Miele and LocalThings resume with their Start button.
+    var btnId = ent[action] || (action === 'resume' && (r.platform === 'miele' || r.platform === 'localthings') ? ent.start : undefined);
     // A button entity stays `unknown` until first pressed: only `unavailable` (or no state at all) rules it out.
     var v = this._val(btnId);
     if (btnId && v !== undefined && v !== 'unavailable') return { domain: 'button', service: 'press', data: { entity_id: btnId } };
@@ -3913,8 +4361,12 @@ class HomeConnectBaseCard extends HTMLElement {
       : (!powerOn && (!opState || opState === 'inactive' || opState === 'off') ? 'off' : (opState || (profile.simple ? 'ready' : 'off')));
     // Appliances without a program are at work while a super mode, the hood's fan or a hob zone is on.
     if (profile.simple && online && state === 'ready' && this._busy(ent)) state = 'run';
+    // A hob whose state sensor is one of its zones (LG ThinQ reports a state per location) cooks while any zone is on.
+    if (profile.simple && online && state === 'off' && ent.zones.some((z) => this._zoneOn(z))) state = 'run';
     var running = !profile.simple && (state === 'run' || state === 'pause' || state === 'delayedstart' || state === 'actionrequired');
     var color = HC_STATE_COLORS[state] || 'var(--disabled-text-color, #9e9e9e)';
+    this._iconColor = HC_ICON_COLORS[state] || '';
+    this._illustrated = c.illustration !== false;
     // A wine cabinet's inside light glows in the illustration while it is on.
     this._lit = kind === 'wine_cooler' && online && this._val(ent.light) === 'on';
 
@@ -3929,6 +4381,8 @@ class HomeConnectBaseCard extends HTMLElement {
     var progress = num(ent.progress);
     var finish = this._avail(ent.finish_time) ? new Date(this._val(ent.finish_time)) : null;
     if (finish && Number.isNaN(finish.getTime())) finish = null;
+    // A LocalThings oven cooking without a timer still reports a percentage (stuck at 0 or 1): no finish, no progress.
+    if (r.platform === 'localthings' && !finish && hcMinutes(this._st(ent.remaining)) == null) progress = null;
     // Times left and elapsed in minutes, converted from the unit the sensor is shown in.
     var mins = (id) => (this._avail(id) ? hcMinutes(this._st(id)) : null);
     var left = mins(ent.remaining), elapsed = mins(ent.elapsed), total = num(ent.total);
@@ -3944,6 +4398,8 @@ class HomeConnectBaseCard extends HTMLElement {
     if (progress != null) progress = Math.max(0, Math.min(100, progress));
     var timeLine = running && finish ? this._timeLine(finish) : '';
     this._ticking = !!(running && finish);
+    // A hob's zones (after the line above: a zone timer keeps the tick running too).
+    var zonesHtml = this._compact() ? '' : this._zonesHtml(ent, deviceName, online);
 
     // While a program runs, integrations that report its step say more than "Running" (spinning, drying…).
     var statusText = this._t(`st_${state}`);
@@ -4080,45 +4536,144 @@ class HomeConnectBaseCard extends HTMLElement {
     var noPct = this._noPct = running && progress == null && r.platform !== 'home_connect';
     if ((running && !noPct) || state === 'finished') {
       var pct = state === 'finished' ? 100 : (progress == null ? 0 : progress);
-      big = '<div class="big"><span class="pct">' + Math.round(pct) + '<small> %</small></span><span class="state">' + hcEsc(statusText) + '</span></div>' +
+      // The state is in the header pill: beside the percentage, the time left instead (the finish time under the bar).
+      // Without a finish time, the state stays there only for a card so narrow that the pill keeps just its dot.
+      var label = `<span class="state pill-echo">${hcEsc(statusText)}</span>` +
+        (running && finish ? `<span class="state" data-tick="left">${hcEsc(this._leftText(finish))}</span>` : '');
+      big = '<div class="big"><span class="pct">' + Math.round(pct) + '<small> %</small></span>' + label + '</div>' +
         '<div class="bar"><div class="fill" style="width:' + pct + '%"></div></div>' +
-        (timeLine ? `<div class="time" data-tick="time">${hcEsc(timeLine)}</div>` : '');
+        (running && finish ? `<div class="time" data-tick="ends">${hcEsc(this._endsAt(finish))}</div>` : '');
     } else {
-      big = `<div class="big"><span class="state-big">${hcEsc(statusText)}</span></div>${timeLine ? `<div class="time" data-tick="time">${hcEsc(timeLine)}</div>` : ''}`;
+      // Idle, ready, delayed: the state is the pill's; written big again only when the pill keeps just its dot.
+      big = `<div class="big pill-echo"><span class="state-big">${hcEsc(statusText)}</span></div>${timeLine ? `<div class="time" data-tick="time">${hcEsc(timeLine)}</div>` : ''}`;
     }
     var art = c.icon
       ? `<div class="badge"><ha-icon icon="${hcEsc(icon)}"></ha-icon></div>`
       : ((door === 'open' && HC_ART_OPEN[kind]) || HC_ART[kind] || HC_ART.dishwasher);
-    var heroHtml = '<div class="hero">' + hcPicture(art, state, !c.icon, this._lit) +
-      '<div class="info">' + big + (chips.length ? `<div class="chips">${chips.join('')}</div>` : '') + '</div></div>';
+    var infoHtml = '<div class="info">' + big + (chips.length ? `<div class="chips">${chips.join('')}</div>` : '') + '</div>';
+    // Illustrated header: the appliance stands in the banner, the state and its chips fill the row under it.
+    var heroHtml = this._illustrated ? `<div class="hero">${infoHtml}${powerBtn}</div>`
+      : `<div class="hero">${hcPicture(art, state, !c.icon, this._lit)}${infoHtml}</div>`;
 
     var logo = `<div class="logo" aria-hidden="true"><ha-icon icon="${hcEsc(profile.icon)}"></ha-icon>${this._badge()}</div>`;
     var sub = progLabel || this._t(kind);
+    // The banner always shows the appliance (a custom `icon` only replaces the classic layout's illustration).
+    var illus = (door === 'open' && HC_ART_OPEN[kind]) || HC_ART[kind] || HC_ART.dishwasher;
+    // The state is in the pill next to the title: the subtitle names the program (else the appliance).
+    var banner = () => this._banner({ name, sub, status: statusText, icon: profile.icon, art: illus, state, kind });
 
     if (this._compact()) {
       this._rows = hcRows(HC_PX.miniBase + (this._error ? HC_PX.error : 0));
       this.shadowRoot.innerHTML = this._miniHtml({ c, ent, name, color, state, statusText, running, online, powerOn, progress,
-        finish, progLabel, chips: chips.filter((x) => x.indexOf('chip warn') >= 0 || x.indexOf('chip extra') >= 0 || !online), art, logo, powerBtn, toggleBtn });
+        finish, progLabel, chips: chips.filter((x) => x.indexOf('chip warn') >= 0 || x.indexOf('chip extra') >= 0 || !online), art, logo, powerBtn, toggleBtn,
+        banner: this._illustrated ? banner() : '' });
       return;
     }
 
-    this._rows = hcRows(HC_PX.base + (programHtml ? HC_PX.program : 0) + optPx + (errorHtml ? HC_PX.error : 0) +
+    // With the illustrated header the state row holds no picture: its own lines set its height.
+    var base = this._illustrated ? HC_PX.bannerBase + (timeLine ? HC_PX.bannerTime : 0) + (chips.length ? HC_PX.bannerChips : 0) : HC_PX.base;
+    var nZones = zonesHtml ? ent.zones.length : 0;
+    this._rows = hcRows(base + (nZones ? HC_PX.section + Math.ceil(nZones / 2) * HC_PX.zoneRow : 0) + (programHtml ? HC_PX.program : 0) + optPx + (errorHtml ? HC_PX.error : 0) +
       (controls ? HC_PX.controls : 0) + (controls.indexOf('class="hint"') >= 0 ? HC_PX.hint : 0));
     this.shadowRoot.innerHTML = this._styles(color) + '<ha-card>' +
-      '<div class="header">' + logo +
-        '<div class="titles"><div class="name">' + hcEsc(name) + '</div><div class="sub">' + this._brandLogo() + hcEsc(sub) + '</div></div>' +
+      (this._illustrated ? banner() : '<div class="header">' + logo +
+        '<div class="titles"><div class="trow"><div class="name">' + hcEsc(name) + '</div>' + this._pill(statusText) + '</div>' +
+          '<div class="sub" title="' + hcEsc(sub) + '">' + this._brandLogo() + hcEsc(sub) + '</div></div>' +
         toggleBtn + powerBtn + this._zoomButton() +
-      '</div>' +
-      heroHtml + programHtml + optionsHtml + errorHtml + controls +
+      '</div>') +
+      heroHtml + zonesHtml + programHtml + optionsHtml + errorHtml + controls +
     '</ha-card>';
   }
 
-  // A program-less appliance at work: a super mode on, the hood's fan turning or venting, its light aside.
+  // A program-less appliance at work: a super mode on, the hood's fan turning or venting, a hob zone on, its light aside.
   _busy(ent) {
     if (this._val(ent.boost) === 'on') return true;
+    if ((ent.zones || []).some((z) => this._zoneOn(z))) return true;
     if (this._val(ent.fan) === 'on') return true;
     var v = this._val(ent.venting);
     return !!(v && this._avail(ent.venting) && !/fan_off$|_off$/.test(v));
+  }
+
+  // A zone's power level: a number (LG ThinQ, `max` from the number entity), Miele's `plate_step_<n>` (`plate_step_1_5`
+  // is level 1.5), or a named step (warming, boost); null when the zone only reports a state.
+  _zoneLevel(z) {
+    if (!this._avail(z.level)) return null;
+    var v = String(this._val(z.level));
+    var m = /^(?:plate_step_)?(\d+)(?:[_.](\d+))?$/.exec(v);
+    if (m) return { n: Number(m[2] ? `${m[1]}.${m[2]}` : m[1]), max: Number(this._st(z.level).attributes.max) || null };
+    return { n: null, text: v.indexOf('plate_step_') === 0 ? hcHumanize(v.slice(11)) : this._fmt(z.level) };
+  }
+
+  _zoneOn(z) {
+    var lv = this._zoneLevel(z);
+    if (lv) return lv.n == null ? true : lv.n > 0;
+    var st = this._val(z.state);
+    return !!(st && this._avail(z.state) && ['power_off', 'off', 'initial', 'standby', 'sleep'].indexOf(st) < 0);
+  }
+
+  // A zone's timer as a finish time: a timestamp, or a duration left counted from its last change.
+  _zoneFinish(z) {
+    var s = this._st(z.timer);
+    if (!s || !this._avail(z.timer)) return null;
+    if (s.attributes.device_class === 'timestamp') {
+      var d = new Date(s.state);
+      return Number.isNaN(d.getTime()) || d.getTime() <= Date.now() ? null : d;
+    }
+    var m = hcMinutes(s);
+    if (!m || m <= 0) return null;
+    var from = Date.parse(s.last_changed || '');
+    return new Date((Number.isNaN(from) ? Date.now() : from) + m * 60000);
+  }
+
+  // "12 min left", "1 hr 5 min left".
+  _leftText(finish) {
+    var mins = Math.max(0, Math.round((finish.getTime() - Date.now()) / 60000));
+    var h = Math.floor(mins / 60), m = mins % 60;
+    var unit = (u, n) => new Intl.NumberFormat(this._locale(), { style: 'unit', unit: u, unitDisplay: 'short' }).format(n);
+    return this._t('remaining').replace('{t}', h && m ? `${unit('hour', h)} ${unit('minute', m)}` : (h ? unit('hour', h) : unit('minute', m)));
+  }
+
+  // A zone's label: what its entities' names share once the device name is cut ("Left front" from "Left front power
+  // level" and "Left front remaining time"), as leading or trailing words; a lone entity keeps its whole name.
+  _zoneLabel(z, deviceName) {
+    var names = z.ids.map((id) => this._entityLabel(id, deviceName).split(/\s+/));
+    if (names.length < 2) return names[0].join(' ');
+    var lead = 0, tail = 0, a = names[0];
+    while (lead < a.length && names.every((w) => w[lead] && w[lead].toLowerCase() === a[lead].toLowerCase())) lead++;
+    while (tail < a.length && names.every((w) => w.length > tail && w[w.length - 1 - tail].toLowerCase() === a[a.length - 1 - tail].toLowerCase())) tail++;
+    var words = lead >= tail ? a.slice(0, lead) : a.slice(a.length - tail);
+    if (!words.length) return a.join(' ');
+    var t = words.join(' ');
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  }
+
+  // The hob's cooking zones, two or three to a row: each in its tile, its level (or state) and the time its timer has left.
+  _zonesHtml(ent, deviceName, online) {
+    var zones = ent.zones || [];
+    if (!online || !zones.length) return '';
+    var on = zones.filter((z) => this._zoneOn(z)).length;
+    var tiles = zones.map((z) => {
+      var active = this._zoneOn(z), lv = this._zoneLevel(z);
+      var value;
+      if (lv && lv.n != null && active) {
+        var n = new Intl.NumberFormat(this._locale(), { maximumFractionDigits: 1 }).format(lv.n);
+        value = hcEsc(n) + (lv.max ? `<small> / ${hcEsc(String(lv.max))}</small>` : '');
+      } else if (lv && lv.text) value = hcEsc(lv.text);
+      else if (!active) value = hcEsc(this._t('st_off'));
+      else value = hcEsc(this._fmt(z.state));
+      var finish = active ? this._zoneFinish(z) : null;
+      if (finish) this._ticking = true;
+      var sub = finish
+        ? `<span class="zt" data-tick="zone" data-finish="${finish.toISOString()}"><ha-icon icon="mdi:timer-outline"></ha-icon>${hcEsc(this._leftText(finish))}</span>`
+        : (lv && z.state && this._avail(z.state) && active ? `<span class="zt">${hcEsc(this._fmt(z.state))}</span>` : '');
+      var id = z.level || z.state;
+      return `<div class="zone${active ? ' on' : ''}" role="button" tabindex="0" data-entity="${hcEsc(id)}">` +
+        `<span class="zic"><ha-icon icon="${active ? 'mdi:circle-slice-8' : 'mdi:circle-outline'}"></ha-icon></span>` +
+        `<span class="ztx"><span class="zn">${hcEsc(this._zoneLabel(z, deviceName))}</span><span class="zv">${value}</span>${sub}</span></div>`;
+    }).join('');
+    return '<div class="section"><div class="section-title"><ha-icon icon="mdi:grid-large"></ha-icon><span>' + hcEsc(this._t('zones')) + '</span>' +
+      `<span class="aside">${hcEsc(this._t('zones_on').replace('{n}', on).replace('{t}', zones.length))}</span></div>` +
+      `<div class="zones">${tiles}</div></div>`;
   }
 
   // Temperatures (cold appliances always, ovens while cooking) and the hood's fan and light.
@@ -4149,8 +4704,17 @@ class HomeConnectBaseCard extends HTMLElement {
       var fan = this._st(ent.fan);
       if (fan && fan.state === 'on' && fan.attributes.percentage != null) chips.push(chip('mdi:fan', `${Math.round(fan.attributes.percentage)} %`, ent.fan));
       else if (this._avail(ent.venting) && this._busy({ venting: ent.venting })) chips.push(chip('mdi:fan', this._fmt(ent.venting), ent.venting));
-      if (this._val(ent.light) === 'on') chips.push(chip('mdi:lightbulb-on-outline', this._t('light_on'), ent.light));
     }
+    // The light of a hood or a wine cabinet.
+    if ((kind === 'hood' || kind === 'wine_cooler') && this._val(ent.light) === 'on') chips.push(chip('mdi:lightbulb-on-outline', this._t('light_on'), ent.light));
+    // What the appliance draws now, while it draws something.
+    var w = this._st(ent.watts);
+    if (w && this._avail(ent.watts) && Number(w.state) > 0) {
+      chips.push(chip('mdi:flash', this._hass.formatEntityState ? this._hass.formatEntityState(w) : `${w.state} ${w.attributes.unit_of_measurement || ''}`.trim(), ent.watts));
+    }
+    if (this._val(ent.child_lock) === 'on') chips.push(chip('mdi:lock', this._t('child_lock'), ent.child_lock));
+    // A program-less hob says whether it can be driven from Home Assistant (LG ThinQ's remote control).
+    if (kind === 'hob' && this._val(ent.remote_start) === 'on') chips.push(chip('mdi:remote', this._t('remote_on'), ent.remote_start));
     return chips;
   }
 
@@ -4161,6 +4725,36 @@ class HomeConnectBaseCard extends HTMLElement {
     if (!b || HC_BRAND_LOGOS[b.key]) return '';
     var initials = b.key === 'lg' ? 'LG' : b.name.charAt(0).toUpperCase();
     return `<span class="hc-badge brand" style="background:${b.color}" title="${hcEsc(b.name)}">${hcEsc(initials)}</span>`;
+  }
+
+  // The illustrated header: the room and the appliance's own illustration on the right, the round icon (tinted by the
+  // state, the brand's logo or initial in a badge on it), the title and the subtitle on the left.
+  _banner(o) {
+    var c = this._config, night = hcIsNight(this._hass, c);
+    if (!this._uid) this._uid = ++hcUid;
+    var scene = HC_LAUNDRY.indexOf(o.kind) >= 0 ? 'laundry' : 'kitchen';
+    var art = String(o.art).replace(/(id="|url\(#)hc-/g, `$1hc${this._uid}-`);
+    var drop = HC_BANNER_DROP[o.kind] ? ` style="--hc-drop: ${HC_BANNER_DROP[o.kind]}px"` : '';
+    var zoom = this._zoomButton();
+    return `<div class="banner sc-${scene}${night ? ' night' : ''}${zoom ? ' has-zoom' : ''}">` +
+      `<svg class="scene" viewBox="0 0 200 80" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">${HC_SCENES[scene](night)}</svg>` +
+      '<div class="ground"></div>' +
+      `<div class="htext"><div class="logo" aria-hidden="true"><ha-icon icon="${hcEsc(c.icon || o.icon)}"></ha-icon>${this._bannerBadge()}</div>` +
+      `<div class="titles"><div class="trow"><div class="name">${hcEsc(o.name)}</div>${this._pill(o.status)}</div><div class="sub" title="${hcEsc(o.sub)}">${hcEsc(o.sub)}</div></div></div>` +
+      `<div class="bart"${drop}>${hcPicture(art, o.state, true, this._lit)}</div>` + zoom +
+    '</div>';
+  }
+
+  // The status pill: a dot and the state, in the header icon's colour; its text stays in its title when only the dot shows.
+  _pill(text) {
+    return `<span class="st" title="${hcEsc(text)}"><span class="dot"></span><span class="stt">${hcEsc(text)}</span></span>`;
+  }
+
+  // Badge on the banner's icon: the brand's logo on a white tile, else its initial on the brand's colour.
+  _bannerBadge() {
+    var b = this._brand, svg = b && HC_BRAND_LOGOS[b.key];
+    if (!svg) return this._badge();
+    return `<span class="hc-badge logo-b" role="img" aria-label="${hcEsc(b.name)}" title="${hcEsc(b.name)}">${svg}</span>`;
   }
 
   _brandLogo() {
@@ -4180,9 +4774,11 @@ class HomeConnectBaseCard extends HTMLElement {
         ' --hc-text: color-mix(in srgb, var(--hc-color) 45%, var(--primary-text-color));' +
         ' --hc-warning-text: color-mix(in srgb, var(--warning-color, #ffa600) 45%, var(--primary-text-color));' +
         ' --hc-error-text: color-mix(in srgb, var(--error-color, #db4437) 45%, var(--primary-text-color));' +
-        ' --hc-primary-text: color-mix(in srgb, var(--primary-color, #03a9f4) 45%, var(--primary-text-color)); }' +
+        ' --hc-primary-text: color-mix(in srgb, var(--primary-color, #03a9f4) 45%, var(--primary-text-color));' +
+        // The header icon's colour: the state's (at work, waiting, warning, fault, done), neutral grey when idle or off.
+        ' --hc-icon: ' + (this._iconColor || 'var(--state-inactive-color, var(--disabled-text-color, #9e9e9e))') + '; }' +
       // A size container: narrow layouts (6 columns of a Sections view, the mini card) follow the card's own width.
-      'ha-card { height: 100%; box-sizing: border-box; padding: 12px; display: flex; flex-direction: column; gap: 10px;' +
+      'ha-card { container-name: hc-card; height: 100%; box-sizing: border-box; padding: 12px; display: flex; flex-direction: column; gap: 10px;' +
         ' container-type: inline-size; }' +
       // Containment drops the content's own width: hosts that size the card from it (layout-card, button-card, an
       // `auto` grid column, an inline-block) would shrink it to its 24 px of padding. This empty, zero-height grid
@@ -4194,7 +4790,7 @@ class HomeConnectBaseCard extends HTMLElement {
       // The body starts 8px under the header (the card gap is 10px between body blocks).
       '.header { display: flex; align-items: center; gap: 10px; margin-bottom: -2px; }' +
       '.logo { position: relative; width: 40px; height: 40px; flex: none; border-radius: 50%; display: grid; place-items: center;' +
-        ' color: ' + HC_ACCENT + '; background: color-mix(in srgb, ' + HC_ACCENT + ' 16%, transparent); }' +
+        ' color: var(--hc-icon); background: color-mix(in srgb, var(--hc-icon) 16%, transparent); }' +
       '.logo ha-icon { --mdc-icon-size: 24px; }' +
       '.hc-badge { position: absolute; right: -4px; bottom: -4px; width: 18px; height: 18px; border-radius: 5px; padding: 1px; box-sizing: border-box;' +
         ' display: grid; place-items: center; background: #fff;' +
@@ -4208,8 +4804,21 @@ class HomeConnectBaseCard extends HTMLElement {
       '.hc-badge.brand { padding: 0; color: #fff; font: 700 9px/1 var(--ha-font-family-body, system-ui, sans-serif); letter-spacing: -0.02em; }' +
       // The title takes the room the pill and the buttons leave (basis 0, so it doesn't squeeze the pill at
       // ordinary widths); it shrinks with an ellipsis but keeps about four characters.
-      '.titles { flex: 1 1 0; min-width: 5ch; font-size: 16px; }' +
-      ':host([hide-title]) .titles > .name, :host([hide-subtitle]) .titles > .sub { display: none; }' +
+      '.titles { flex: 1 1 0; min-width: 5ch; font-size: 16px; display: flex; flex-direction: column; }' +
+      ':host([hide-title]) .titles .name, :host([hide-subtitle]) .titles > .sub { display: none; }' +
+      // The status pill on the title row, 8 px after the title, only when the whole title and the pill's whole label
+      // fit there; otherwise on its own line under the subtitle (then kept to one line); its dot alone at 200 px or
+      // less, or when the banner has no room left for its label. Measured after each render (_fitPill), in every
+      // language, never by a fixed width.
+      '.trow { display: flex; align-items: center; gap: 8px; min-width: 0; }' +
+      '.trow .name { flex: 0 1 auto; min-width: 0; }' +
+      '.trow .st { flex: none; }' +
+      '.titles.pill-below .trow { display: contents; }' +
+      '.titles.pill-below .sub { order: 1; }' +
+      '.titles.pill-below .st { order: 2; align-self: flex-start; margin-top: 3px; }' +
+      '.titles.pill-dot .stt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }' +
+      '@container hc-card (max-width: 200px) { .st { padding: 4px; }' +
+        ' .stt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } }' +
       '.name { font-size: 16px; font-weight: 500; line-height: 1.25; color: var(--primary-text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
       '.sub { font-size: 12px; color: var(--secondary-text-color); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
       '.hero { display: flex; align-items: center; gap: 14px; }' +
@@ -4310,6 +4919,12 @@ class HomeConnectBaseCard extends HTMLElement {
       '.big .state { min-width: 0; font-size: 13px; font-weight: 500; color: var(--hc-text); overflow-wrap: break-word; }' +
       '.state-big { min-width: 0; font-size: 22px; font-weight: 400; line-height: 1.2; color: var(--hc-text); overflow-wrap: break-word; }' +
       '.time { font-size: 12px; color: var(--secondary-text-color); }' +
+      // What the header pill already says is not repeated under it, unless the banner's pill keeps only its dot.
+      '.pill-echo { display: none !important; }' +
+      'ha-card:has(.banner .titles.pill-dot) .hero .big.pill-echo { display: flex !important; }' +
+      'ha-card:has(.banner .titles.pill-dot) .hero .state.pill-echo { display: inline !important; }' +
+      '@container hc-card (max-width: 200px) { .banner ~ .hero .big.pill-echo { display: flex !important; }' +
+        ' .banner ~ .hero .state.pill-echo { display: inline !important; } ha-card.mini .banner ~ .content .mstate { display: flex; } }' +
       'button { font: inherit; cursor: pointer; border: none; }' +
       'button:disabled { cursor: default; opacity: 0.5; }' +
       '.power { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none;' +
@@ -4343,6 +4958,26 @@ class HomeConnectBaseCard extends HTMLElement {
       '.section-title ha-icon { --mdc-icon-size: 16px; }' +
       '.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 6px; }' +
       '.toggles { display: flex; flex-wrap: wrap; gap: 6px; }' +
+      '.section-title .aside { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 11px; }' +
+      // A hob's zones: tiles two (or more) to a row, a 40 px round icon tinted by the state while the zone heats.
+      '.zones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }' +
+      '.zone { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 10px; border-radius: 12px; cursor: pointer;' +
+        ' background: var(--secondary-background-color, rgba(128,128,128,0.1)); }' +
+      '.zone:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }' +
+      '.zic { width: 40px; height: 40px; border-radius: 50%; flex: none; display: grid; place-items: center;' +
+        ' background: color-mix(in srgb, var(--secondary-text-color) 12%, transparent); color: var(--secondary-text-color); }' +
+      '.zic ha-icon { --mdc-icon-size: 22px; }' +
+      '.zone.on .zic { background: color-mix(in srgb, var(--hc-color) 16%, transparent); color: var(--hc-color); }' +
+      '.ztx { display: flex; flex-direction: column; min-width: 0; }' +
+      '.zn { font-size: 12px; color: var(--secondary-text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
+      '.zv { font-size: 16px; font-weight: 500; color: var(--primary-text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
+      '.zv small { font-size: 11px; font-weight: 400; color: var(--secondary-text-color); }' +
+      '.zone:not(.on) .zv { font-size: 13px; font-weight: 400; color: var(--secondary-text-color); }' +
+      '.zt { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; color: var(--secondary-text-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }' +
+      '.zt ha-icon { --mdc-icon-size: 13px; flex: none; }' +
+      // A narrow card: smaller icons and gaps, then (6 columns of the Sections view) the zones one under the other.
+      '@container hc-card (max-width: 300px) { .zone { gap: 8px; padding: 8px; } .zic { width: 32px; height: 32px; } .zic ha-icon { --mdc-icon-size: 18px; } .zt ha-icon { display: none; } }' +
+      '@container hc-card (max-width: 240px) { .zones { grid-template-columns: minmax(0, 1fr); } }' +
       '.toggle { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere; text-align: start;' +
         ' font-size: 11px; font-weight: 500; padding: 3px 8px 3px 5px; border-radius: 12px;' +
         ' background: var(--secondary-background-color, rgba(128,128,128,0.12)); color: var(--secondary-text-color); }' +
@@ -4375,11 +5010,11 @@ class HomeConnectBaseCard extends HTMLElement {
       '.zoom ha-icon { --mdc-icon-size: 16px; }' +
       '.zoom:hover { background: color-mix(in srgb, var(--secondary-text-color) 16%, transparent); color: var(--primary-text-color); }' +
       '.zoom:focus-visible { outline: 2px solid var(--primary-color, #03a9f4); outline-offset: 1px; }' +
-      // The status pill takes at most half the header and truncates; on a narrow card only its dot shows.
-      '.st { display: inline-flex; align-items: center; gap: 4px; flex: 0 1 auto; min-width: 0; max-width: 50%; overflow: hidden; box-sizing: border-box;' +
+      // The status pill keeps its whole label (see .trow); on a narrow card only its dot shows.
+      '.st { display: inline-flex; align-items: center; gap: 4px; flex: none; box-sizing: border-box;' +
         ' padding: 1px 8px; border-radius: 12px; font-size: 11px; font-weight: 500;' +
         ' background: color-mix(in srgb, var(--hc-color) 15%, transparent); color: var(--hc-text); }' +
-      '.stt { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }' +
+      '.stt { white-space: nowrap; }' +
       '.dot { width: 6px; height: 6px; flex: none; border-radius: 50%; background: var(--hc-color); }' +
       '.content { display: flex; align-items: center; gap: 12px; }' +
       'ha-card.mini .picture { width: 56px; height: 66px; }' +
@@ -4402,13 +5037,10 @@ class HomeConnectBaseCard extends HTMLElement {
         ' ha-card.mini .content { flex-wrap: wrap; row-gap: 8px; }' +
         ' ha-card.mini .mcontrols { flex: 1 1 100%; justify-content: flex-end; }' +
       ' }' +
-      // At 6 columns the mini card's pill is a dot (its text stays in its title and for screen readers) and the
-      // state is spelt out above the program instead, where it has room to wrap.
-      '@container (max-width: 230px) {' +
-        ' ha-card.mini .st { padding: 4px; }' +
-        ' ha-card.mini .stt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }' +
-        ' ha-card.mini .mstate { display: flex; }' +
-      ' }' +
+      // When the mini card's pill is a dot (its text stays in its title and for screen readers), the state is spelt
+      // out above the program instead, where it has room to wrap.
+      '@container (max-width: 200px) { ha-card.mini .header ~ .content .mstate { display: flex; } }' +
+      'ha-card.mini:has(.titles.pill-dot) .content .mstate { display: flex; }' +
       // The full card's header icon shrinks, then steps aside; the mini card's keeps its 40 px at every width (its
       // title, pill and picture give way instead).
       '@container (max-width: 230px) {' +
@@ -4429,7 +5061,7 @@ class HomeConnectBaseCard extends HTMLElement {
         ' ha-card.mini .picture { width: 44px; height: 52px; }' +
         ' ha-card.mini .content { column-gap: 8px; }' +
       ' }' +
-    '</style>';
+    '</style>' + (this._illustrated ? HC_BANNER_STYLE : '');
   }
 
   _onClick(ev) {
@@ -4701,7 +5333,7 @@ var hcMini = (Base) => class extends Base {
       var pct = m.state === 'finished' ? 100 : (m.progress == null ? 0 : m.progress);
       bar = `<div class="mbar"><div class="bar"><div class="fill" style="width:${pct}%"></div></div><span class="v">${Math.round(pct)} %</span></div>`;
     }
-    if (m.progLabel && m.online && m.powerOn) lines.push(`<div class="line"><ha-icon icon="mdi:tune-variant"></ha-icon><span>${hcEsc(m.progLabel)}</span></div>`);
+    if (m.progLabel && m.online && m.powerOn && !m.banner) lines.push(`<div class="line"><ha-icon icon="mdi:tune-variant"></ha-icon><span>${hcEsc(m.progLabel)}</span></div>`);
     if (m.running && m.finish) {
       lines.push(`<div class="line"><ha-icon icon="mdi:clock-outline"></ha-icon><span data-tick="time">${hcEsc(this._timeLine(m.finish))}</span></div>`);
     }
@@ -4716,12 +5348,14 @@ var hcMini = (Base) => class extends Base {
       ? `<div class="error" role="alert" title="${hcEsc(this._error.detail)}"><ha-icon icon="mdi:alert-circle-outline"></ha-icon><span>${hcEsc(this._t(this._error.key))}</span></div>`
       : '';
 
-    return this._styles(m.color) + '<ha-card class="mini">' +
+    if (m.banner) this._rows = hcRows(HC_PX.bannerMini + (this._error ? HC_PX.error : 0));
+    return this._styles(m.color) + '<ha-card class="mini">' + (m.banner ||
       '<div class="header">' + m.logo +
-        '<div class="titles"><div class="name">' + hcEsc(m.name) + '</div>' + (this._brandLogo() ? `<div class="sub">${this._brandLogo()}</div>` : '') + '</div>' +
-        `<span class="st" title="${hcEsc(m.statusText)}"><span class="dot"></span><span class="stt">${hcEsc(m.statusText)}</span></span>` + this._zoomButton() +
-      '</div>' +
-      '<div class="content">' + hcPicture(m.art, m.state, !c.icon, this._lit) +
+        '<div class="titles"><div class="trow"><div class="name">' + hcEsc(m.name) + '</div>' + this._pill(m.statusText) + '</div>' +
+          (this._brandLogo() ? `<div class="sub">${this._brandLogo()}</div>` : '') + '</div>' +
+        this._zoomButton() +
+      '</div>') +
+      '<div class="content">' + (m.banner ? '' : hcPicture(m.art, m.state, !c.icon, this._lit)) +
         '<div class="info">' + mstate + bar + lines.join('') + '</div>' +
         (btns.length ? `<div class="mcontrols">${btns.join('')}</div>` : '') +
       '</div>' + errorHtml +
@@ -4736,7 +5370,7 @@ class HomeConnectWasherMiniCard extends hcMini(HomeConnectWasherCard) {}
 class SmartApplianceMiniCard extends hcMini(SmartApplianceCard) {}
 
 // ── smart-appliance-card-editor (visual editor, built on HA's ha-form) ──────────
-var HC_EDITOR_DEFAULTS = { show_title: true, show_subtitle: true, show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true, toggle_color: 'green' };
+var HC_EDITOR_DEFAULTS = { illustration: true, illustration_theme: 'auto', show_title: true, show_subtitle: true, show_program: true, show_controls: true, show_options: true, show_alerts: true, show_power: true, show_energy: true, zoom: true, toggle_color: 'green' };
 
 class HomeConnectCardEditor extends HTMLElement {
   setConfig(config) {
@@ -4787,6 +5421,12 @@ class HomeConnectCardEditor extends HTMLElement {
         type: 'grid', name: '', schema: [
           { name: 'name', selector: { text: {} } },
           { name: 'icon', selector: { icon: {} } },
+        ],
+      },
+      {
+        type: 'grid', name: '', schema: [
+          { name: 'illustration', selector: { boolean: {} } },
+          { name: 'illustration_theme', selector: { select: { mode: 'dropdown', options: ['auto', 'day', 'night'].map((v) => ({ value: v, label: t(`theme_${v}`) })) } } },
         ],
       },
       {

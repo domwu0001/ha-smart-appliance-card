@@ -18,12 +18,13 @@
   <br><br>
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/miele.svg" alt="Miele" height="20">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/samsung.svg" alt="Samsung" height="15">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/images/localthings-dark.png"><img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/images/localthings.png" alt="LocalThings" height="20"></picture>&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/lg.svg" alt="LG" height="26">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/whirlpool.svg" alt="Whirlpool" height="20">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/juju35/ha-smart-appliance-card/main/logos/kitchenaid.svg" alt="KitchenAid" height="13">
 </p>
 
-Animated Lovelace cards for home appliances in Home Assistant: washing machines, tumble dryers, washer-dryers, dishwashers, ovens, microwaves, hobs, coffee machines, cooker hoods, fridges, freezers, wine cabinets and the LG Styler. They work with [Home Connect](https://www.home-assistant.io/integrations/home_connect/), [Miele](https://www.home-assistant.io/integrations/miele/), [SmartThings](https://www.home-assistant.io/integrations/smartthings/), [LG ThinQ](https://www.home-assistant.io/integrations/lg_thinq/), [Whirlpool](https://www.home-assistant.io/integrations/whirlpool/) and [Matter](https://www.home-assistant.io/integrations/matter/).
+Animated Lovelace cards for home appliances in Home Assistant: washing machines, tumble dryers, washer-dryers, dishwashers, ovens, microwaves, hobs, coffee machines, cooker hoods, fridges, freezers, wine cabinets and the LG Styler. They work with [Home Connect](https://www.home-assistant.io/integrations/home_connect/), [Miele](https://www.home-assistant.io/integrations/miele/), [SmartThings](https://www.home-assistant.io/integrations/smartthings/), [LocalThings](https://github.com/mbillow/localthings), [LG ThinQ](https://www.home-assistant.io/integrations/lg_thinq/), [Whirlpool](https://www.home-assistant.io/integrations/whirlpool/) and [Matter](https://www.home-assistant.io/integrations/matter/).
 
 Pick the appliance: the card works out its type and its brand, and finds all its entities by itself.
 
@@ -62,6 +63,7 @@ Pick the appliance: the card works out its type and its brand, and finds all its
 | [Home Connect Local](https://github.com/chris-mc1/homeconnect_local_hass) (custom, local network, no cloud) — Bosch, Siemens, Neff, Gaggenau, Constructa | Same appliances as Home Connect, type read from the device model | Status, progress, time left, program picker with its options, **Start**, **Pause / Resume**, **Stop**, power, door (binary sensor), salt and rinse aid levels, coffee machine tanks, fridge super modes, lights |
 | [Miele](https://www.home-assistant.io/integrations/miele/) (built in) | Washing machines, tumble dryers, washer-dryers, dishwashers, ovens (steam and combi included), microwaves, hobs, coffee machines, cooker hoods, fridges, freezers, wine cabinets | Status and program phase, program, progress and finish time from the elapsed and remaining times, **Start**, **Pause**, **Stop**, power, door, zone temperatures, super cooling and super freezing |
 | [SmartThings](https://www.home-assistant.io/integrations/smartthings/) (built in) — Samsung | Washing machines, tumble dryers, washer-dryers, dishwashers, ovens, cooker hoods, fridges, freezers | Machine and job state, progress, finish time, **Start / Pause / Resume / Stop** through the operating state, dishwasher course picker, door, temperatures, rapid cooling and freezing |
+| [LocalThings](https://github.com/mbillow/localthings) (custom, local network, no cloud) — Samsung | Washing machines, tumble dryers, dishwashers, ovens and ranges, type read from the device name | Machine state and step (oven cavity state, laundry progress), progress, finish time, cycle or oven mode picker, **Start / Pause / Resume / Stop** buttons, remote control, power, door, oven temperatures |
 | [LG ThinQ](https://www.home-assistant.io/integrations/lg_thinq/) (built in) — LG | Washing machines, tumble dryers, WashTower and WashCombo, dishwashers, ovens, microwaves, hobs, cooker hoods, fridges, wine cabinets, Styler | Current state and step, progress and finish time, **Start** and **Stop** through the operation mode, power, remote start, door, temperatures, express modes |
 | [Whirlpool](https://www.home-assistant.io/integrations/whirlpool/) (built in) — Whirlpool, Maytag, KitchenAid, Consul | Washing machines, tumble dryers, ovens, fridges | Washer and dryer state, finish time and door; oven state, temperature and **Stop** (set `brand` for a Maytag, KitchenAid or Consul: the integration doesn't say) |
 | [Matter](https://www.home-assistant.io/integrations/matter/) (built in) | Dishwashers, washing machines, tumble dryers (Matter 1.2+) | Operational state and phase, finish time, **Start / Pause / Resume / Stop**, power, program options (set `kind` when the appliance type can't be told from its entities) |
@@ -192,7 +194,9 @@ entities:
 | `show_subtitle` | ❌ | `true` | Show the subtitle under the title |
 | `kind` | ❌ | Auto | Appliance type when it can't be detected: `dishwasher`, `washer`, `dryer`, `washer_dryer`, `oven`, `microwave`, `hob`, `coffee_maker`, `hood`, `fridge`, `freezer`, `wine_cooler`, `styler` |
 | `brand` | ❌ | Auto | Brand for the badge and button colour when the integration doesn't give it: `bosch`, `siemens`, `neff`, `gaggenau`, `constructa`, `miele`, `samsung`, `lg`, `whirlpool`, `maytag`, `kitchenaid`, `consul` |
-| `icon` | ❌ | Illustration | Replaces the appliance illustration with an icon |
+| `icon` | ❌ | Appliance icon | The header's round icon; with `illustration: false`, it also replaces the appliance illustration |
+| `illustration` | ❌ | `true` | Illustrated header (both cards): the appliance in its room (laundry room or kitchen) on a tiled floor, its icon tinted by the state and the brand's logo on it. `false` keeps the classic header |
+| `illustration_theme` | ❌ | `auto` | Illustrated header, both cards: `auto` (follows the Home Assistant theme: night with a dark theme, day with a light theme), `day` or `night` |
 | `show_program` | ❌ | `true` | Show the program picker |
 | `show_options` | ❌ | `true` | Show program options (only before a program starts) |
 | `show_controls` | ❌ | `true` | Show Start / Pause / Resume / Stop buttons |

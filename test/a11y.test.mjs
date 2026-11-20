@@ -200,7 +200,19 @@ test("state, warning, error and primary texts reach 4.5:1 in light and dark them
 
 test("the mini card's status pill keeps its text in a title (and for screen readers) for when only its dot shows", () => {
   const Mini = customElements.get("home-connect-washer-mini-card");
-  const html = card(mockHass(), Mini).shadowRoot.innerHTML;
+  // Illustrated header: the pill right after the title (the subtitle no longer repeats the state).
+  const banner = card(mockHass(), Mini).shadowRoot.innerHTML;
+  assert.match(banner, /<div class="trow"><div class="name">[^<]*<\/div><span class="st" title="Running"><span class="dot"><\/span><span class="stt">Running<\/span><\/span><\/div><div class="sub"/);
+  assert.doesNotMatch(banner, /<div class="sub">Running<\/div>/);
+  // The state line is there too, shown only on a card so narrow that the banner's pill keeps just its dot.
+  assert.match(banner, /<div class="info"><div class="line mstate" aria-hidden="true"><span>Running<\/span><\/div>/);
+  // The full card too.
+  const Full = customElements.get("home-connect-washer-card");
+  assert.match(card(mockHass(), Full).shadowRoot.innerHTML, /<div class="trow"><div class="name">[^<]*<\/div><span class="st" title="Running">/);
+  const el = new Mini();
+  el.setConfig({ illustration: false });
+  el.hass = mockHass();
+  const html = el.shadowRoot.innerHTML;
   assert.match(html, /<div class="info"><div class="line mstate" aria-hidden="true"><span>Running<\/span><\/div>/);
   assert.match(html, /<span class="st" title="Running"><span class="dot"><\/span><span class="stt">Running<\/span><\/span>/);
 });
