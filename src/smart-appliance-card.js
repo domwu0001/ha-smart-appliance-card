@@ -4552,7 +4552,7 @@ class HomeConnectBaseCard extends HTMLElement {
       : ((door === 'open' && HC_ART_OPEN[kind]) || HC_ART[kind] || HC_ART.dishwasher);
     var infoHtml = '<div class="info">' + big + (chips.length ? `<div class="chips">${chips.join('')}</div>` : '') + '</div>';
     // Illustrated header: the appliance stands in the banner, the state and its chips fill the row under it.
-    var heroHtml = this._illustrated ? `<div class="hero">${infoHtml}${powerBtn}</div>`
+    var heroHtml = this._illustrated ? `<div class="hero">${infoHtml}${toggleBtn}${powerBtn}</div>`
       : `<div class="hero">${hcPicture(art, state, !c.icon, this._lit)}${infoHtml}</div>`;
 
     var logo = `<div class="logo" aria-hidden="true"><ha-icon icon="${hcEsc(profile.icon)}"></ha-icon>${this._badge()}</div>`;
